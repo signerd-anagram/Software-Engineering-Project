@@ -1,0 +1,19 @@
+{% extends 'layout.html' %}
+{% block content %}
+<div class = "sign_up">
+	<form action =  "/sign up" method = "POST">		
+		<div class = "block_header" ><h2><font class = "theme_colour">SIGN </font> UP</h2></div>
+					
+		<hr> 
+									
+		<div class = "response_bullet">Username</div><input type = "text" name = "username"  required><br>
+		<div class = "response_bullet">Email</div><input type = "email" name = "email" required><br>
+		<div class = "response_bullet">Password</div><input type = "password" name = "password" required><br>
+		<div class = "response_bullet">National ID</div><input type = "text" name = "national_id"  required><br>
+		<div class = "response_bullet">Phone number</div><input type = "month" name = "phone_number" min="2012-01-01" max="2013-01-01" required><br>
+																
+		<p><input type = "submit" value = "Sign Up"></p><br>
+								
+	</form>
+</div>
+{% endblock %}

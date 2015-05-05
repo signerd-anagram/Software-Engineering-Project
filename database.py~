@@ -1,0 +1,7 @@
+''' this library defines the database for the online bidding system '''
+
+from peewee import *
+from user import *
+from item import *
+
+DATABASE = SqliteDatabase('online_bidding.db')

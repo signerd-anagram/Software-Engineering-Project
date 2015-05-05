@@ -1,0 +1,18 @@
+{% extends 'layout.html' %}
+{% block content %}
+<div class = "sign_up">
+	<form action =  "/submit item" method = "POST">		
+		<div class = "block_header" ><h2><font class = "theme_colour">SUBMIT ITEM </font></h2></div>
+					
+		<hr> 
+									
+		<div class = "response_bullet">Name</div><input type = "text" name = "name"  required><br>
+		<div class = "response_bullet">Description</div><textarea name = "description" required></textarea><br>
+		<div class = "response_bullet">Price</div><input type = "number" name = "price" required><br>
+		<div class = "response_bullet">Image</div><input type = "text" name = "image_url"  required><br>
+																
+		<p><input type = "submit" value = "Submit"></p><br>
+								
+	</form>
+</div>
+{% endblock %}

@@ -1,0 +1,66 @@
+{% extends 'menu.html' %}
+{% block more_content%}
+
+<div id = "bids_banner" style = "text-align: left;">	
+	<div style = "float: left; width: auto;">	
+		<img src = "/static/imgs/superuser.png" width = "100px" height = "100px" style = "border-radius: 50px;"><br>
+		<font style = "color: maroon; font-size: 3em;">Admin</font>
+	</div>
+</div>
+
+<div class = "sign_up" style = "margin-right: 1%; width: 99%; float: left;">	
+<div class = "block_header" ><h2>POST MESSAGE</h2></div>
+					
+		<hr> 
+		
+		<form action = "" method = "POST">
+			<textarea name  = "message" required></textarea>
+			<input type = "submit" name = "" value = "Post message">
+		</form>
+		
+</div>
+
+<div class = "sign_up" style = "margin-right: 1%;">	
+<div class = "block_header" ><h2>CURRENT BIDS</h2></div>
+					
+		<hr> 
+		
+		<div id = "bids_banner">
+		{% for item in items.where(Item.bought == False) %}
+			<div class = " bid_ad" style = "width: 40%; float: left; margin: 0 4% 20px 4%; background-color: #f3f4f5; border-radius: 10px; padding: 1%;" >
+			<form action = "/stop?item_code={{ item.code }}" method = "POST">
+				<a href = "/item?code={{ item.code }}">
+					<img src = "/static/imgs/{{ item.image_url }}" width = "100px" height = "100px">
+					<h2>{{ item.name }}</h2>
+					<input type = "text" value = "PRICE: {{item.price}}" style = "width: 200px; border: 0; border-bottom: 2px solid maroon; float: center; padding: 16px 0 16px 0; text-align: center;" readonly>
+					<input type = "text" value = "HIGHEST BID: {{item.highest_bid}}" style = "width: 200px; border: 0; border-bottom: 2px solid maroon; float: center; padding: 16px 0 16px 0; text-align: center;" readonly>
+				</a>
+			<input type = "submit" name = "btn_stop_bid" value = "STOP">
+			</form>
+			</div>
+		{% endfor %}
+		</div>
+</div>
+
+<div class = "sign_up" style = "margin-left: 1%;">
+<div class = "block_header" ><h2>SETTLED BIDS</h2></div>
+					
+		<hr> 
+		
+		<div id = "bids_banner">
+		{% for item in items.where(Item.bought == True) %}
+			<div class = " bid_ad" style = "width: 40%; float: left; margin: 0 4% 20px 4%; background-color: #f3f4f5; border-radius: 10px; padding: 1%;" >
+			<form action = "/stop?item_code={{ item.code }}" method = "POST">
+				<a href = "/item?code={{ item.code }}">
+					<img src = "/static/imgs/{{ item.image_url }}" width = "100px" height = "100px">
+					<h2>{{ item.name }}</h2>
+					<input type = "text" value = "PRICE: {{item.price}}" style = "width: 200px; border: 0; border-bottom: 2px solid maroon; float: center; padding: 16px 0 16px 0; text-align: center;" readonly>
+					<input type = "text" value = "HIGHEST BID: {{item.highest_bid}}" style = "width: 200px; border: 0; border-bottom: 2px solid maroon; float: center; padding: 16px 0 16px 0; text-align: center;" readonly>
+					<input type = "text" value = "HIGHEST BIDDER: {{item.buyer.username}}" style = "width: 200px; border: 0; border-bottom: 2px solid maroon; float: center; padding: 16px 0 16px 0; text-align: center;" readonly>
+				</a>
+			</form>
+			</div>
+		{% endfor %}
+		</div>
+</div>
+{% endblock %}

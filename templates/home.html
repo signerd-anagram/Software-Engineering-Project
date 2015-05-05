@@ -1,0 +1,21 @@
+{% extends 'layout.html'%}
+{% block content%}
+
+<div class = "sign_up">
+	<form action =  "" method = "POST">		
+		<div class = "block_header" ><h2><font class = "theme_colour">AUCTIONEER'S UPDATES </font></h2></div>
+					
+		<hr> 
+		
+		<img src = "/static/imgs/superuser.png" width = "100px" height = "100px" align = "center" style = "border-radius: 50px;">
+			
+		{%for update in updates[0:10]%}						
+		<p>		
+			<strong>{{ update.date_submitted }}</strong>  {{update.message}}	
+			<hr>	
+		</p>
+		{%endfor%}
+								
+	</form>
+</div>
+{% endblock %}

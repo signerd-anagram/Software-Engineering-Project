@@ -1,0 +1,33 @@
+{% extends 'layout.html' %}
+{% block content %}
+<div class = "sign_up" style = "margin-right: 1%;">
+	<form action =  "" method = "POST">		
+		<div class = "block_header" ><h2><font class = "theme_colour">SEND MESSAGE</font></h2></div>
+					
+		<hr> 
+
+		<div class = "response_bullet">Name</div><input type = "text" name = "response_one"  required><br>
+		<div class = "response_bullet">Email</div><input type = "email" name = "response_one"  required><br>
+		<label for = "message">Message</label><br>
+		<textarea name = "message" required></textarea><br>
+																
+		<p><input type = "submit" value = "Send"></p><br>
+								
+	</form>
+</div>
+
+<div class = "sign_up" style = "margin-left: 1%;">
+	<form action =  "" method = "POST">		
+		<div class = "block_header" ><h2><font class = "theme_colour">ABOUT US</font></h2></div>
+					
+		<hr> 
+		
+		<img src = "/static/imgs/qm.png" width = "170px" height = "150px" align = "center">
+									
+		<p>
+		Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+		</p>
+								
+	</form>
+</div>
+{% endblock %}

@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+	<head>
+		<link href = "static/css/style.css" rel = "stylesheet" type = "text/css">
+		<title>Online Bidding</title>
+	</head>
+	
+	<body>		
+			<div class = "flash" style = "color: white; text-align: left;">
+				{% with flash_messages = get_flashed_messages('sign_in_first') %}
+					{% for flash_message in flash_messages %}
+					<p>{{ flash_message }}</p>
+					{% endfor %}
+				{% endwith %}
+			</div>
+						
+			<div id = "main_menu">
+				<a href = "/"><label class="first" >Home</label></a>
+				<a href = "/auctions"><label class="first" >Auctions</label></a>
+				<a href = "/gallery"><label class="first">Gallery</label></a>
+				<a href = "/submit item"><label class="first">Submit </label></a>
+				<a href = "/faq"><label class="first">FAQ</label></a>
+				<a href = "/about"><label class="first">About</label></a>
+				<a href = "/contact"><label class="first">Contact</label></a>
+				<a href = "/advertise"><label class="first">Advertise</label></a>
+				<a href = "/sign up form"><label class="first">Sign Up</label></a>
+				<a href = "{{ message[1] }}"><label class="second">{{ message[0] }}</label></a>
+			</div>
+			<div id = "content">
+				{% block more_content%}{% endblock%}
+			</div>
+	</body>
+</html>

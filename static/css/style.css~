@@ -1,0 +1,141 @@
+body {
+	background-color: white;
+	background-image: url(../imgs/back.jp);
+	font: .775em Kalinga;
+	width: auto;
+}
+
+#main_container {
+	background-color: black;
+	width:100%;
+	height: auto;
+	height: auto;
+}
+
+.sign_up {
+	background-color: #bbb;
+	border-radius: 10px;
+	width: 48%;
+	margin: 10px 0 10px 0;
+	padding: 0.5%;
+	height: auto;
+	float: left;
+}
+
+#bids_banner {
+	background-color: #bbb;
+	width: 98%;
+	float: left;
+	color: black;
+	height: auto;
+	border-radius: 20px;
+	padding: 1%;
+}
+
+#bids_banner .bid_ad {
+	background-color: #bbb;
+	width: 21%;
+	height: auto;
+	margin: 5px 2% 5px 2%;
+	float: left;
+	text-align: center;
+}
+
+#bids_banner .bid_ad img {
+	width: 100px;
+	height: 100px;
+	border-radius: 50px;
+}
+
+#bids_banner button {
+	background-color: #bbb;
+	color: maroon;
+	float: left;
+	border-radius: 5px;
+	border: none;
+	font-size: 36px;
+}
+
+#bids_banner .bid_ad .bid_current{
+	color: #bbb;
+	background-color: maroon;
+	padding: 5px 35px;
+	float: center;
+	height: auto;
+	text-align: center;
+	border-radius: 50px;
+}
+
+#main_menu {
+	background-color: black;
+	width: auto;
+	height: auto;
+}
+
+#main_menu li {
+	display: inline;
+	list-style: none;
+}
+
+#main_menu .first{
+  	font-size: 0.9rem !important;
+  	padding: 10px 30px;	
+  	color: white;
+  	background-color: maroon;
+  	text-align: center;
+  	float: left;
+  	margin: 2px;
+  	border-radius: 10px;
+}
+
+#main_menu .second{
+  	font-size: 0.9rem !important;
+   	padding: 10px 30px;		
+  	color: white;
+  	background-color: green;
+  	text-align: center;
+  	float: right;
+  	margin: 2px;
+   	border-radius: 10px;
+}
+
+input[type=text], 
+input[type=number], 
+input[type=email], 
+select, 
+input[type=radio], 
+input[type=password], 
+textarea, 
+input[type=email],
+input[type=file] {
+  border: 1px solid #bbb;
+  outline: 0;
+  padding: 10px 0;
+  width: 100%;
+  text-align: left;
+  background-color: white;
+}
+
+
+input[type=submit] {
+  margin: 3px;
+  padding: 13px 23px;
+  border: 0px solid white;
+  border-radius: 4px;
+  text-align: center;
+  background: maroon;
+  outline: 0;
+  color: white;
+  font-size: 14px;
+  float: right;
+}
+
+h2 {
+	color: black;
+	font-size: 1em;
+}
+
+a {
+	text-decoration: none;
+}
+

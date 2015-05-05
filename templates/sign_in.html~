@@ -1,0 +1,16 @@
+{% extends 'layout.html' %}
+{% block content %}
+<div class = "sign_up">
+	<form action =  "/sign in" method = "POST">		
+		<div class = "block_header" ><h2><font class = "theme_colour">SIGN </font> IN</h2></div>
+					
+		<hr> 
+									
+		<div class = "response_bullet">Username</div><input type = "text" name = "username"  required><br>
+		<div class = "response_bullet">Password</div><input type = "password" name = "password" required><br>
+		
+		<p><input type = "submit" value = "Sign IN"></p><br>
+								
+	</form>
+</div>
+{% endblock %}

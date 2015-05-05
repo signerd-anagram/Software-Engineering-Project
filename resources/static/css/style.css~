@@ -1,0 +1,166 @@
+body {
+	background-color: #F3F4F5;
+	font: .775em Kalinga;
+	height: auto;
+}
+
+#button {
+	background-color: orange;
+	font-weight: bold;
+	margin: 2px;
+}
+
+#header h1{
+	font-size: 40px;
+	font-family: Roboto medium;
+	color: white;
+	text-align: left;
+}
+
+#header p{
+	font-family: Kalinga;
+	font-size: 22px;
+	color: white;
+}
+
+#fourteen {
+	font-family: Roboto light;
+	color: white;
+	font-size: 26px;
+}
+
+#g {
+	font-family: Roboto black;
+	color: green;
+	font-size: 28px;
+}
+
+#header {
+	background-color: orange;
+	opacity: .5;
+	height: auto;
+	width: 100%;
+	margin: 5px 0 5px 0;
+	float: left;
+	pad
+}
+
+#footer {
+	background-color: black;
+	opacity: 0.7;
+	height: 100px;
+	width: 100%;
+	float: left;
+}
+
+input[type=submit] {
+/**  margin: 19px 19px 0;**/
+  padding: 13px 0;
+  border: 2px solid green;
+  border-radius: 4px;
+  opacity: .7;
+  text-align: center;
+  width: auto;
+  background: green;
+  outline: 0;
+  color: white;
+  font-size: 14px;
+  float: right;
+}
+
+h2 {
+	color: black;
+	font-size: 1em;
+}
+
+#descriptions {
+	height: auto;
+	width: 100%;
+	background-color: white;
+}
+
+.blocks {
+	background-color: #F3F4F5;
+	float: left;
+	width: 18.5%;
+	height:auto;
+	margin: 0 2% 0 2%;
+	padding: 1%;
+	border: 1px solid #E6E6E6;
+	text-align: center;	
+}
+
+a {
+	text-decoration: none;
+}
+
+#main_container {
+	background-color: white;
+	float: left;
+	width: 90%;
+	height: auto;
+	margin-right: 5%;
+	margin-left: 5%;
+	
+}
+
+h1 {
+	font-family: URW Gothic L;
+	text-align: center;
+}
+
+#main_menu {
+	background-color: black;
+	opacity:0.7;
+	width: 100%;
+	height: auto;
+	float: right;
+}
+
+#main_menu li {
+	display: inline;
+	list-style: none;
+}
+
+.first{
+	padding: 0.4rem 0.95rem 0.4rem 0.95rem !important;
+  	font-size: 0.775rem !important;	
+  	color: white;
+  	float: right;
+  	width: auto;
+  	border: 0 0 0 1px solid white;
+  	background-color: black;
+}
+
+.first:hover {
+	color: green;
+}
+.first-exception {
+  	font-size: 0.775rem !important;	
+  	padding: 0px;
+  	float: left;
+  	text-align: left;
+}
+
+.menu_item {
+	float: right;
+	padding-right: 10px;
+	padding-left: 10px;
+	font-size: 20px;
+	font-family: URW Gothic L;
+	border: 1px solid white;
+	font-size: 16px;
+}
+
+.menu_item:hover {
+	background-color: black;
+}
+
+.menu_link {
+	color: white;
+}
+
+.menu_link:hover {
+	color: white;
+}
+

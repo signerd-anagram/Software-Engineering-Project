@@ -1,0 +1,2701 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html class=" pw-locale-en ra1-pw-desktop" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"><head id="ctl00_Head1"><meta http-equiv="X-UA-Compatible" content="IE=8"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta http-equiv="Expires" content="0"><meta http-equiv="Cache-Control" content="no-cache"><meta http-equiv="Pragma" content="no-cache"><title>
+	The fundamentals of real-time bidding - iMediaConnection.com
+</title><link type="text/css" rel="stylesheet" href="The%20fundamentals%20of%20real-time%20bidding%20-%20iMediaConnection.com_files/960_24_col.css"><link type="text/css" rel="stylesheet" href="The%20fundamentals%20of%20real-time%20bidding%20-%20iMediaConnection.com_files/reset.css"><link type="text/css" rel="stylesheet" href="The%20fundamentals%20of%20real-time%20bidding%20-%20iMediaConnection.com_files/basestyle.css"><link type="text/css" rel="stylesheet" href="The%20fundamentals%20of%20real-time%20bidding%20-%20iMediaConnection.com_files/colorbox.css">
+
+    <script src="The%20fundamentals%20of%20real-time%20bidding%20-%20iMediaConnection.com_files/d5f33ed74e.asc" type="text/javascript"></script><script async="" src="The%20fundamentals%20of%20real-time%20bidding%20-%20iMediaConnection.com_files/cbgapi.loaded_1"></script><script src="The%20fundamentals%20of%20real-time%20bidding%20-%20iMediaConnection.com_files/insight.js" async="" type="text/javascript"></script><script src="The%20fundamentals%20of%20real-time%20bidding%20-%20iMediaConnection.com_files/ga.js" async="" type="text/javascript"></script><script async="" src="The%20fundamentals%20of%20real-time%20bidding%20-%20iMediaConnection.com_files/cbgapi.loaded_0"></script><script gapi_processed="true" src="The%20fundamentals%20of%20real-time%20bidding%20-%20iMediaConnection.com_files/plusone_002.js" async="" type="text/javascript"></script><script type="text/javascript" src="The%20fundamentals%20of%20real-time%20bidding%20-%20iMediaConnection.com_files/jquery-1.js"></script>
+    <script type="text/javascript" src="The%20fundamentals%20of%20real-time%20bidding%20-%20iMediaConnection.com_files/jquery_007.js"></script>
+    <script type="text/javascript" src="The%20fundamentals%20of%20real-time%20bidding%20-%20iMediaConnection.com_files/jquery_002.js"></script>
+    <script type="text/javascript" src="The%20fundamentals%20of%20real-time%20bidding%20-%20iMediaConnection.com_files/jquery_005.js"></script>
+    <script type="text/javascript" src="The%20fundamentals%20of%20real-time%20bidding%20-%20iMediaConnection.com_files/jquery_003.js"></script>
+    <script type="text/javascript" src="The%20fundamentals%20of%20real-time%20bidding%20-%20iMediaConnection.com_files/jquery_006.js"></script>
+    <script type="text/javascript" src="The%20fundamentals%20of%20real-time%20bidding%20-%20iMediaConnection.com_files/InternalCampaign.js"></script> 
+    <script type="text/javascript" src="The%20fundamentals%20of%20real-time%20bidding%20-%20iMediaConnection.com_files/adCode.js"></script>   
+    <script type="text/javascript" src="The%20fundamentals%20of%20real-time%20bidding%20-%20iMediaConnection.com_files/Common.js"></script>
+    <script type="text/javascript" src="The%20fundamentals%20of%20real-time%20bidding%20-%20iMediaConnection.com_files/fix_wmode2opaque_swf.js"></script>
+    <script type="text/javascript" src="The%20fundamentals%20of%20real-time%20bidding%20-%20iMediaConnection.com_files/jquery.js"></script>
+    <script type="text/javascript" src="The%20fundamentals%20of%20real-time%20bidding%20-%20iMediaConnection.com_files/knockout-3.js"></script>
+
+
+
+    <link rel="SHORTCUT ICON" href="http://www.imediaconnection.com/favicon.ico"><link rel="alternate" type="application/rss+xml" title="iMediaConnection" href="http://feeds.feedburner.com/ImediaConnectionAll?socialmodule">
+    <!-- <script type="text/javascript" src="/Scripts/jquery.tools.min.js"></script> -->
+    <script type="text/javascript" src="The%20fundamentals%20of%20real-time%20bidding%20-%20iMediaConnection.com_files/jquery_004.js"></script>
+    <script type="text/javascript" src="The%20fundamentals%20of%20real-time%20bidding%20-%20iMediaConnection.com_files/knockout-3.js"></script> 
+    <script type="text/javascript">
+
+        function createViewSingleCookie() {
+            $.cookie("cookieArticleViewType", "0", { expires: 365 });
+            window.scrollTo(0, 0);
+            window.location.hash = 'singleview';
+            location.reload(true);
+        }
+
+        function createViewMultiCookie() {
+            $.cookie("cookieArticleViewType", "1", { expires: 365 });
+            window.scrollTo(0, 0);
+            window.location.hash = 'multiview';
+            location.reload(true);
+        }
+
+        function PopLoginSingleReminder() {
+            $.cookie("cookieArticleViewType", "0", { expires: 365 });
+            window.scrollTo(0, 0);
+            window.location.hash = 'singleview';
+            jQuery.colorbox({
+                href: baseSecureUrl + "dialogs/LoginDialog.aspx?rem=1",
+                iframe: true,
+                scrolling: false,
+                width: '770px',
+                height: '310px',
+                onClosed: closedLogin,
+                fixed: true,
+                reposition: true,
+                top: function () {
+                        if (mobileCheck()) { return 50 }
+                        else { return false; } 
+                    },
+                    left: function () {
+                        if (mobileCheck()) { return 50 }
+                        else { return false; } 
+                    }
+            });
+        }
+
+        function PopSponsorLearnMore() {
+            window.scrollTo(0, 0);
+            window.location.hash = 'singleview';
+            jQuery.colorbox({
+                href: baseSecureUrl + "dialogs/SponsorLearnMore.htm",
+                iframe: true,
+                scrolling: false,
+                width: '350px',
+                height: '310px',
+                onClosed: closedLogin,
+                fixed: true,
+                reposition: true,
+                top: function () {
+                    if (mobileCheck()) { return 50 }
+                    else { return false; }
+                },
+                left: function () {
+                    if (mobileCheck()) { return 50 }
+                    else { return false; }
+                }
+            });
+        }
+
+        function UpdateQueryString(key, value, url) {
+            if (!url) url = window.location.href;
+            var re = new RegExp("([?|&])" + key + "=.*?(&|#|$)(.*)", "gi");
+
+            if (re.test(url)) {
+                if (value)
+                    return url.replace(re, '$1' + key + "=" + value + '$2$3');
+                else {
+                    return url.replace(re, '$1$3').replace(/(&|\?)$/, '');
+                }
+            }
+            else {
+                if (value) {
+                    var separator = url.indexOf('?') !== -1 ? '&' : '?',
+                hash = url.split('#');
+                    url = hash[0] + separator + key + '=' + value;
+                    if (hash[1]) url += '#' + hash[1];
+                    return url;
+                }
+                else
+                    return url;
+            }
+        }
+
+        function scrollTo(hash) {
+            location.hash = "#" + hash;
+        }
+
+        function PopulateFollow() {
+            if (typeof followCheck == 'undefined') {
+                var callUrl = "/profiles/PCWebService.asmx/GetPCInfo";
+                $.ajax({
+                    type: "POST",
+                    url: callUrl,
+                    data: '{ profileID: "12960"}',
+                    contentType: "application/json; charset=utf-8",
+                    dataType: "json",
+                    success: function (ret) {
+                        if (ret != null) {
+                            var tooltipContent = ret.d;
+                            var followbioHTML = [];
+                            if (tooltipContent != null) {
+                                //followbioHTML.push('<a  href="/profiles/iMedia_PC_Bio.aspx?ID=/' + id + '" target="new">Bio</a> ');
+                                followbioHTML.push('<a class="rss" href="/profiles/feeds/authorarticles.aspx?id=12960" target="new">RSS</a> ');
+                                if (tooltipContent.twitter.length) {
+                                    followbioHTML.push('<a class="twitter" href="' + tooltipContent.twitter + '" target="new">Twitter</a> ');
+                                }
+                                if (tooltipContent.linkedin.length) {
+                                    followbioHTML.push('<a class="linkedin" href="' + tooltipContent.linkedin + '" target="new">LinkedIn</a> ');
+                                }
+                                if (tooltipContent.facebook.length) {
+                                    followbioHTML.push('<a class="fb" href="' + tooltipContent.facebook + '" target="new">FaceBook</a> ');
+                                }
+                                if (tooltipContent.googlePlus.length) {
+                                    followbioHTML.push('<a class="g-plus" href="' + tooltipContent.googlePlus + '?ref=author" target="new">Google+</a> ');
+                                }
+                                //$('#authorfollows').html($(followbioHTML.join(''))).fadeIn(600);
+                                $('#authorfollows').html($(followbioHTML.join('')));
+                                followCheck = 1;
+                            }
+                            else {
+                                //alert('no data');
+                            }
+                        }
+                        else {
+                            //alert('no response');
+                        }
+                    },
+                    error: function (e) { }
+                });
+            }
+        }
+
+        function ToggleFollow() {
+            if ($('#authorfollows').is(":visible"))
+                $('#authorfollows').fadeOut(600)();
+            else
+                $('#authorfollows').fadeIn(600)();
+        }
+
+        function activeTOC() {
+            var titleChapter = document.getElementById("chapter-title").innerHTML; //Varying apologies: Amazon, H&M, Walmart
+
+            if (titleChapter != null) {
+                var activeNav = document.getElementById($('<div/>').html(titleChapter).text());
+                activeNav.className = "active";
+            }
+        }
+
+        function InitInternalCampaign_MidPageLink() {
+            var a = jQuery("#center-content > .txt-content > div > a, #center-content .midpage-promobox");
+            InternalCampagin.ProcessReferences(a, "imc-midpage");
+        }
+
+        function InitDisplayAuthorBlock() {
+            var pars = $(".art-content p");
+            var omg = $(".author-block-hide").html();
+            $('<div class="author-block">' + omg + '</div>').insertAfter(pars[0]);
+        }
+
+        function ContactViaForm(ID) {
+            $.colorbox({ href: "/dialogs/ContactAuthor.aspx?ID=" + ID, iframe: true, width: '630px', height: '560px' });
+        }
+
+        function CheckandRemindLogin() {
+            if ($('#PanelLoggedIn').length == 0) {
+
+                //pop up ad - show once a week
+                if ($.cookie('login_reminder') != null) {
+                    loginreminderchk = $.cookie('login_reminder');
+                    
+                    if ($.cookie('login_reminder') == 2) {
+                        //change to 3
+                        $.cookie('login_reminder', '3', { expires: 7 });
+                        PopLoginReminder();
+                    }
+
+                    if ($.cookie('login_reminder') == 1) {
+                        //change to 2
+                        $.cookie('login_reminder', '2', { expires: 7 });
+                    }                 
+                }
+                else {
+                    $.cookie('login_reminder', '1');
+                }
+            }
+        }
+
+        $(document).ready(function () {
+            $.ajaxSetup({
+                cache: false
+            });
+            //PopulateFollow();
+            //CheckandRemindLogin();
+        });
+
+    </script>
+    <!--script for twitter -->
+    <script type="text/javascript">
+        tweetmeme_url = 'http://www.imediaconnection.com/content/27430.asp';
+        tweetmeme_source = 'imediatweet';
+        tweetmeme_service = 'bit.ly';
+        service_api = 'R_122313191a14c06ea8466472b4c6f3f9';
+    </script>    
+
+    
+    <script type="text/javascript">
+        var onScrollEventsFunctions = [];
+        var onScrollEventsHandler = function () {
+            if (typeof onScrollEventsFunctions === 'undefined')
+                return;
+            for (var i = 0; i < onScrollEventsFunctions.length; i++) {
+                onScrollEventsFunctions[i]();
+            }
+        };
+
+        // NAVIGATION DELAY
+        jQuery(document).ready(function () {
+
+            window.onscroll = document.documentElement.onscroll = onScrollEventsHandler;
+
+            function megaHoverOver() {
+                jQuery(this).find(".sub").fadeTo('fast', 1, function () {
+                    if (navigator.appName == 'Microsoft Internet Explorer')
+                        this.style.removeAttribute("filter");
+                }).show();
+            }
+
+            function megaHoverOut() {
+                jQuery(this).find(".sub").stop().fadeTo('fast', 0, function () {
+                    jQuery(this).hide();
+                });
+            }
+
+            var config = {
+                sensitivity: 1, // number = sensitivity threshold (must be 1 or higher)    
+                interval: 50, // number = milliseconds for onMouseOver polling interval    
+                over: megaHoverOver, // function = onMouseOver callback (REQUIRED)    
+                timeout: 0, // number = milliseconds delay before onMouseOut    
+                out: megaHoverOut // function = onMouseOut callback (REQUIRED)    
+            };
+
+            jQuery("ul#topnav li .sub").css({ 'opacity': '0' });
+            jQuery("ul#topnav li").hoverIntent(config);
+
+            jQuery("#loginDropDown span").click(function () {
+                var dd = jQuery("#loginDropDown .sub")
+                if (dd.css("display") == "none") {
+                    jQuery("ul.click-dropdown-menu .sub").hide(); // hide any other open drop downs
+                    dd.show();
+                }
+                else {
+                    dd.hide();
+                }
+
+                var callUrl = "/CompanyService.asmx/GetProfilecompanies";
+                jQuery.ajax({
+                    type: "POST",
+                    url: callUrl,
+                    data: '{ }',
+                    contentType: "application/json; charset=utf-8",
+                    dataType: "json",
+                    success: function (ret) {
+                        if (ret != null) {
+                            var renderedContent = ret.d;
+                            if (renderedContent.Success) {
+                                jQuery("#login-companies").html(renderedContent.Message);
+                            }
+                            else {
+                                jQuery("#login-companies").html(""); //make the load image go away.
+                            }
+                        }
+                        else {
+                            jQuery("#login-companies").html(""); //make the load image go away.
+                        }
+                    },
+                    error: function (e) {
+                        jQuery("#login-companies").html(""); //make the load image go away.
+                    }
+                });
+            });
+
+            //check for new messages
+            setInterval(function () { GetUnreadMessagesCount() }, 300000); //set the timeout to be once every 5 minutes.
+
+            jQuery('#loginDropDown').click(function (e) {
+                e.stopPropagation();
+            });
+
+            jQuery(document).bind('click', function () {
+                jQuery("ul.click-dropdown-menu .sub").hide();
+            });
+        });
+
+        // delay hide of the alert notification div
+        jQuery(document).ready(function ($) {
+            jQuery(".msg-notification").delay(2000).slideUp(800);
+        });
+
+        function GetUnreadMessagesCount() {
+            var callUrl = "/profiles/PCWebService.asmx/GetUnreadMessagesCount";
+            jQuery.ajax({
+                type: "POST",
+                url: callUrl,
+                data: '{ }',
+                contentType: "application/json; charset=utf-8",
+                dataType: "json",
+                success: function (ret) {
+                    if (ret != null) {
+                        var renderedContent = ret.d;
+                        if (renderedContent.Success) {
+                            jQuery("#login-inboxCount").html(renderedContent.Message);
+                        }
+                    }
+                },
+                error: function (e) { }
+            });
+        }
+        
+    </script>
+    <script type="text/javascript">
+       jQuery(function ($) {
+           if (document.location.protocol == 'http:') {
+               var kkeys = [], konami = "38,38,40,40,37,39,37,39,66,65", kmri = "75,65,84,65,77,65,82,73";
+               jQuery(document).keydown(function (e) {
+                   kkeys.push(e.keyCode);
+                   if (kkeys.toString().indexOf(konami) >= 0) {
+                       jQuery(document).unbind('keydown', arguments.callee);
+                       jQuery.getScript('http://www.cornify.com/js/cornify.js', function () {
+                           cornify_add();
+                           jQuery(document).keydown(cornify_add);
+                       });
+                   }
+                   else if (kkeys.toString().indexOf(kmri) >= 0) {
+                       var i, s, ss = ['http://kathack.com/js/kh.js', 'http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js'];
+                       for (i = 0; i != ss.length; i++) { s = document.createElement('script'); s.src = ss[i]; document.body.appendChild(s); } void (0); kkeys = [];
+                   }
+               });
+           }
+       });
+    </script>
+
+    <!-- Place this tag in your head or just before your close body tag -->   
+    <script type="text/javascript">
+        (function () {
+            var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+            po.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'apis.google.com/js/plusone.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+        })();
+    </script>
+
+    <!-- twitter-->
+    <script type="text/javascript">
+        jQuery(document).ready(function ($) {
+            jQuery(".emdigoColorBox").colorbox({ iframe: true, innerWidth: 525, innerHeight: 250 });
+            jQuery("a[rel='articleSlideShow']").colorbox({ slideshowSpeed: 4000, slideshow: true, transition: "no", width: "640px", height: "480px" });
+
+            $(".iframe").colorbox({ iframe: true, width: "80%", height: "80%" });
+            //CheckAndShowPopupAd();
+        });
+
+        function trimTitle(s) {
+            var l = 0; var r = s.length - 1;
+            while (l < s.length && s[l] == ' ')
+            { l++; }
+            while (r > l && s[r] == ' ')
+            { r -= 1; }
+            return s.substring(l, r + 1);
+        }
+
+        function RightColumnTrack(URL, trackTypeID) {
+
+            try {
+                xmlHttp = new XMLHttpRequest();
+            }
+            catch (trymicrosoft) {
+                try {
+                    xmlHttp = new ActiveXObject("Msxml2.XMLHTTP");
+                }
+                catch (othermicrosoft) {
+                    try {
+                        xmlHttp = new ActiveXObject("Microsoft.XMLHTTP");
+                    }
+                    catch (failed) {
+                        xmlHttp = false;
+                    }
+                }
+            }
+
+            if (!xmlHttp) {
+                alert('Browser does not support HTTP Request')
+                return
+            }
+
+            var url = "/admin/RightColumnTrack.aspx";
+            url = url + "?TrackTypeID=" + trackTypeID;
+            xmlHttp.onreadystatechange = statesChanged;
+            xmlHttp.open("GET", url, true)
+            xmlHttp.send(null)
+            window.location = URL;
+        }
+
+        function statesChanged() {
+            if (xmlHttp.readyState == 4 || xmlHttp.readyState == "complete") {
+            }
+        }
+
+    </script>
+
+    <script type="text/javascript">
+    $(window).resize(function () {
+        if ($('#cboxOverlay').is(':visible')) {
+            $.colorbox.load(true);
+        }
+    });    
+    </script>
+
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info = {"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"d5f33ed74e","applicationID":"4094369","transactionName":"MVMBNxBTCkYHU0FRDAgZIjAyHQVHEllWVAY5WgwEC1xKVBVATQ==","queueTime":0,"applicationTime":97,"ttGuid":"99EFFE5FB88F7BB4","agent":"js-agent.newrelic.com/nr-593.min.js"}</script><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(n,e,t){function r(t){if(!e[t]){var o=e[t]={exports:{}};n[t][0].call(o.exports,function(e){var o=n[t][1][e];return r(o?o:e)},o,o.exports)}return e[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({QJf3ax:[function(n,e){function t(n){function e(e,t,a){n&&n(e,t,a),a||(a={});for(var u=c(e),f=u.length,s=i(a,o,r),p=0;f>p;p++)u[p].apply(s,t);return s}function a(n,e){f[n]=c(n).concat(e)}function c(n){return f[n]||[]}function u(){return t(e)}var f={};return{on:a,emit:e,create:u,listeners:c,_events:f}}function r(){return{}}var o="nr@context",i=n("gos");e.exports=t()},{gos:"7eSDFh"}],ee:[function(n,e){e.exports=n("QJf3ax")},{}],3:[function(n,e){function t(n){return function(){r(n,[(new Date).getTime()].concat(i(arguments)))}}var r=n("handle"),o=n(1),i=n(2);"undefined"==typeof window.newrelic&&(newrelic=window.NREUM);var a=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit","noticeError"];o(a,function(n,e){window.NREUM[e]=t("api-"+e)}),e.exports=window.NREUM},{1:12,2:13,handle:"D5DuLP"}],gos:[function(n,e){e.exports=n("7eSDFh")},{}],"7eSDFh":[function(n,e){function t(n,e,t){if(r.call(n,e))return n[e];var o=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(n,e,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return n[e]=o,o}var r=Object.prototype.hasOwnProperty;e.exports=t},{}],D5DuLP:[function(n,e){function t(n,e,t){return r.listeners(n).length?r.emit(n,e,t):(o[n]||(o[n]=[]),void o[n].push(e))}var r=n("ee").create(),o={};e.exports=t,t.ee=r,r.q=o},{ee:"QJf3ax"}],handle:[function(n,e){e.exports=n("D5DuLP")},{}],XL7HBI:[function(n,e){function t(n){var e=typeof n;return!n||"object"!==e&&"function"!==e?-1:n===window?0:i(n,o,function(){return r++})}var r=1,o="nr@id",i=n("gos");e.exports=t},{gos:"7eSDFh"}],id:[function(n,e){e.exports=n("XL7HBI")},{}],loader:[function(n,e){e.exports=n("G9z0Bl")},{}],G9z0Bl:[function(n,e){function t(){var n=h.info=NREUM.info;if(n&&n.licenseKey&&n.applicationID&&f&&f.body){c(l,function(e,t){e in n||(n[e]=t)}),h.proto="https"===d.split(":")[0]||n.sslForHttp?"https://":"http://",a("mark",["onload",i()]);var e=f.createElement("script");e.src=h.proto+n.agent,f.body.appendChild(e)}}function r(){"complete"===f.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=n("handle"),c=n(1),u=(n(2),window),f=u.document,s="addEventListener",p="attachEvent",d=(""+location).split("?")[0],l={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-593.min.js"},h=e.exports={offset:i(),origin:d,features:{}};f[s]?(f[s]("DOMContentLoaded",o,!1),u[s]("load",t,!1)):(f[p]("onreadystatechange",r),u[p]("onload",t)),a("mark",["firstbyte",i()])},{1:12,2:3,handle:"D5DuLP"}],12:[function(n,e){function t(n,e){var t=[],o="",i=0;for(o in n)r.call(n,o)&&(t[i]=e(o,n[o]),i+=1);return t}var r=Object.prototype.hasOwnProperty;e.exports=t},{}],13:[function(n,e){function t(n,e,t){e||(e=0),"undefined"==typeof t&&(t=n?n.length:0);for(var r=-1,o=t-e||0,i=Array(0>o?0:o);++r<o;)i[r]=n[e+r];return i}e.exports=t},{}]},{},["G9z0Bl"]);</script><script src="The%20fundamentals%20of%20real-time%20bidding%20-%20iMediaConnection.com_files/secureAnonymousFramework"></script><style type="text/css">* html #li_ui_li_gen_1425578418486_0 a#li_ui_li_gen_1425578418486_0-link{height:1% !important;}#li_ui_li_gen_1425578418486_0{position:relative !important;overflow:visible !important;display:block !important;}#li_ui_li_gen_1425578418486_0 span{-webkit-box-sizing:content-box !important;-moz-box-sizing:content-box !important;box-sizing:content-box !important;}#li_ui_li_gen_1425578418486_0 a#li_ui_li_gen_1425578418486_0-link{border:0 !important;height:20px !important;text-decoration:none !important;padding:0 !important;margin:0 !important;display:inline-block !important;}#li_ui_li_gen_1425578418486_0 a#li_ui_li_gen_1425578418486_0-link:link, #li_ui_li_gen_1425578418486_0 a#li_ui_li_gen_1425578418486_0-link:visited, #li_ui_li_gen_1425578418486_0 a#li_ui_li_gen_1425578418486_0-link:hover, #li_ui_li_gen_1425578418486_0 a#li_ui_li_gen_1425578418486_0-link:active{border:0 !important;text-decoration:none !important;}#li_ui_li_gen_1425578418486_0 a#li_ui_li_gen_1425578418486_0-link:after{content:"." !important;display:block !important;clear:both !important;visibility:hidden !important;line-height:0 !important;height:0 !important;}#li_ui_li_gen_1425578418486_0 #li_ui_li_gen_1425578418486_0-logo{background-image:url(https://static.licdn.com/scds/common/u/images/apps/connect/sprites/sprite_connect_v14.png) !important;background-position:0px -593px !important;background-repeat:no-repeat !important;background-color:#0077b5 !important;background-size:initial !important;cursor:pointer !important;border:0 !important;border-right:1px solid #066094 !important;text-indent:-9999em !important;overflow:hidden !important;padding:0 !important;margin:0 !important;position:absolute !important;left:0px !important;top:0px !important;display:block !important;width:20px !important;height:20px !important;float:right !important;border-radius:2px !important;-moz-border-radius:2px !important;border-top-right-radius:2px !important;border-bottom-right-radius:2px !important;-moz-border-radius-topright:2px !important;-moz-border-radius-bottomright:2px !important;}#li_ui_li_gen_1425578418486_0 #li_ui_li_gen_1425578418486_0-title{color:#fff !important;cursor:pointer !important;display:block !important;white-space:nowrap !important;float:left !important;margin-left:1px !important;vertical-align:top !important;overflow:hidden !important;text-align:center !important;height:18px !important;padding:0 4px 0 23px !important;border:1px solid #000 !important;border-top-color:#0077b5 !important;border-right-color:#0077b5 !important;border-bottom-color:#0077b5 !important;border-left-color:#0077b5 !important;text-shadow:0 -1px #005887 !important;line-height:20px !important;border-radius:2px !important;-moz-border-radius:2px !important;border-top-right-radius:2px !important;border-bottom-right-radius:2px !important;-moz-border-radius-topright:2px !important;-moz-border-radius-bottomright:2px !important;background-color:#0077b5 !important;background-image:-moz-linear-gradient(top, #0077b5 0%, #0077b5 100%) !important;}#li_ui_li_gen_1425578418486_0.hovered #li_ui_li_gen_1425578418486_0-title{border:1px solid #000 !important;border-top-color:#0369a0 !important;border-right-color:#0369a0 !important;border-bottom-color:#0369a0 !important;border-left-color:#0369a0 !important;background-color:#0369a0 !important;background-image:-moz-linear-gradient(top, #0369a0 0%, #0369a0 100%) !important;}#li_ui_li_gen_1425578418486_0.clicked #li_ui_li_gen_1425578418486_0-title, #li_ui_li_gen_1425578418486_0.down #li_ui_li_gen_1425578418486_0-title{color:#fff !important;border:1px solid #000 !important;border-top-color:#066094 !important;border-right-color:#066094 !important;border-bottom-color:#066094 !important;border-left-color:#066094 !important;background-color:#066094 !important;background-image:-moz-linear-gradient(top, #066094 0%, #066094 100%) !important;}.IN-shadowed #li_ui_li_gen_1425578418486_0 #li_ui_li_gen_1425578418486_0-title{}.IN-shadowed #li_ui_li_gen_1425578418486_0.hovered #li_ui_li_gen_1425578418486_0-title{}.IN-shadowed #li_ui_li_gen_1425578418486_0.clicked #li_ui_li_gen_1425578418486_0-title, .IN-shadowed #li_ui_li_gen_1425578418486_0.down #li_ui_li_gen_1425578418486_0-title{}#li_ui_li_gen_1425578418486_0 #li_ui_li_gen_1425578418486_0-title-text, #li_ui_li_gen_1425578418486_0 #li_ui_li_gen_1425578418486_0-title-text *{color:#fff !important;font-size:11px !important;font-family:Arial, sans-serif !important;font-weight:bold !important;font-style:normal !important;-webkit-font-smoothing:antialiased !important;display:inline-block !important;background:transparent none !important;vertical-align:top !important;height:18px !important;line-height:20px !important;float:none !important;}#li_ui_li_gen_1425578418486_0 #li_ui_li_gen_1425578418486_0-title-text strong{font-weight:bold !important;}#li_ui_li_gen_1425578418486_0 #li_ui_li_gen_1425578418486_0-title-text em{font-style:italic !important;}#li_ui_li_gen_1425578418486_0.hovered #li_ui_li_gen_1425578418486_0-title-text, #li_ui_li_gen_1425578418486_0.hovered #li_ui_li_gen_1425578418486_0-title-text *{color:#fff !important;}#li_ui_li_gen_1425578418486_0.clicked #li_ui_li_gen_1425578418486_0-title-text, #li_ui_li_gen_1425578418486_0.down #li_ui_li_gen_1425578418486_0-title-text, #li_ui_li_gen_1425578418486_0.clicked #li_ui_li_gen_1425578418486_0-title-text *, #li_ui_li_gen_1425578418486_0.down #li_ui_li_gen_1425578418486_0-title-text *{color:#fff !important;}#li_ui_li_gen_1425578418486_0 #li_ui_li_gen_1425578418486_0-title #li_ui_li_gen_1425578418486_0-mark{display:inline-block !important;width:0px !important;overflow:hidden !important;}.success #li_ui_li_gen_1425578418486_0 #li_ui_li_gen_1425578418486_0-title{color:#fff !important;border-top-color:#0077b5 !important;border-right-color:#0077b5 !important;border-bottom-color:#0077b5 !important;border-left-color:#0077b5 !important;background-color:#0077b5 !important;background-image:-moz-linear-gradient(top, #0077b5 0%, #0077b5 100%) !important;}.success #li_ui_li_gen_1425578418486_0 #li_ui_li_gen_1425578418486_0-title-text, .success #li_ui_li_gen_1425578418486_0 #li_ui_li_gen_1425578418486_0-title-text *{color:#fff !important;}.IN-shadowed .success #li_ui_li_gen_1425578418486_0 #li_ui_li_gen_1425578418486_0-title{}.success #li_ui_li_gen_1425578418486_0.hovered #li_ui_li_gen_1425578418486_0-title{color:#fff !important;border-top-color:#0369a0 !important;border-right-color:#0369a0 !important;border-bottom-color:#0369a0 !important;border-left-color:#0369a0 !important;background-color:#0369a0 !important;background-image:-moz-linear-gradient(top, #0369a0 0%, #0369a0 100%) !important;}.success #li_ui_li_gen_1425578418486_0.hovered #li_ui_li_gen_1425578418486_0-title-text, .success #li_ui_li_gen_1425578418486_0.hovered #li_ui_li_gen_1425578418486_0-title-text *{color:#fff !important;}.success #li_ui_li_gen_1425578418486_0.clicked #li_ui_li_gen_1425578418486_0-title, .success #li_ui_li_gen_1425578418486_0.down #li_ui_li_gen_1425578418486_0-title{color:#fff !important;border-top-color:#066094 !important;border-right-color:#066094 !important;border-bottom-color:#066094 !important;border-left-color:#066094 !important;background-color:#066094 !important;background-image:-moz-linear-gradient(top, #066094 0%, #066094 100%) !important;}.success #li_ui_li_gen_1425578418486_0.clicked #li_ui_li_gen_1425578418486_0-title-text, .success #li_ui_li_gen_1425578418486_0.down #li_ui_li_gen_1425578418486_0-title-text, .success #li_ui_li_gen_1425578418486_0.clicked #li_ui_li_gen_1425578418486_0-title-text *, .success #li_ui_li_gen_1425578418486_0.down #li_ui_li_gen_1425578418486_0-title-text *{color:#fff !important;}.IN-shadowed .success #li_ui_li_gen_1425578418486_0.clicked #li_ui_li_gen_1425578418486_0-title, .IN-shadowed .success #li_ui_li_gen_1425578418486_0.down #li_ui_li_gen_1425578418486_0-title{}#li_ui_li_gen_1425578418546_1-container.IN-right {display:inline-block !important;float:left !important;overflow:visible !important;position:relative !important;height:20px !important;padding-left:2px !important;line-height:1px !important;cursor:pointer !important;}#li_ui_li_gen_1425578418546_1.IN-right {display:block !important;float:left !important;height:20px !important;margin-right:4px !important;padding-right:4px !important;background-image:url(https://static.licdn.com/scds/common/u/images/apps/connect/sprites/sprite_connect_v14.png) !important;background-color:transparent !important;background-repeat:no-repeat !important;background-position:right -447px !important;}#li_ui_li_gen_1425578418546_1-inner.IN-right {display:block !important;float:left !important;padding-left:8px !important;text-align:center !important;background-image:url(https://static.licdn.com/scds/common/u/images/apps/connect/sprites/sprite_connect_v14.png) !important;background-color:transparent !important;background-repeat:no-repeat !important;background-position:0px -426px !important;}#li_ui_li_gen_1425578418546_1-content.IN-right {display:inline !important;font-size:11px !important;color:#4e4e4e !important;font-weight:bold !important;font-family:Arial, sans-serif !important;line-height:20px !important;padding:0 5px 0 5px !important;}#li_ui_li_gen_1425578418546_1-container.IN-empty {display:none !important;}#li_ui_li_gen_1425578418546_1-container.IN-hidden #li_ui_li_gen_1425578418546_1 {display:none !important;}* html #li_ui_li_gen_1425578418572_2 a#li_ui_li_gen_1425578418572_2-link{height:1% !important;}#li_ui_li_gen_1425578418572_2{position:relative !important;overflow:visible !important;display:block !important;}#li_ui_li_gen_1425578418572_2 span{-webkit-box-sizing:content-box !important;-moz-box-sizing:content-box !important;box-sizing:content-box !important;}#li_ui_li_gen_1425578418572_2 a#li_ui_li_gen_1425578418572_2-link{border:0 !important;height:20px !important;text-decoration:none !important;padding:0 !important;margin:0 !important;display:inline-block !important;}#li_ui_li_gen_1425578418572_2 a#li_ui_li_gen_1425578418572_2-link:link, #li_ui_li_gen_1425578418572_2 a#li_ui_li_gen_1425578418572_2-link:visited, #li_ui_li_gen_1425578418572_2 a#li_ui_li_gen_1425578418572_2-link:hover, #li_ui_li_gen_1425578418572_2 a#li_ui_li_gen_1425578418572_2-link:active{border:0 !important;text-decoration:none !important;}#li_ui_li_gen_1425578418572_2 a#li_ui_li_gen_1425578418572_2-link:after{content:"." !important;display:block !important;clear:both !important;visibility:hidden !important;line-height:0 !important;height:0 !important;}#li_ui_li_gen_1425578418572_2 #li_ui_li_gen_1425578418572_2-logo{background-image:url(https://static.licdn.com/scds/common/u/images/apps/connect/sprites/sprite_connect_v14.png) !important;background-position:0px -593px !important;background-repeat:no-repeat !important;background-color:#0077b5 !important;background-size:initial !important;cursor:pointer !important;border:0 !important;border-right:1px solid #066094 !important;text-indent:-9999em !important;overflow:hidden !important;padding:0 !important;margin:0 !important;position:absolute !important;left:0px !important;top:0px !important;display:block !important;width:20px !important;height:20px !important;float:right !important;border-radius:2px !important;-moz-border-radius:2px !important;border-top-right-radius:2px !important;border-bottom-right-radius:2px !important;-moz-border-radius-topright:2px !important;-moz-border-radius-bottomright:2px !important;}#li_ui_li_gen_1425578418572_2 #li_ui_li_gen_1425578418572_2-title{color:#fff !important;cursor:pointer !important;display:block !important;white-space:nowrap !important;float:left !important;margin-left:1px !important;vertical-align:top !important;overflow:hidden !important;text-align:center !important;height:18px !important;padding:0 4px 0 23px !important;border:1px solid #000 !important;border-top-color:#0077b5 !important;border-right-color:#0077b5 !important;border-bottom-color:#0077b5 !important;border-left-color:#0077b5 !important;text-shadow:0 -1px #005887 !important;line-height:20px !important;border-radius:2px !important;-moz-border-radius:2px !important;border-top-right-radius:2px !important;border-bottom-right-radius:2px !important;-moz-border-radius-topright:2px !important;-moz-border-radius-bottomright:2px !important;background-color:#0077b5 !important;background-image:-moz-linear-gradient(top, #0077b5 0%, #0077b5 100%) !important;}#li_ui_li_gen_1425578418572_2.hovered #li_ui_li_gen_1425578418572_2-title{border:1px solid #000 !important;border-top-color:#0369a0 !important;border-right-color:#0369a0 !important;border-bottom-color:#0369a0 !important;border-left-color:#0369a0 !important;background-color:#0369a0 !important;background-image:-moz-linear-gradient(top, #0369a0 0%, #0369a0 100%) !important;}#li_ui_li_gen_1425578418572_2.clicked #li_ui_li_gen_1425578418572_2-title, #li_ui_li_gen_1425578418572_2.down #li_ui_li_gen_1425578418572_2-title{color:#fff !important;border:1px solid #000 !important;border-top-color:#066094 !important;border-right-color:#066094 !important;border-bottom-color:#066094 !important;border-left-color:#066094 !important;background-color:#066094 !important;background-image:-moz-linear-gradient(top, #066094 0%, #066094 100%) !important;}.IN-shadowed #li_ui_li_gen_1425578418572_2 #li_ui_li_gen_1425578418572_2-title{}.IN-shadowed #li_ui_li_gen_1425578418572_2.hovered #li_ui_li_gen_1425578418572_2-title{}.IN-shadowed #li_ui_li_gen_1425578418572_2.clicked #li_ui_li_gen_1425578418572_2-title, .IN-shadowed #li_ui_li_gen_1425578418572_2.down #li_ui_li_gen_1425578418572_2-title{}#li_ui_li_gen_1425578418572_2 #li_ui_li_gen_1425578418572_2-title-text, #li_ui_li_gen_1425578418572_2 #li_ui_li_gen_1425578418572_2-title-text *{color:#fff !important;font-size:11px !important;font-family:Arial, sans-serif !important;font-weight:bold !important;font-style:normal !important;-webkit-font-smoothing:antialiased !important;display:inline-block !important;background:transparent none !important;vertical-align:top !important;height:18px !important;line-height:20px !important;float:none !important;}#li_ui_li_gen_1425578418572_2 #li_ui_li_gen_1425578418572_2-title-text strong{font-weight:bold !important;}#li_ui_li_gen_1425578418572_2 #li_ui_li_gen_1425578418572_2-title-text em{font-style:italic !important;}#li_ui_li_gen_1425578418572_2.hovered #li_ui_li_gen_1425578418572_2-title-text, #li_ui_li_gen_1425578418572_2.hovered #li_ui_li_gen_1425578418572_2-title-text *{color:#fff !important;}#li_ui_li_gen_1425578418572_2.clicked #li_ui_li_gen_1425578418572_2-title-text, #li_ui_li_gen_1425578418572_2.down #li_ui_li_gen_1425578418572_2-title-text, #li_ui_li_gen_1425578418572_2.clicked #li_ui_li_gen_1425578418572_2-title-text *, #li_ui_li_gen_1425578418572_2.down #li_ui_li_gen_1425578418572_2-title-text *{color:#fff !important;}#li_ui_li_gen_1425578418572_2 #li_ui_li_gen_1425578418572_2-title #li_ui_li_gen_1425578418572_2-mark{display:inline-block !important;width:0px !important;overflow:hidden !important;}.success #li_ui_li_gen_1425578418572_2 #li_ui_li_gen_1425578418572_2-title{color:#fff !important;border-top-color:#0077b5 !important;border-right-color:#0077b5 !important;border-bottom-color:#0077b5 !important;border-left-color:#0077b5 !important;background-color:#0077b5 !important;background-image:-moz-linear-gradient(top, #0077b5 0%, #0077b5 100%) !important;}.success #li_ui_li_gen_1425578418572_2 #li_ui_li_gen_1425578418572_2-title-text, .success #li_ui_li_gen_1425578418572_2 #li_ui_li_gen_1425578418572_2-title-text *{color:#fff !important;}.IN-shadowed .success #li_ui_li_gen_1425578418572_2 #li_ui_li_gen_1425578418572_2-title{}.success #li_ui_li_gen_1425578418572_2.hovered #li_ui_li_gen_1425578418572_2-title{color:#fff !important;border-top-color:#0369a0 !important;border-right-color:#0369a0 !important;border-bottom-color:#0369a0 !important;border-left-color:#0369a0 !important;background-color:#0369a0 !important;background-image:-moz-linear-gradient(top, #0369a0 0%, #0369a0 100%) !important;}.success #li_ui_li_gen_1425578418572_2.hovered #li_ui_li_gen_1425578418572_2-title-text, .success #li_ui_li_gen_1425578418572_2.hovered #li_ui_li_gen_1425578418572_2-title-text *{color:#fff !important;}.success #li_ui_li_gen_1425578418572_2.clicked #li_ui_li_gen_1425578418572_2-title, .success #li_ui_li_gen_1425578418572_2.down #li_ui_li_gen_1425578418572_2-title{color:#fff !important;border-top-color:#066094 !important;border-right-color:#066094 !important;border-bottom-color:#066094 !important;border-left-color:#066094 !important;background-color:#066094 !important;background-image:-moz-linear-gradient(top, #066094 0%, #066094 100%) !important;}.success #li_ui_li_gen_1425578418572_2.clicked #li_ui_li_gen_1425578418572_2-title-text, .success #li_ui_li_gen_1425578418572_2.down #li_ui_li_gen_1425578418572_2-title-text, .success #li_ui_li_gen_1425578418572_2.clicked #li_ui_li_gen_1425578418572_2-title-text *, .success #li_ui_li_gen_1425578418572_2.down #li_ui_li_gen_1425578418572_2-title-text *{color:#fff !important;}.IN-shadowed .success #li_ui_li_gen_1425578418572_2.clicked #li_ui_li_gen_1425578418572_2-title, .IN-shadowed .success #li_ui_li_gen_1425578418572_2.down #li_ui_li_gen_1425578418572_2-title{}#li_ui_li_gen_1425578418598_3-container.IN-right {display:inline-block !important;float:left !important;overflow:visible !important;position:relative !important;height:20px !important;padding-left:2px !important;line-height:1px !important;cursor:pointer !important;}#li_ui_li_gen_1425578418598_3.IN-right {display:block !important;float:left !important;height:20px !important;margin-right:4px !important;padding-right:4px !important;background-image:url(https://static.licdn.com/scds/common/u/images/apps/connect/sprites/sprite_connect_v14.png) !important;background-color:transparent !important;background-repeat:no-repeat !important;background-position:right -447px !important;}#li_ui_li_gen_1425578418598_3-inner.IN-right {display:block !important;float:left !important;padding-left:8px !important;text-align:center !important;background-image:url(https://static.licdn.com/scds/common/u/images/apps/connect/sprites/sprite_connect_v14.png) !important;background-color:transparent !important;background-repeat:no-repeat !important;background-position:0px -426px !important;}#li_ui_li_gen_1425578418598_3-content.IN-right {display:inline !important;font-size:11px !important;color:#4e4e4e !important;font-weight:bold !important;font-family:Arial, sans-serif !important;line-height:20px !important;padding:0 5px 0 5px !important;}#li_ui_li_gen_1425578418598_3-container.IN-empty {display:none !important;}#li_ui_li_gen_1425578418598_3-container.IN-hidden #li_ui_li_gen_1425578418598_3 {display:none !important;}</style><script src="The%20fundamentals%20of%20real-time%20bidding%20-%20iMediaConnection.com_files/in_006.php" async="" type="text/javascript"></script><link media="all" href="The%20fundamentals%20of%20real-time%20bidding%20-%20iMediaConnection.com_files/r1post.css" type="text/css" rel="stylesheet"><link media="all" href="The%20fundamentals%20of%20real-time%20bidding%20-%20iMediaConnection.com_files/share2quote.css" type="text/css" rel="stylesheet"><script src="The%20fundamentals%20of%20real-time%20bidding%20-%20iMediaConnection.com_files/in_004.php" async="" type="text/javascript"></script><style type="text/css">.gscb_a{display:inline-block;font:27px/13px arial,sans-serif}.gsst_a .gscb_a{color:#a1b9ed;cursor:pointer}.gsst_a:hover .gscb_a,.gsst_a:focus .gscb_a{color:#36c}.gsst_a{display:inline-block}.gsst_a{cursor:pointer;padding:0 4px}.gsst_a:hover{text-decoration:none!important}.gsst_b{font-size:16px;padding:0 2px;position:relative;user-select:none;-moz-user-select:none;white-space:nowrap}.gsst_e{opacity:0.55;}.gsst_a:hover .gsst_e,.gsst_a:focus .gsst_e{opacity:0.72;}.gsst_a:active .gsst_e{opacity:1;}.gsst_f{background:white;text-align:left}.gsst_g{background-color:white;border:1px solid #ccc;border-top-color:#d9d9d9;box-shadow:0 2px 4px rgba(0,0,0,0.2);-moz-box-shadow:0 2px 4px rgba(0,0,0,0.2);margin:-1px -3px;padding:0 6px}.gsst_h{background-color:white;height:1px;margin-bottom:-1px;position:relative;top:-1px}.gsib_a{width:100%;padding:4px 6px 0}.gsib_a,.gsib_b{vertical-align:top}.gssb_c{border:0;position:absolute;z-index:989}.gssb_e{border:1px solid #ccc;border-top-color:#d9d9d9;box-shadow:0 2px 4px rgba(0,0,0,0.2);-moz-box-shadow:0 2px 4px rgba(0,0,0,0.2);cursor:default}.gssb_f{visibility:hidden;white-space:nowrap}.gssb_k{border:0;display:block;position:absolute;top:0;z-index:988}.gsdd_a{border:none!important}.gscsep_a{display:none}.gsq_a{padding:0}.gssb_a{padding:0 7px}.gssb_a,.gssb_a td{white-space:nowrap;overflow:hidden;line-height:22px}#gssb_b{font-size:11px;color:#36c;text-decoration:none}#gssb_b:hover{font-size:11px;color:#36c;text-decoration:underline}.gssb_g{text-align:center;padding:8px 0 7px;position:relative}.gssb_h{font-size:15px;height:28px;margin:0.2em}.gssb_i{background:#eee}.gss_ifl{visibility:hidden;padding-left:5px}.gssb_i .gss_ifl{visibility:visible}a.gssb_j{font-size:13px;color:#36c;text-decoration:none;line-height:100%}a.gssb_j:hover{text-decoration:underline}.gssb_l{height:1px;background-color:#e5e5e5}.gssb_m{color:#000;background:#fff}.gsfe_a{border:1px solid #b9b9b9;border-top-color:#a0a0a0;box-shadow:inset 0px 1px 2px rgba(0,0,0,0.1);-moz-box-shadow:inset 0px 1px 2px rgba(0,0,0,0.1);-webkit-box-shadow:inset 0px 1px 2px rgba(0,0,0,0.1);}.gsfe_b{border:1px solid #4d90fe;outline:none;box-shadow:inset 0px 1px 2px rgba(0,0,0,0.3);-moz-box-shadow:inset 0px 1px 2px rgba(0,0,0,0.3);-webkit-box-shadow:inset 0px 1px 2px rgba(0,0,0,0.3);}.gssb_a{padding:0 2px}.gssb_e{border:0}.gssb_l{margin:5px 0}.gssb_c .gsc-completion-container{position:static}.gssb_c{z-index:5000}.gsc-completion-container table{background:transparent;font-size:inherit;font-family:inherit}.gssb_c > tbody > tr,.gssb_c > tbody > tr > td,.gssb_d,.gssb_d > tbody > tr,.gssb_d > tbody > tr > td,.gssb_e,.gssb_e > tbody > tr,.gssb_e > tbody > tr > td{padding:0;margin:0;border:0}.gssb_a table,.gssb_a table tr,.gssb_a table tr td{padding:0;margin:0;border:0}</style><script src="The%20fundamentals%20of%20real-time%20bidding%20-%20iMediaConnection.com_files/in_003.php" async="" type="text/javascript"></script><script src="The%20fundamentals%20of%20real-time%20bidding%20-%20iMediaConnection.com_files/in_005.php" async="" type="text/javascript"></script><script src="The%20fundamentals%20of%20real-time%20bidding%20-%20iMediaConnection.com_files/in.php" async="" type="text/javascript"></script><script src="The%20fundamentals%20of%20real-time%20bidding%20-%20iMediaConnection.com_files/in_008.php" async="" type="text/javascript"></script><script src="The%20fundamentals%20of%20real-time%20bidding%20-%20iMediaConnection.com_files/in_007.php" async="" type="text/javascript"></script><script src="The%20fundamentals%20of%20real-time%20bidding%20-%20iMediaConnection.com_files/in_002.php" async="" type="text/javascript"></script></head>
+<body data-twttr-rendered="true"><iframe src="The%20fundamentals%20of%20real-time%20bidding%20-%20iMediaConnection.com_files/hub.html" style="position: absolute; top: -9999em; width: 10px; height: 10px;" name="twttrHubFrameSecure" tabindex="0" scrolling="no" allowtransparency="true" id="twttrHubFrameSecure" frameborder="0"></iframe><iframe src="The%20fundamentals%20of%20real-time%20bidding%20-%20iMediaConnection.com_files/hub_002.html" style="position: absolute; top: -9999em; width: 10px; height: 10px;" name="twttrHubFrame" tabindex="0" scrolling="no" allowtransparency="true" id="twttrHubFrame" frameborder="0"></iframe>
+    <form method="post" action="article_login.aspx?id=27430" id="aspnetForm" class="site-master-aspx-form">
+<div>
+<input name="__EVENTTARGET" id="__EVENTTARGET" value="" type="hidden">
+<input name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" type="hidden">
+<input name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwULLTE3NzA2NTMyNzMPZBYCZg9kFgICAw9kFgQCDg9kFgwCBQ8WAh4EVGV4dAUlVGhlIGZ1bmRhbWVudGFscyBvZiByZWFsLXRpbWUgYmlkZGluZ2QCBg8WAh8ABYEDPGxpIGNsYXNzPSJhdXRob3ItbmFtZSI+PGEgaHJlZj0iL3Byb2ZpbGVzL2lNZWRpYV9QQ19PdmVydmlldy5hc3B4P0lEPTEyOTYwIj4gUGhpbGlwIFNtb2xpbjwvYT48L2xpPjxsaSBjbGFzcz0iY29udGFjdC1tZW1iZXIiPjxhIGhyZWY9ImphdmFzY3JpcHQ6Q29udGFjdFZpYUZvcm0oMTI5NjApOyB2b2lkKDApOyI+Q29udGFjdDwvYT48L2xpPjxsaSBjbGFzcz0iZm9sbG93LW1lbWJlciIgb25jbGljaz0iVG9nZ2xlRm9sbG93KCkiPkZvbGxvdyB0aGlzIGF1dGhvcjwvbGk+PGxpIGlkPSJhdXRob3Jmb2xsb3dzIj48YSBjbGFzcz0icnNzIiBocmVmPSIvcHJvZmlsZXMvZmVlZHMvYXV0aG9yYXJ0aWNsZXMuYXNweD9pZD0xMjk2MCIgdGFyZ2V0PSJuZXciPlJTUzwvYT48L2xpPmQCBw8WAh8ABTU8YSBjbGFzcz0iY2F0ZWdvcnkiIGhyZWY9Jy90YXJnZXRpbmcvJz4gVGFyZ2V0aW5nPC9hPmQCEQ9kFgYCAw8WAh8ABY08PFA+V2hlbiBpdCBjb21lcyB0byBvbmxpbmUgYWR2ZXJ0aXNpbmcsIHRoZXJlJ3MgYSBjb21tb24gbWlzY29uY2VwdGlvbiB0aGF0IHJlYWwtdGltZSBiaWRkaW5nIChSVEIpIGlzIGEgd2hvbGUgbmV3IGJhbGwgZ2FtZSwgcmVxdWlyaW5nIGEgc2VwYXJhdGUgbWVkaWEgc3RyYXRlZ3kgYW5kIGFuIGVudGlyZWx5IG5ldyBzZXQgb2YgY2FtcGFpZ24gZ29hbHMuIFdoaWxlIGl0J3MgdHJ1ZSB0aGF0IFJUQiBpcyBhIGRpZmZlcmVudCBidXlpbmcgbW9kZWwgZm9yIG1hcmtldGVycyB0byB1bmRlcnN0YW5kLCB0aGUgcHJvbWlzZSBvZiBkaWdpdGFsIGRpc3BsYXkgYWR2ZXJ0aXNpbmcgcmVtYWlucyAicmlnaHQgbWVzc2FnZSwgcmlnaHQgY3VzdG9tZXIuIiBXaGF0IFJUQiBhZGRzIHRvIHRoZSBlcXVhdGlvbiBpcyAicmlnaHQgcHJpY2UgYW5kIHJpZ2h0IHRpbWUuIiBUaGFua3MgdG8gUlRCIGFuZCBhdWN0aW9uIG1hcmtldHBsYWNlcywgZGlnaXRhbCBkaXNwbGF5IGNhbiBub3cgYmUgcHVyY2hhc2VkIGluIHdheXMgc2ltaWxhciB0byBzZWFyY2gsIGFuZCBpdCBkcmFtYXRpY2FsbHkgaW1wcm92ZXMgYSBtYXJrZXRlcidzIGFiaWxpdHkgdG8gcmVhY2ggc3BlY2lmaWMgYXVkaWVuY2VzIGF0IHNjYWxlLiBJdCdzIGVhc3kgdG8gdGhpbmsgdGhpcyBtaWdodCBqdXN0IGJlIHJlbGV2YW50IGZvciBkaXJlY3QgcmVzcG9uc2UgY2FtcGFpZ25zLCBidXQgaW4gZmFjdCBSVEIgZGVsaXZlcnMgdHJlbWVuZG91cyBhZHZhbnRhZ2VzIGZvciBicmFuZCBhbmQgYnJhbmRlZCByZXNwb25zZSBjYW1wYWlnbnMgYXMgd2VsbC4gTGV0J3MgbG9vayBhdCBob3cgUlRCIGVuYWJsZXMgYWxsIGFkdmVydGlzZXJzIHRvIG1vcmUgZWZmaWNpZW50bHkgYW5kIGVmZmVjdGl2ZWx5IGFjaGlldmUgZm91ciBjb21tb24gY2FtcGFpZ24gb2JqZWN0aXZlcy48L1A+CjxESVYgY2xhc3M9bWlkcGFnZS1wcm9tb2JveD48U1RST05HPlN0YXkgaW5mb3JtZWQuPC9TVFJPTkc+IEZvciBtb3JlIHRpcHMgb24gZnJlc2hlbmluZyB1cCB5b3VyIGJyYW5kJ3MgbWFya2V0aW5nIGluaXRpYXRpdmVzLCBhdHRlbmQgdGhlIGlNZWRpYSBCcmFuZCBTdW1taXQsIFNlcHQuIDExLTE1LiA8QSBocmVmPSJodHRwOi8vd3d3LmltZWRpYWNvbm5lY3Rpb24uY29tL1NGREMvV2ViVG9MZWFkLmFzcHgiPlJlcXVlc3QgeW91ciBpbnZpdGF0aW9uIHRvZGF5PC9BPi4gPC9ESVY+CjxQPjxTVFJPTkc+MS4gRmluZCBjdXN0b20gYXVkaWVuY2VzIGF0IHNjYWxlPC9TVFJPTkc+PEJSPlRoZSBmdW5kYW1lbnRhbCBjb25jZXB0IG9mIFJUQiBpcyBpdCBlbmFibGVzIG1hcmtldGVycyB0byB0YXJnZXQgYXVkaWVuY2VzIGRpcmVjdGx5LCBpbnN0ZWFkIG9mIHVzaW5nIGNvbnRlbnQgYXMgYSBwcm94eSBmb3IgYXVkaWVuY2UuIEluIGF1Y3Rpb24gbWFya2V0cywgbWFya2V0ZXJzIGJpZCAob3Igbm90KSBvbiBpbmRpdmlkdWFsIGFkIGltcHJlc3Npb25zIGJhc2VkIG9uIHRoZSBkZW1vZ3JhcGhpYyBhbmQgYmVoYXZpb3JhbCBwcm9maWxlIG9mIGEgY29uc3VtZXIsIGluIGNvbnRyYXN0IHRvIHRyYWRpdGlvbmFsIGNvbnRlbnQtYmFzZWQgYnV5cyB3aGVyZSBpbnZlbnRvcnkgaXMgcHVyY2hhc2VkIHRvIDxFTT5ob3BlZnVsbHk8L0VNPiByZWFjaCBhIHRhcmdldGVkIGF1ZGllbmNlLiA8L1A+CjxQPlRoZSBiZWF1dHkgb2YgUlRCIGlzIHRoYXQgbWFya2V0ZXJzIHRhcmdldCBhdWRpZW5jZXMgYmFzZWQgb24gdGhlaXIgb3duIGN1c3RvbSBkZWZpbml0aW9ucyBvZiB3aGljaCBjb25zdW1lcnMgYXJlIGFwcHJvcHJpYXRlIGZvciBhIGNhbXBhaWduLiBBIGNsYXNzaWMgc3RyYXRlZ3kgaXMgdG8gdXNlIHJlbWFya2V0aW5nIGRhdGEgdGhhdCB0cmFja3Mgd2hlbiBjb25zdW1lcnMgaGF2ZSB2aXNpdGVkIHRoZSBhZHZlcnRpc2VyJ3Mgd2Vic2l0ZS4gQnV0IHdpdGggUlRCLCBtYXJrZXRlcnMgY2FuIG5vdyB0YWtlIGl0IHRvIHRoZSBuZXh0IGxldmVsIGFuZCBsZXZlcmFnZSB0aGVpciBmdWxsIGN1c3RvbWVyIHJlbGF0aW9uc2hpcCBtYW5hZ2VtZW50IChDUk0pIGRhdGFiYXNlIGZvciB0YXJnZXRpbmcuIFRoZXNlIGRhdGEgcmVwcmVzZW50IHRoZSBhZHZlcnRpc2VyJ3MgZnVsbCB2aWV3IG9mIGl0cyBjdXN0b21lcnMgKHJlZ2lzdHJhdGlvbiBkYXRhLCBwdXJjaGFzZSBoaXN0b3J5LCBsb3lhbHR5IHRpZXIsIGV0Yy4pLiBCeSB1c2luZyBhIENSTS1jYXBhYmxlIDxBIGhyZWY9Ii9jb250ZW50LzI2NzAwLmFzcCI+ZGVtYW5kLXNpZGUgcGxhdGZvcm0gKERTUCk8L0E+LCBhbiBhZHZlcnRpc2VyIGNhbiBleGVjdXRlIHBvd2VyZnVsIGNyb3NzLXNlbGwsIHVwLXNlbGwsIGFuZCByZXRlbnRpb24gY2FtcGFpZ25zLiA8L1A+CjxQPkhvd2V2ZXIsIHRoZXNlIHN0cmF0ZWdpZXMsIHdoaWxlIGV4dHJlbWVseSBlZmZlY3RpdmUsIHRlbmQgdG8gaGF2ZSBsaW1pdGVkIHJlYWNoLiBUbyBpbmNyZWFzZSBzY2FsZSwgYWR2ZXJ0aXNlcnMgY2FuIHVzZSA8QSBocmVmPSJodHRwOi8vd3d3LmNsaWNrei5jb20vY2xpY2t6L2NvbHVtbi8xNzE3MDE0L2xvb2tpbmctZm9yLWxvb2stYWxpa2VzIiB0YXJnZXQ9bmV3Pmxvb2stYWxpa2U8L0E+IG1vZGVsaW5nIHRvIGV4cGFuZCB0aGUgc2l6ZSBvZiB0aGUgdGFyZ2V0YWJsZSBhdWRpZW5jZS4gTG9vay1hbGlrZSBtb2RlbGluZyBmaW5kcyBuZXcgY29uc3VtZXJzIHRoYXQgY2xvc2VseSByZXNlbWJsZSB0aGUgZGVtb2dyYXBoaWMgYW5kIHBzeWNob2dyYXBoaWMgYXR0cmlidXRlcyBvZiBhbiBhZHZlcnRpc2VyJ3MgZXhpc3RpbmcgYXVkaWVuY2UuIEhvdyBkb2VzIHRoaXMgd29yaz8gSW1hZ2luZSBhIGRhcnQgYm9hcmQgd2hlcmUgdGhlIG9yaWdpbmFsIHJlbWFya2V0aW5nIGF1ZGllbmNlIGlzIHRoZSByZWQgYnVsbCdzLWV5ZSBpbiB0aGUgY2VudGVyLiBMb29rLWFsaWtlIHNlZ21lbnRzIGFyZSB0aGUgY29uY2VudHJpYyBjaXJjbGVzIHRoYXQgZXh0ZW5kIG91dCBmcm9tIHRoZSBjZW50ZXIsIHdpdGggZWFjaCBjaXJjbGUgaW5jcmVhc2luZyB0aGUgc2NhbGUgb2YgYXVkaWVuY2UgYXZhaWxhYmxlIGF0IGRlY3JlYXNpbmcgbGV2ZWxzIG9mIHNpbWlsYXJpdHkuIDwvUD4KPFA+PFNUUk9ORz4yLiBSZWR1Y2UgbWVkaWEgd2FzdGU8L1NUUk9ORz48QlI+V2l0aCBSVEIsIG1hcmtldGVycyBnZXQgZXhhY3RseSB0aGUgaW1wcmVzc2lvbnMgdGhleSB3YW50IGFuZCBjb250cm9sIG92ZXIgdGhlaXIgYWQgc3BlbmQuIFRoaXMgaW1tZWRpYXRlbHkgaW1wcm92ZXMgZWZmaWNpZW5jeSBieSBlbnN1cmluZyB0aGUgYWR2ZXJ0aXNlcnMgb25seSBwdXJjaGFzZSBtZWRpYSBmb3IgdGhlaXIgdGFyZ2V0IGF1ZGllbmNlLiBBZGRpdGlvbmFsbHksIGVmZmljaWVuY2llcyBjYW4gYmUgZ2FpbmVkIGV2ZW4gYmVmb3JlIHlvdSBidXkgdGhlIGZpcnN0IGltcHJlc3Npb24uIFNvcGhpc3RpY2F0ZWQgRFNQcyBwcm92aWRlIG1hcmtldGVycyB3aXRoIHBvd2VyZnVsIDxBIGhyZWY9Imh0dHA6Ly9ibG9nLnR1cm4uY29tLzIwMTAvMDQvMjAvdGhlLXBvd2VyLW9mLXdoYXQtaWYtd2hlbi1pdHMtbmVlZGVkLXRoZS1tb3N0LyIgdGFyZ2V0PW5ldz5iaWQtZm9yZWNhc3RpbmcgdG9vbHM8L0E+IHRoYXQgYXJlIHVzZWQgdG8gcHJlZGljdCB0aGUgdW5pcXVlIHVzZXIgcmVhY2ggYW5kIGltcHJlc3Npb24gYXZhaWxhYmlsaXR5IGZvciBhIGN1c3RvbWVyIGF1ZGllbmNlIHNlZ21lbnQsIGFsb25nIHdpdGggaG93IHRoYXQgYXZhaWxhYmlsaXR5IGNoYW5nZXMgYmFzZWQgb24gYmlkIHByaWNlIGFuZCBmcmVxdWVuY3kgY2FwLiBCeSBhbmFseXppbmcgdGhlc2UgZGF0YSBwb2ludHMgZHVyaW5nIHRoZSBwbGFubmluZyBwcm9jZXNzLCB0aGUgcGxhbm5lciBjYW4gZXZhbHVhdGUgcG90ZW50aWFsIG1lZGlhIHN0cmF0ZWdpZXMgYW5kIGF2b2lkIHNwZW5kaW5nIHRpbWUgYW5kIG1vbmV5IG9uIHRob3NlIHRoYXQgd2lsbCBub3Qgc2NhbGUgdXAgc3VmZmljaWVudGx5IGVub3VnaCB0byBiZSB3b3J0aCBwdXJzdWluZy4gPC9QPgo8UD5Bbm90aGVyIHBsdXMgdG8gb3BlcmF0aW5nIGNhbXBhaWducyBpbiB0aGUgUlRCIGVudmlyb25tZW50IGlzIHVuaXZlcnNhbCBmcmVxdWVuY3kgY2Fwcy4gVGhpcyBmZWF0dXJlLCB3aGljaCBicmFuZCBhZHZlcnRpc2VycyBoYXZlIGJlZW4gd2FpdGluZyBmb3Igc2luY2UgdGhlIGluY2VwdGlvbiBvZiBvbmxpbmUgZGlzcGxheSBhZHZlcnRpc2luZyBpbiAxOTk1LCBlbmFibGVzIHRoZSBEU1AgdG8gbW9uaXRvciBhbmQgZW5mb3JjZSBhIHNpbmdsZSBmcmVxdWVuY3kgY2FwIGFjcm9zcyBldmVyeSBSVEIgaW52ZW50b3J5IHNvdXJjZS4gTWVkaWEgYnV5IGR1cGxpY2F0aW9uIGlzIChmaW5hbGx5ISkgZWxpbWluYXRlZCwga2VlcGluZyBjb3N0cyB1bmRlciBjb250cm9sIGFuZCBlbnN1cmluZyBlYWNoIGNvbnN1bWVyIGlzIHNlcnZlZCB0aGUgY29ycmVjdCBudW1iZXIgb2YgYWQgaW1wcmVzc2lvbnMuIDwvUD4KPFA+PFNUUk9ORz4zLiBPcHRpbWl6ZSBmb3IgcGVyZm9ybWFuY2U8L1NUUk9ORz48QlI+IlJlYWwtdGltZSBiaWRkaW5nIiBsaXRlcmFsbHkgbWVhbnMgcmVhbCB0aW1lLCBhbmQgYXMgYWR2ZXJ0aXNlcnMgb2JzZXJ2ZSBjYW1wYWlnbiBwZXJmb3JtYW5jZSwgdGhleSBjYW4gcmVhY3QgaW1tZWRpYXRlbHkgdG8gdGhlIGRhdGEuIE5vIG1vcmUgd2FpdGluZyBob3VycyBvciBkYXlzIGZvciBjYW1wYWlnbiBhbmFseXRpY3MgYW5kIHRoZW4gcGlja2luZyB1cCB0aGUgcGhvbmUgdG8gY2FsbCBhIHB1Ymxpc2hlciB0byBjaGFuZ2UgYW4gSU8uIEFsbCBvZiB0aGUgcGVyZm9ybWFuY2UgZGF0YSBhbmQgY29udHJvbHMgZm9yIGNoYW5naW5nIGNhbXBhaWduIHRhcmdldGluZywgYnVkZ2V0aW5nLCBhbmQgYmlkIHByaWNpbmcgYXJlIHByZXNlbnRlZCBpbiBhIHNpbmdsZSBpbnRlcmZhY2UgYW5kIGp1c3QgYSBzaW5nbGUgY2xpY2sgYXdheS48L1A+CjxQPkRlcGVuZGluZyBvbiB0aGUgY2FwYWJpbGl0aWVzIG9mIHlvdXIgRFNQLCBzb3BoaXN0aWNhdGVkIGFsZ29yaXRobXMgbWlnaHQgY29uc2lkZXIgdGhvdXNhbmRzIG9mIHZhcmlhYmxlcyBhYm91dCB0aGUgY29uc3VtZXIsIHNpdGUsIHdlYiBwYWdlLCBhbmQgYWQgY3JlYXRpdmUgdG8gcHJlZGljdCB0aGUgcmlnaHQgYmlkIHByaWNlIGZvciBldmVyeSBpbXByZXNzaW9uLiBTb21lIERTUHMgYWxzbyBwcm92aWRlIGFsZ29yaXRobXMgZm9yIG9wdGltaXppbmcgYnVkZ2V0IGFsbG9jYXRpb24gYW5kIHdpbGwgYXV0b21hdGljYWxseSBzaGlmdCBkb2xsYXJzIHRvIHRoZSBhdWN0aW9uIG1hcmtldHMgYW5kIHRhcmdldGluZyBzdHJhdGVnaWVzIHRoYXQgYXJlIGRyaXZpbmcgdGhlIGJlc3QgYXVkaWVuY2UgcmVhY2ggb3IgUk9JLiBFdmVuIHdpdGggdGhlc2UgcG93ZXJmdWwgdG9vbHMgaW4gdGhlIGhhbmRzIG9mIHRoZSBjYW1wYWlnbiBtYW5hZ2VyLCBpdCdzIGltcG9ydGFudCB0byBub3QgYmUgaHlwbm90aXplZCBieSBhIGxvd2VyIENQTS4gIlNwcmF5IHBhaW50aW5nIiBjYW1wYWlnbnMgd2l0aCBjaGVhcCBpbXByZXNzaW9ucyBkb2Vzbid0IG5lY2Vzc2FyaWx5IGxlYWQgdG8gYSBiZXR0ZXIgb3V0Y29tZS4gU2VydmluZyBmZXdlciBidXQgbW9yZSByZWxldmFudCBpbXByZXNzaW9ucyB0byB0aGUgcmlnaHQgY29uc3VtZXJzIGlzIGZyZXF1ZW50bHkgYSBtb3JlIHByb2R1Y3RpdmUgcm91dGUgdG8gcXVhbGl0eSBjb252ZXJzaW9ucyBhbmQgYSBsb3dlciBlZmZlY3RpdmUgQ1BBLjwvUD4KPFA+PFNUUk9ORz40LiBNYWludGFpbiBicmFuZCBzYWZldHk8L1NUUk9ORz48QlI+SW4gdGhlIGVhcmx5IGFkIGV4Y2hhbmdlcywgYnV5ZXJzIGRpZG4ndCBoYXZlIGEgbG90IG9mIGNvbnRyb2wgb3ZlciBwdWJsaXNoZXIgcXVhbGl0eSwgYW5kIHRoZXkgb2Z0ZW4gYm91Z2h0IGltcHJlc3Npb25zIG9uIGEgYmxpbmQgYmFzaXMuIFRoYW5rcyB0byBSVEIsIG1hcmtldGVycyBjYW4gbm93IGNob29zZSB3aGF0IGltcHJlc3Npb25zIHRvIHB1cmNoYXNlIGFuZCBhdCB3aGF0IGxldmVsIG9mIHRyYW5zcGFyZW5jeS4gRm9yIG1vcmUgYnJhbmQtY29uc2Npb3VzIGFkdmVydGlzZXJzLCBpdCdzIG5vdyBwb3NzaWJsZSB0byBlbnN1cmUgYSBjYW1wYWlnbiBpcyBkaXNwbGF5ZWQgb24gc3BlY2lmaWMgd2Vic2l0ZXMgYW5kIHR5cGVzIG9mIGNvbnRlbnQsIGFuZCB0byBlbmZvcmNlIHRob3NlIHJ1bGVzIGluIHJlYWwgdGltZS4gVGhlIElBQiBoYXMgcmVjZW50bHkgZGV2ZWxvcGVkIDxBIGhyZWY9Imh0dHA6Ly93d3cuaWFiLm5ldC9pYWJfcHJvZHVjdHNfYW5kX2luZHVzdHJ5X3NlcnZpY2VzLzUwODY3Ni9uZV9ndWlkZWxpbmVzIiB0YXJnZXQ9bmV3PnN0YW5kYXJkcyBmb3IgY29udGVudCBjYXRlZ29yaXphdGlvbiBhbmQgc2l0ZSB0cmFuc3BhcmVuY3kgbGV2ZWxzPC9BPiB0aGF0IHdpbGwgYmVjb21lIGEgc3RhbmRhcmQgZm9yIGFsbCBJQUItY2VydGlmaWVkIGFkIGV4Y2hhbmdlcyAoYW5kIGFkIG5ldHdvcmtzKSBpbiAyMDExLiBUbyBtYWludGFpbiBhIGJyYW5kIHNhZmUgZW52aXJvbm1lbnQsIHNlbGVjdCB0aGUgYXVjdGlvbiBtYXJrZXRzIGFuZCBwdWJsaXNoZXJzIHRoYXQgcHJvdmlkZSB0aGUgaGlnaGVzdCB0cmFuc3BhcmVuY3kgcG9zc2libGUsIGFuZCB1c2UgRFNQIHRvb2xzIHRoYXQgZW5hYmxlIHlvdSB0byBzZWxlY3QgaW52ZW50b3J5IHF1YWxpdHkgbGV2ZWxzIHRoYXQgbWF0Y2ggeW91ciBicmFuZCdzIHJlcXVpcmVtZW50cy4gPC9QPgo8UD5TaW5jZSBpdHMgaW5jZXB0aW9uIGluIHRoZSBtaWQgJzkwcywgb25saW5lIGRpc3BsYXkgYWR2ZXJ0aXNpbmcgaGFzIHJlbWFpbmVkIGxhcmdlbHkgdW5jaGFuZ2VkLiBXaGlsZSB0aGVyZSBoYXZlIGJlZW4gbmV3IHJpY2ggbWVkaWEgYWQgdW5pdHMgYW5kIHNvbWUgaW1wcm92ZW1lbnRzIHRvIGFkIHRhcmdldGluZywgdGhlIGJhc2ljIG1lY2hhbmljcyBvZiBob3cgYWR2ZXJ0aXNpbmcgaXMgYm91Z2h0IGFuZCBzb2xkIGhhcyByZW1haW5lZCB0aGUgc2FtZS4gQnV0LCB3aXRoIHRoZSBhZG9wdGlvbiBvZiBSVEIsIG9yZGVyIG9mIG1hZ25pdHVkZSBpbXByb3ZlbWVudHMgaW4gc2NhbGFiaWxpdHksIHBlcmZvcm1hbmNlLCBhbmQgYnJhbmQgc2FmZXR5IGFyZSBwb3NzaWJsZS4gSW4gcGFydGljdWxhciwgbWFueSBicmFuZCBhZHZlcnRpc2VycyB3aWxsIGJlIHN1cnByaXNlZCB0byBmaW5kIFJUQiBpcyB0aGVpciBmcmllbmQsIGFuZCBwcmVzZW50cyBhIG1vcmUgZWZmZWN0aXZlIGFuZCBlZmZpY2llbnQgbWV0aG9kIHRvIHJlYWNoIGF1ZGllbmNlcyBhdCBzY2FsZSB3aGlsZSBpbXByb3ZpbmcgY2FtcGFpZ24gUk9JLiA8L1A+CjxQPjxBIGhyZWY9Imh0dHA6Ly93d3cuaW1lZGlhY29ubmVjdGlvbi5jb20vcHJvZmlsZXMvaW1lZGlhX3BjX292ZXJ2aWV3LmFzcHg/SUQ9MTI5NjAiPjxFTT5QaGlsaXAgU21vbGluPC9FTT48L0E+PEVNPiBpcyBHTSwgcGxhdGZvcm0gc29sdXRpb25zLCBhdCA8L0VNPjxBIGhyZWY9Imh0dHA6Ly93d3cudHVybi5jb20vIiB0YXJnZXQ9bmV3PjxFTT5UdXJuPC9FTT48L0E+PEVNPi4mbmJzcDsgPC9FTT48L1A+CjxQPjxFTT5PbiBUd2l0dGVyPyBGb2xsb3cgaU1lZGlhIENvbm5lY3Rpb24gYXQgPC9FTT48QSBocmVmPSJodHRwOi8vdHdpdHRlci5jb20vaU1lZGlhVHdlZXQiIHRhcmdldD1uZXc+PEVNPkBpTWVkaWFUd2VldDwvRU0+PC9BPjxFTT4uIDwvRU0+PC9QPmQCBQ9kFgJmDxYCHwBlZAIHDxYCHgdWaXNpYmxlaBYCAgIPFgIfAGVkAh8PFgIfAWdkAjcPZBYEAgEPZBYCAgEPZBYCAgMPDxYCHwAFowE8YSBocmVmPSJodHRwczovL3d3dy5pbWVkaWFjb25uZWN0aW9uLmNvbS9wcm9maWxlcy9yZWdpc3Rlci9zdGFydC5hc3B4P1JldHVyblVybD1odHRwOi8vd3d3LmltZWRpYWNvbm5lY3Rpb24uY29tL2NvbnRlbnQvMjc0MzAuYXNwIiB0YXJnZXQ9Il90b3AiPlJlZ2lzdGVyIGhlcmU8L2E+ZGQCAg8WAh8ABfsPPGRpdiBjbGFzcz0nYXJ0LWNvbW1lbnQgY2xlYXJmaXgnPjxkaXYgY2xhc3M9J3Byb2ZpbGUtaW1nJz48YSBocmVmPScvcHJvZmlsZXMvaU1lZGlhX1BDX092ZXJ2aWV3LmFzcHg/aWQ9Mjc0MDknPjxpbWcgb25lcnJvcj0idGhpcy5vbmVycm9yPW51bGw7dGhpcy5zcmM9J2h0dHA6Ly9pbWVkaWEtaW1hZ2VzLnMzLmFtYXpvbmF3cy5jb20vd2ViL2dlbmVyaWNfcHJvZmlsZXBpYy5naWYnIiAgc3JjPSJodHRwOi8vd3d3LmltZWRpYWNvbm5lY3Rpb24uY29tL3Byb2ZpbGVzL2ltYWdlcy9wcm9maWxlcGljcy90aHVtYjEvMjc0MDkuanBnIiBhbHQ9IkFuZ2kgS2VsbGV5IiB0aXRsZT0iQW5naSBLZWxsZXkiPjwvYT48L2Rpdj48ZGl2IGNsYXNzPSdhcnQtY29tbWVudC1jb250ZW50Jz48ZGl2PjxzdHJvbmc+PGEgY2xhc3M9J25hbWUnIGhyZWY9Jy9wcm9maWxlcy9pTWVkaWFfUENfT3ZlcnZpZXcuYXNweD9pZD0yNzQwOSc+QW5naSBLZWxsZXk8L2E+PC9zdHJvbmc+IDxzcGFuIGNsYXNzPSd0aW1lJz4gQXVndXN0IDIzLCAyMDEwIGF0IDQ6NTkgUE08L3NwYW4+PC9kaXY+PHA+VGhpcyBpcyBvbmUgbW9kZWwgd2hlcmUgdGhlIHN1cHBvc2l0aW9ucyBkb24ndCBtYXRjaCB3aXRoIHJlYWwtbGlmZS4gIFJUQiB3b3JrcyBncmVhdCBpbiB0aGVvcnkgYW5kIGlmIHlvdSBjYW4gZGV0ZXJtaW5lIHdoYXQgdGltZSBvciBkYXRlIGEgY3VzdG9tZXIgaXMgbW9yZSBsaWtlbHkgdG8gcHVyY2hhc2UuICBCdXQgbm90IGluZHVzdHJpZXMgdGhhdCBoYXZlIG5vIHB1cmNoYXNpbmcgcGF0dGVybnMuICBUaGVuIHRoZXJlJ3MgdGhlIGNvbXBldGl0b3JzIHdobyB1cCB0aGUgYmlkZGluZyB0byBzdWNoIGEgcG9pbnQgaXQncyBubyBsb25nZXIgcHJvZml0YWJsZSBiZWNhdXNlIHRoZXkgZG9uJ3QgdHJhY2sgdGhlaXIgc291cmNlcyBidXQgYmVsaWV2ZSBhbGwgdGhlIFNFTSBhbmQgUFBDIGFnZW5jaWVzIHRoYXQgaW5zaXN0IHlvdSBoYXZlIHRvIGhhdmUgYSBjYW1wYWlnbiB0byBzdXJ2aXZlLiAgU29ycnkuLi4gYnV0IGl0J3Mgb3V0cHJpY2luZyBpdHNlbGYganVzdCBsaWtlIHllbGxvdyBwYWdlcy48L3A+PC9kaXY+PC9kaXY+PGRpdiBjbGFzcz0nYXJ0LWNvbW1lbnQgY2xlYXJmaXgnPjxkaXYgY2xhc3M9J3Byb2ZpbGUtaW1nJz48YSBocmVmPScvcHJvZmlsZXMvaU1lZGlhX1BDX092ZXJ2aWV3LmFzcHg/aWQ9Mjk0MzInPjxpbWcgb25lcnJvcj0idGhpcy5vbmVycm9yPW51bGw7dGhpcy5zcmM9J2h0dHA6Ly9pbWVkaWEtaW1hZ2VzLnMzLmFtYXpvbmF3cy5jb20vd2ViL2dlbmVyaWNfcHJvZmlsZXBpYy5naWYnIiAgc3JjPSJodHRwOi8vd3d3LmltZWRpYWNvbm5lY3Rpb24uY29tL3Byb2ZpbGVzL2ltYWdlcy9wcm9maWxlcGljcy90aHVtYjEvMjk0MzIuanBnIiBhbHQ9IkxpeiBaZWRvIiB0aXRsZT0iTGl6IFplZG8iPjwvYT48L2Rpdj48ZGl2IGNsYXNzPSdhcnQtY29tbWVudC1jb250ZW50Jz48ZGl2PjxzdHJvbmc+PGEgY2xhc3M9J25hbWUnIGhyZWY9Jy9wcm9maWxlcy9pTWVkaWFfUENfT3ZlcnZpZXcuYXNweD9pZD0yOTQzMic+TGl6IFplZG88L2E+PC9zdHJvbmc+IDxzcGFuIGNsYXNzPSd0aW1lJz4gQXVndXN0IDIzLCAyMDEwIGF0IDEyOjA3IFBNPC9zcGFuPjwvZGl2PjxwPlRoYW5rcyBmb3Igd3JpdGluZyB0aGlzIGRldGFpbGVkIHBpZWNlIG9uIFJUQiBQaGlsaXAuICBJdCBpcyBiZWNvbWluZyBhIG1vcmUgYW5kIG1vcmUgcG9wdWxhciB0b3BpYyBpbiBvdXIgc3BhY2UgYW5kIGFkdmVydGlzZXJzIG5lZWQgdG8gdW5kZXJzdGFuZCB0aGUgZnVuZGFtZW50YWxzLiAgT2YgY291cnNlIHRoZSBvYmplY3RpdmVzIG9mIFJUQiBhcmUgbm90aGluZyBuZXcsIGJ1dCBob3BlZnVsbHkgdGhlIHRlY2hub2xvZ3kgd2lsbCBoZWxwIHB1Ymxpc2hlcnMgc2VsbCBtb3JlIGludmVudG9yeSwgYW5kIGhlbHAgYWR2ZXJ0aXNlcnMgYnV5IGludmVudG9yeSBmYXN0ZXIgYW5kIG1vcmUgb2Z0ZW4uPGJyIC8+PGJyIC8+TGl6PGJyIC8+TWFya2V0aW5nIE1hbmFnZXI8YnIgLz53d3cuWkVETy5jb208L3A+PC9kaXY+PC9kaXY+ZAIPD2QWAgIBD2QWAgIBD2QWAgIWD2QWAgIBDxYCHwAF+wU8ZGl2IGNsYXNzPSdjbGVhcmZpeCc+PHA+PHNwYW4gY2xhc3M9J2Ryb3AnPjE8L3NwYW4+IDxhIGhyZWY9Jy9jb250ZW50LzM4MjU1LmFzcD9yZWY9cmNfbXAnPlRoZSAxMCBjb21tYW5kbWVudHMgb2YgSW5zdGFncmFtIG1hcmtldGluZzwvYT48L3A+PC9kaXY+PGRpdiBjbGFzcz0nY2xlYXJmaXgnPjxwPjxzcGFuIGNsYXNzPSdkcm9wJz4yPC9zcGFuPiA8YSBocmVmPScvY29udGVudC8zMjM1OS5hc3A/cmVmPXJjX21wJz5UaGUgbW9zdCBtZWFuaW5nbGVzcyAoYW5kIGhpbGFyaW91cykgam9iIHRpdGxlcyBvbiBMaW5rZWRJbjwvYT48L3A+PC9kaXY+PGRpdiBjbGFzcz0nY2xlYXJmaXgnPjxwPjxzcGFuIGNsYXNzPSdkcm9wJz4zPC9zcGFuPiA8YSBocmVmPScvY29udGVudC8zODI1Ny5hc3A/cmVmPXJjX21wJz4xMCBlc3NlbnRpYWwgbW9iaWxlIGFwcHMgZm9yIHRoZSBtb2Rlcm4gbWFya2V0ZXI8L2E+PC9wPjwvZGl2PjxkaXYgY2xhc3M9J2NsZWFyZml4Jz48cD48c3BhbiBjbGFzcz0nZHJvcCc+NDwvc3Bhbj4gPGEgaHJlZj0nL2NvbnRlbnQvMzIyMTkuYXNwP3JlZj1yY19tcCc+MTEgaW5ub3ZhdGl2ZSBtb3ZpZSBtYXJrZXRpbmcgY2FtcGFpZ25zPC9hPjwvcD48L2Rpdj48ZGl2IGNsYXNzPSdjbGVhcmZpeCc+PHA+PHNwYW4gY2xhc3M9J2Ryb3AnPjU8L3NwYW4+IDxhIGhyZWY9Jy9jb250ZW50LzM4MTc0LmFzcD9yZWY9cmNfbXAnPlRoZSB0b3AgMTAgbW9zdCBkaXNhc3Ryb3VzIGhhc2h0YWcgY2FtcGFpZ25zIDwvYT48L3A+PC9kaXY+ZGT+cMKLF/Wz/fwtG3Ktchlun3AY/w==" type="hidden">
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['aspnetForm'];
+if (!theForm) {
+    theForm = document.aspnetForm;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="The%20fundamentals%20of%20real-time%20bidding%20-%20iMediaConnection.com_files/WebResource.js" type="text/javascript"></script>
+
+
+<script src="The%20fundamentals%20of%20real-time%20bidding%20-%20iMediaConnection.com_files/ScriptResource_002.js" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+if (typeof(Sys) === 'undefined') throw new Error('ASP.NET Ajax client-side framework failed to load.');
+//]]>
+</script>
+
+<script src="The%20fundamentals%20of%20real-time%20bidding%20-%20iMediaConnection.com_files/ScriptResource.js" type="text/javascript"></script>
+<div>
+
+	<input name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="17066188" type="hidden">
+	<input name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWBALI/qCOBgKb9ovlBQKDjYGNBALdjdG2DH5e7XJQr/UtRJL1KGuy2buK/8yj" type="hidden">
+</div>   
+        
+        <script type="text/javascript">
+            (function () {
+                var useSSL = 'https:' == document.location.protocol;
+                var src = (useSSL ? 'https:' : 'http:') + '//www.googletagservices.com/tag/js/gpt.js';
+                document.write('<scr' + 'ipt src="' + src + '"></scr' + 'ipt>');
+            })();
+        </script><script src="The%20fundamentals%20of%20real-time%20bidding%20-%20iMediaConnection.com_files/gpt.js"></script><iframe style="visibility: hidden; display: none;" src="The%20fundamentals%20of%20real-time%20bidding%20-%20iMediaConnection.com_files/container.html"></iframe>
+
+        <script type="text/javascript">
+            _area = "CONS_STRAT_BEHAVIORAL_MKTG";
+        </script>
+
+        <script type="text/javascript">
+            LoadDoubleClickAdCodes(_area); 
+            
+            googletag.pubads().enableSyncRendering(); 
+            //googletag.pubads().enableSingleRequest(); 
+            googletag.enableServices(); 
+        </script>
+
+        
+
+        <!-- DFP Skin -->
+        
+            <div id="div-ad-skin-1x1">
+                <script type="text/javascript">
+                    googletag.display('div-ad-skin-1x1');
+                </script>
+            </div>
+        
+
+        <script type="text/javascript">
+
+        var actId = 0;
+        var actTitle = "";
+        var actCompany = "";
+        var actCompanyType = "";
+        var sectionArea = "targeting";
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-4077114-8']);
+        
+        //_gaq.push(['_trackPageview']);
+
+        if (actId != null && actId > 0)
+        {
+            _gaq.push(['_setCustomVar',1,'ActId','0',1]);
+        }
+
+        if (actTitle != "" || actTitle != null)
+        {
+            _gaq.push(['_setCustomVar',2,'ActJobTitle','',1]);
+        }
+
+        if (actCompany != "" || actCompany != null)
+        {
+            _gaq.push(['_setCustomVar',3,'ActCompany','',1]);
+        }
+
+        if (actCompanyType != "" || actCompanyType != null)
+        {
+            _gaq.push(['_setCustomVar',4,'ActCompanyType','',1]);
+        }
+
+        if (sectionArea != "" || sectionArea != null)
+        {
+            _gaq.push(['_setCustomVar',5,'section','targeting',3]);
+            _gaq.push(['_trackEvent', 'Section', 'View', 'targeting', 1, true]);
+        }
+
+        _gaq.push(['_trackPageview', location.pathname + location.search + location.hash]);
+        
+
+        (function () {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+
+
+    </script>
+
+        <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ctl00$WebServiceScriptManager', 'aspnetForm', [], [], [], 90, 'ctl00');
+//]]>
+</script>
+
+
+        <script type="text/javascript">
+            function mobileCheck()
+            {
+
+                //alert(navigator.userAgent);
+                var check = false;
+                if(typeof window.orientation !== 'undefined')
+                {
+                    check = true;
+                }
+
+                var check = (/iphone|ipod|android|blackberry|fennec/).test
+                (navigator.userAgent.toLowerCase());
+
+                return check;
+            }
+
+            var baseSecureUrl = "https://www.imediaconnection.com/";
+
+            function closedLogin() {
+                if (jQuery.cookie('.imcAuthCookie2') != null) {
+                    window.location.reload();
+                }
+            }
+
+            function closedLogout() {
+                window.location.reload(true);
+            }
+
+            function PopLogout() {
+                jQuery.colorbox({
+                    href: baseSecureUrl + "dialogs/LogoutDialog.aspx",
+                    iframe: true,
+                    scrolling: false,
+                    width: '420px',
+                    height: '310px',
+                    onClosed: closedLogout
+                });
+            }
+
+
+            function PopLogin() {
+                jQuery.colorbox({
+                    href: baseSecureUrl + "dialogs/LoginDialog.aspx",
+                    iframe: true,
+                    scrolling: false,
+                    width: '420px',
+                    height: '310px',
+                    onClosed: closedLogin,
+                    fixed: true,
+                    reposition: true,
+                    top: function () {
+                        if (mobileCheck()) { return 50 }
+                        else { return false; } 
+                    },
+                    left: function () {
+                        if (mobileCheck()) { return 50 }
+                        else { return false; } 
+                    }
+                });
+            }
+
+            
+            function PopLoginReminder() {
+                jQuery.colorbox({
+                    href: baseSecureUrl + "dialogs/LoginDialog.aspx?rem=1",
+                    iframe: true,
+                    scrolling: false,
+                    width: '770px',
+                    height: '310px',
+                    onClosed: closedLogin,
+                    reposition: false,
+                    top: function () {
+                        if (mobileCheck()) { return 50 }
+                        else { return false; } 
+                    },
+                    left: function () {
+                        if (mobileCheck()) { return 50 }
+                        else { return false; } 
+                    }
+                });
+            }
+
+            function PopLoginMembership() {
+                jQuery.colorbox({
+                    href: baseSecureUrl + "dialogs/LoginDialog.aspx?rem=2",
+                    iframe: true,
+                    scrolling: false,
+                    width: '770px',
+                    height: '310px',
+                    onClosed: closedLogin,
+                    reposition: false,
+                    top: function () {
+                        if (mobileCheck()) { return 50 }
+                        else { return false; } 
+                    },
+                    left: function () {
+                        if (mobileCheck()) { return 50 }
+                        else { return false; } 
+                    }
+                });
+            }
+
+            function ShowPopUpInterstitial() {
+
+                jQuery.colorbox({
+                    href: "/dialogs/InterstitialPop.aspx",
+                    iframe: true,
+                    scrolling: false,
+                    width: '640px',
+                    height: '480px',
+                    reposition: false,
+//                    top: function () {
+//                        if (mobileCheck()) { return 50 }
+//                        else { return false; }
+//                    },
+//                    left: function () {
+//                        if (mobileCheck()) { return 50 }
+//                        else { return false; }
+//                    }
+                });
+            }
+
+            function ShowPopUpAd(){
+            jQuery.colorbox({
+                            href: baseSecureUrl + "dialogs/addialog.htm",
+                            iframe: true,
+                            scrolling: false,
+                            width: '770px',
+                            height: '310px',
+                            reposition: false,
+                            top: function () {
+                                if (mobileCheck()) { return 50 }
+                                else { return false; }
+                            },
+                            left: function () {
+                                if (mobileCheck()) { return 50 }
+                                else { return false; }
+                            }
+                        });
+            }
+
+
+            function CheckAndShowPopupAd() {
+                //pop up ad - show once a week
+                if (jQuery.cookie('imc_ad_reminder') != null) {
+                    loginreminderchk = $.cookie('imc_ad_reminder');
+                    if (jQuery.cookie('imc_ad_reminder') == 1) {
+                        //change to 2
+                        jQuery.cookie('imc_ad_reminder', '2', { expires: 7 });
+                        //popup
+                        ShowPopUpAd();
+                        
+                    }
+                }
+                else {
+                    jQuery.cookie('imc_ad_reminder', '1');
+                }
+            }
+
+            
+            </script>
+
+        <!-- ADMIN NAVIGATION BAR -->
+        
+
+        <!-- AUTHOR NAVIGATION BAR -->
+        
+
+        <!--  ANY NOTIFICATION MESSAGE GOES HERE  -->
+        
+        <div class="site-toolbar">
+            <div id="socialmedia" class="clearfix">
+                <div>Follow us: </div>
+                <ul>
+                    <li><a href="http://goo.gl/bCMG6" id="nl" target="_blank">iMedia Connection Daily Newsletter</a></li>
+                    <li><a href="http://goo.gl/2Tibc" id="tw" target="_blank">Follow iMedia Connection on Twitter</a></li>
+                    <li><a href="http://goo.gl/T1mNO" id="fb" target="_blank">iMedia Connection on Facebook</a></li>
+                    <li><a href="http://www.linkedin.com/company/53863?trk=NUS-body-company-name" id="linkedin" target="_blank">iMedia Connection on LinkedIn</a></li>
+                    <li><a href="http://goo.gl/yUPu6" id="rss" target="_blank">iMedia Connection RSS Feed</a></li>
+                    <li><a href="http://goo.gl/FRXzd" id="youtube" target="_blank">iMedia Connection on Youtube</a></li>
+
+                </ul>
+            </div>
+            <!--  LOGIN  -->
+            <div id="user-setting" class="clearfix">
+                
+                <div id="ctl00_PanelNotLoggedIn">
+	
+                    <span class="link" onclick="PopLogin()"><strong>Sign in</strong></span><span class="imc-lightgray">&nbsp;&nbsp;|&nbsp;&nbsp;</span><a href="https://www.imediaconnection.com/profiles/Register/Start.aspx" id="AHREFRegisterLink">Register</a>
+                
+</div>
+            </div>
+        </div>
+        <div class="main-body">
+            <div class="container_24 clearfix">
+                <div class="special-tag">Brand Marketers Only</div>
+                <div class="modal-top">
+                    
+                </div>
+                <div class="grid_24 header">
+                    <h2 class="site">
+                        <a href="http://www.imediaconnection.com/">iMedia Connection - Connecting the Marketing Community</a>
+                    </h2>
+                    
+                    <!--  SOCIAL MEDIA LINKS  -->
+                    
+
+                    <div class="banner728x90">                        
+                        <div id="div-ad-top-leaderboard-728x90" style="width:728px; height:90px;">
+                            <script type="text/javascript">
+                                googletag.display('div-ad-top-leaderboard-728x90');
+                            </script>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 970 Ad -->
+                
+				    <div id="div-ad-pushdown-970x66" class="banner970x66 grid_24" style="margin-left:-5px;">                
+                        <script type="text/javascript">
+                            googletag.display('div-ad-pushdown-970x66');
+                         </script>
+                    </div>
+                
+
+                <!--  SITE NAVIGATION  -->
+                
+<div class="grid_24 site-navigation">
+    <ul id="topnav">
+        <li class="article"><span class="article">Articles</span>
+            <div style="opacity: 0;" class="sub">
+                <div class="nav-content">
+                    <div class="col top-stories">
+                        <div class="title">
+                            <a href="http://www.imediaconnection.com/coverstories/?imcid=nav">Top <span>Stories</span></a></div>
+                        <ul id="ArticlesUL" class="article">
+<li>
+  <a href="http://www.imediaconnection.com/content/38258.asp?imcid=nav">The most unbearable people you meet at conferences</a>
+</li>
+<li>
+  <a href="http://www.imediaconnection.com/content/38285.asp?imcid=nav">Here is your digital disruption mantra</a>
+</li>
+<li>
+  <a href="http://www.imediaconnection.com/content/38294.asp?imcid=nav">How to strengthen the relationship between brands and retailers</a>
+</li>
+<li>
+  <a href="http://www.imediaconnection.com/content/38293.asp?imcid=nav">The year of search personalization</a>
+</li>
+<li>
+  <a href="http://www.imediaconnection.com/content/38289.asp?imcid=nav">6 ways to maximize limited ad budgets</a>
+</li>
+<li>
+  <a href="http://www.imediaconnection.com/content/38284.asp?imcid=nav">The problem with programmatic</a>
+</li>
+<li>
+  <a href="http://www.imediaconnection.com/content/38257.asp?imcid=nav">10 essential mobile apps for the modern marketer</a>
+</li></ul>
+                        <div class="coverstories">
+                            <div class="title">
+                                Cover <span>Stories</span></div>
+                            <span><a href="http://www.imediaconnection.com/coverstories/?imcid=nav">View all Cover Stories »</a></span>
+                        </div>
+                    </div>
+                    <div class="col subject">
+                        <div class="title">
+                            Subjects</div>
+                        <ul>
+                            <li><a href="http://www.imediaconnection.com/adnetworks/?imcid=nav">Ad Networks</a></li>
+                            <li><a href="http://www.imediaconnection.com/adserving/?imcid=nav">Ad Serving</a></li>
+                            <!--  DISABLED UNTIL NEW CMS  -->
+                            <!-- <li><a href="#">Agency Issues</a></li> -->
+                            <li><a href="http://www.imediaconnection.com/apps/?imcid=nav">Apps</a></li>
+                            <li><a href="http://www.imediaconnection.com/brandissues/?imcid=nav">Brand Issues</a></li>
+                            <li><a href="http://www.imediaconnection.com/casestudies/?imcid=nav">Case Studies</a></li>
+                            <li><a href="http://www.imediaconnection.com/creative/?imcid=nav">Creative</a></li>
+                            <li><a href="http://www.imediaconnection.com/demographics/?imcid=nav">Demographics</a></li>
+                            <li><a href="http://www.imediaconnection.com/directmarketing/?imcid=nav">Direct Marketing</a></li>
+                            <li><a href="http://www.imediaconnection.com/email/?imcid=nav">Email</a></li>
+                            <li><a href="http://www.imediaconnection.com/emerging/?imcid=nav">Emerging Platforms</a></li>
+                            <li><a href="http://www.imediaconnection.com/integrated/?imcid=nav">Integrated Marketing</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="http://www.imediaconnection.com/local/?imcid=nav">Local</a></li>
+                            <li><a href="http://www.imediaconnection.com/mediaplanning/?imcid=nav">Media Planning &amp; Buying</a></li>
+                            <li><a href="http://www.imediaconnection.com/mobile/?imcid=nav">Mobile</a></li>
+                            <!--  DISABLED UNTIL NEW CMS  
+                                                        <li><a href="#">Professional Development</a></li>
+                                                    -->
+                            <li><a href="http://www.imediaconnection.com/search/?imcid=nav">Search</a></li>
+                            <li><a href="http://www.imediaconnection.com/socialmedia/?imcid=nav">Social Media</a></li>
+                            <li><a href="http://www.imediaconnection.com/targeting/?imcid=nav">Targeting</a></li>
+                            <li><a href="http://www.imediaconnection.com/viral/?imcid=nav">Viral</a></li>
+                            <li><a href="http://www.imediaconnection.com/videoarticles/?imcid=nav">Video</a></li>
+                            <li><a href="http://www.imediaconnection.com/webanalytics/?imcid=nav">Web Analytics</a></li>
+                            <li><a href="http://www.imediaconnection.com/websites/?imcid=nav">Websites</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li class="blog"><span class="blog">Blogs</span>
+            <div style="opacity: 0;" class="sub">
+                <div class="nav-content">
+                    <div class="col">
+                        <div class="title">
+                            <a href="http://blogs.imediaconnection.com/?imcid=nav">iMediaConnection <span>Blog</span></a>
+                        </div>
+                        <ul id="ImcBlogNavUL">
+<li>
+  <a href="http://blogs.imediaconnection.com/blog/2015/03/04/farewell-qa-with-ny-times-ad-columnist-stuart-elliott-pt-3-change-is-on-the-air/?imcid=nav">FAREWELL Q&amp;A WITH NY TIMES AD COLUMNIST STUART ELLIOTT (PT 3): CHANGE IS (ON) THE AIR</a>
+</li>
+<li>
+  <a href="http://blogs.imediaconnection.com/blog/2015/03/04/visually-sell-a-destination-photos-in-your-travel-marketing-campaign/?imcid=nav">Visually Sell a Destination: Photos in Your Travel Marketing Campaign</a>
+</li>
+<li>
+  <a href="http://blogs.imediaconnection.com/blog/2015/02/27/supergate-lenovo-how-and-why-does-that-even-happen/?imcid=nav">Supergate Lenovo: How and why does that even happen?</a>
+</li>
+<li>
+  <a href="http://blogs.imediaconnection.com/blog/2015/02/26/facebook-reach-back-to-the-future/?imcid=nav">Facebook Reach – Back To The Future</a>
+</li>
+<li>
+  <a href="http://blogs.imediaconnection.com/blog/2015/02/26/3-steps-for-converging-digital-video-and-tv-advertising-today/?imcid=nav">3 steps for converging digital video and TV advertising, today</a>
+</li>
+<li>
+  <a href="http://blogs.imediaconnection.com/blog/2015/02/25/women-in-tech-industry-still-facing-career-challenges/?imcid=nav">Women in Tech Industry Still Facing Career Challenges</a>
+</li>
+<li>
+  <a href="http://blogs.imediaconnection.com/blog/2015/02/25/5-tips-for-turning-attendees-into-brand-advocates/?imcid=nav">5 tips for turning attendees into brand advocates</a>
+</li>
+<li>
+  <a href="http://blogs.imediaconnection.com/blog/2015/02/25/7-simple-ways-to-fit-learning-into-a-busy-schedule/?imcid=nav">7 simple ways to fit LEARNING into a busy schedule</a>
+</li>
+<li>
+  <a href="http://blogs.imediaconnection.com/blog/2015/02/24/how-agility-will-set-you-apart-from-the-competition/?imcid=nav">How agility will set you apart from the competition</a>
+</li>
+<li>
+  <a href="http://blogs.imediaconnection.com/blog/2015/02/24/the-great-content-debate-creativity-vs-measurability/?imcid=nav">The great content debate: Creativity vs. measurability</a>
+</li><li class="viewmore"><a href="http://blogs.imediaconnection.com/">view more »</a></li></ul>
+                    </div>
+                    
+                </div>
+            </div>
+        </li>
+        <li class="video"><span class="video">Videos</span>
+            <div style="opacity: 0;" class="sub">
+                <div class="nav-content">
+                    <div class="col video-sections">
+                        <div class="title">
+                            Sections</div>
+                        <ul>
+                            <li><a href="http://www.imediaconnection.com/videos/?imcid=nav">All Videos</a></li>
+                            <li><a href="http://www.imediaconnection.com/videos/summits/?imcid=nav">Summits</a></li>
+                            <li><a href="http://www.imediaconnection.com/videos/bob-garfield/?imcid=nav">Bob Garfield</a></li>
+                            <li><a href="http://www.imediaconnection.com/videos/industry-insider/?imcid=nav">Industry Insider</a></li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <div class="title">
+                            <a href="http://www.imediaconnection.com/videos/">Latest <span>Videos</span></a></div>
+                        <ul class="video">
+                            
+                                <script type="text/javascript" src="The%20fundamentals%20of%20real-time%20bidding%20-%20iMediaConnection.com_files/VideoFile.js"></script>
+                                <script type="text/javascript">
+                                    try {
+                                        for (i = 0; i < 4; i++) {
+                                            document.write('<li><a href="/videoredirect.aspx?VideoID=' + videofile.NewDataSet.VideoFile[i].VideoFile_ID + '&type=' + videofile.NewDataSet.VideoFile[i].VideoType + '&imcid=nav">');
+                                            document.write('<img src="/spot/images/' + videofile.NewDataSet.VideoFile[i].ThumbnailFile + '" alt="video' + videofile.NewDataSet.VideoFile[i].VideoFile_ID + '" /><br />');
+                                            title = videofile.NewDataSet.VideoFile[i].Video_Title;
+                                            title = title.replace(/\\u0027/g, "'");
+                                            title = title.replace(/\\u0022/g, '"');
+                                            document.write('<span>' + title + '</span></a></li>');
+                                        }
+                                    }
+                                    catch (err) {
+                                        //Handle errors here
+                                    }
+                                </script><li><a href="http://www.imediaconnection.com/videoredirect.aspx?VideoID=38285&amp;type=1&amp;imcid=nav"><img src="The%20fundamentals%20of%20real-time%20bidding%20-%20iMediaConnection.com_files/38285.jpg" alt="video38285"><br><span>Here is your digital disruption mantra</span></a></li><li><a href="http://www.imediaconnection.com/videoredirect.aspx?VideoID=38284&amp;type=1&amp;imcid=nav"><img src="The%20fundamentals%20of%20real-time%20bidding%20-%20iMediaConnection.com_files/38284.jpg" alt="video38284"><br><span>The problem with programmatic</span></a></li><li><a href="http://www.imediaconnection.com/videoredirect.aspx?VideoID=38261&amp;type=1&amp;imcid=nav"><img src="The%20fundamentals%20of%20real-time%20bidding%20-%20iMediaConnection.com_files/38261.jpg" alt="video38261"><br><span>2 simple survival strategies for agencies</span></a></li><li><a href="http://www.imediaconnection.com/videoredirect.aspx?VideoID=38212&amp;type=1&amp;imcid=nav"><img src="The%20fundamentals%20of%20real-time%20bidding%20-%20iMediaConnection.com_files/38212.jpg" alt="video38212"><br><span>PepsiCo's biggest digital marketing challenge</span></a></li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li class="summit"><span class="summit">Summits</span>
+            <div style="opacity: 0;" class="sub">
+                <div class="nav-content">
+                    <div class="primary">
+                        <div class="title" style="width: 450px; float: left;">
+                            Upcoming <span>Summits<a id="fullcalendar" href="http://www.imediaconnection.com/summits/">Full Summit Calendar</a></span></div>
+                        <div style="background-color: #A30006; padding: 2px; color: #FFF; font-family: Arial, Helvetica, sans-serif;
+                            font-size: 12px; width: 120px; float: right; text-align: center;">
+                            <strong><a href="http://www.imediaconnection.com/SFDC/WebToLead.aspx" target="_blank" style="color: #FFF; text-decoration: none;">Request invitation</a></strong></div>
+                        <div class="summit-detail">
+                            <ul>
+                                
+                                <li><a href="http://www.imediaconnection.com/summits/37535.asp?imcid=nav">
+                                    <img src="The%20fundamentals%20of%20real-time%20bidding%20-%20iMediaConnection.com_files/imc-nav-commerce-140412.jpg" alt="iMedia Commerce Summit 2015" title="iMedia Commerce Summit 2015" width="180" height="114" border="0"></a><br>
+                                    <span class="detail"><strong>April 12-14, 2015<br>
+                                        Minneapolis, Minnesota</strong></span> The lines between online and offline shopping aren't just blurring; they've disappeared altogether. <br>
+                                    <a href="http://www.imediaconnection.com/summits/37535.asp?imcid=nav">Summit Info</a></li>
+								<li><a href="http://www.imediaconnection.com/summits/36923.asp?imcid=nav">
+                                    <img src="The%20fundamentals%20of%20real-time%20bidding%20-%20iMediaConnection.com_files/imc-nav-agency-201412.jpg" alt="iMedia Agency Summit 2015" title="iMedia Agency Summit 2015" border="0"></a><br>
+                                    <span class="detail"><strong>May 3-6, 2015<br>
+                                        Rancho Palos Verdes, California</strong></span>This May, agency leaders will converge
+                                    to discuss the latest tools, tactics, and strategies for finding the right balance
+                                    between experience and experimentation.<br>
+                                    <a href="http://www.imediaconnection.com/summits/36923.asp?imcid=nav">Summit Info</a></li>
+                                    <li><a href="http://www.imediaconnection.com/summits/36929.asp?imcid=nav">
+                                    <img src="The%20fundamentals%20of%20real-time%20bidding%20-%20iMediaConnection.com_files/imc-nav-brand-140908.jpg" alt="iMedia Brand Summit 2015" title="iMedia Brand Summit 2015" width="180" height="114" border="0"></a><br>
+                                    <span class="detail"><strong>September 13-16, 2015<br>
+                                        Coronado, California</strong></span> This September, join senior level brand
+                                    marketers and today's hottest solution providers for a three-day foray into the
+                                    mind of today's consumer. Request your invitation today.<br>
+                                    <a href="http://www.imediaconnection.com/summits/36929.asp?imcid=nav">Summit Info</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="secondary">
+                        <div class="summit-coverage">
+                            <div class="title">
+                                Summit <span>Coverage</span></div>
+                            <ul class="summit-coverage col">
+                            
+                            <li><span>iMedia Brand Summit, February 2015</span><br>
+                                    <a href="http://www.imediaconnection.com/PhotoGallery/Default.aspx?SummitId=146&amp;imcid=nav">Photos</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="http://www.imediaconnection.com/summits/coverage/38037.asp?imcid=nav">Articles &amp; Videos</a></li>
+                                <li><span>iMedia Agency Summit, December 2014</span><br>
+                                    <a href="http://www.imediaconnection.com/PhotoGallery/Default.aspx?SummitId=144&amp;imcid=nav">Photos</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="http://www.imediaconnection.com/summits/coverage/37129.asp?imcid=nav">Articles &amp; Videos</a></li>
+								<li><span>iMedia Breakthrough Summit, October 2014</span><br>
+                                    <a href="http://www.imediaconnection.com/PhotoGallery/Default.aspx?SummitId=142&amp;imcid=nav">Photos</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="http://www.imediaconnection.com/summits/coverage/37122.asp?imcid=nav">Articles &amp; Videos</a></li>
+								<li><span>iMedia Brand Summit, September 2014</span><br>
+                                    <a href="http://www.imediaconnection.com/PhotoGallery/Default.aspx?SummitId=143&amp;imcid=nav">Photos</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="http://www.imediaconnection.com/summits/coverage/37116.asp?imcid=nav">Articles &amp; Videos</a></li>
+                               
+                                
+                                <li class="viewmore"><a href="http://www.imediaconnection.com/summits/96.asp?imcid=nav">view more »</a></li>
+                            </ul>
+                        </div>
+                        <div class="speak-at-imedia">
+                            <a href="http://www.imediaconnection.com/summits/speakatimedia.html">
+                                <img src="The%20fundamentals%20of%20real-time%20bidding%20-%20iMediaConnection.com_files/img-nav-become-speaker.png" alt="Speak @ iMedia" title="Speak @ iMedia" border="0"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </li>
+        
+        <li class="job"><span class="job">Jobs</span>
+            <div style="opacity: 0;" class="sub">
+                <div class="nav-content">
+                    <div class="job-group col">
+                        <ul class="job-group col">
+                            <li class="seeker"><a href="http://www.imediaconnection.com/jobs/?imcid=nav">Job Seekers<br>
+                                <span>The leading job board for social media jobs.</span></a></li>
+                            <li class="employer"><a href="http://www.imediaconnection.com/jobs/JobConnectionMain.aspx?imcid=nav">Employers<br>
+                                <span>Put listings in front of the active and passive job seekers.</span></a></li>
+                        </ul>
+                    </div>
+                    <div class="job-listing col">
+                        <div class="title">
+                            <a href="http://www.imediaconnection.com/jobs/">Latest <span>Jobs</span></a></div>
+                        <ul class="job-listing" id="navLatestJobs"><li><a href="http://www.imediaconnection.com/jobs/description.aspx?id=3861&amp;imcid=nav">Sales Account Exec, Multiple Locations</a></li><li><a href="http://www.imediaconnection.com/jobs/description.aspx?id=3860&amp;imcid=nav">Mobile App Acquisition Manager, NYC &amp; Port Washington</a></li><li><a href="http://www.imediaconnection.com/jobs/description.aspx?id=3859&amp;imcid=nav">Director Or Sr Director Of Ad Product, San Francisco</a></li><li><a href="http://www.imediaconnection.com/jobs/description.aspx?id=3858&amp;imcid=nav">Associate Director, Paid Search Media, Chicago, Illinois, United States, 60606</a></li><li><a href="http://www.imediaconnection.com/jobs/description.aspx?id=3857&amp;imcid=nav">Sr. Leader - Social Activation And Analytics, Kohler, WI</a></li><li><a href="http://www.imediaconnection.com/jobs/description.aspx?id=3856&amp;imcid=nav">Manager, Strategic Sourcing Marketing &amp; Advertising, Burbank</a></li><li><a href="http://www.imediaconnection.com/jobs/description.aspx?id=3854&amp;imcid=nav">Digital Media Planner, New York, New York, United States, 10019</a></li></ul>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li class="pc"><span class="pc">People Connection</span>
+            <div style="opacity: 0;" class="sub">
+                <div class="nav-content">
+                    
+                    <div class="nav-profile-supplement col">
+                        <a class="adv-search" href="http://www.imediaconnection.com/profiles/Search.aspx">People Connection Search<br>
+                            <span>Find People by name, company, or title</span></a>
+                        <div id="divNavProfileJoin">
+                            <div class="title member-signin">
+                                <a href="https://www.imediaconnection.com/profiles/register/start.aspx?imcid=nav">Join
+                                    <span>People Connection</span></a></div>
+                            <ul class="whyjoin clearfix">
+                                <li>Public profile SEO friendly!</li>
+                                <li>Become an expert. Comments show up on your profile.</li>
+                                <li>Expand your business. </li>
+                                <li class="nav-signup">
+                                    
+                                    <a href="https://www.imediaconnection.com/profiles/register/start.aspx?imcid=nav">
+                                        Become a member now</a>&nbsp;&nbsp;|&nbsp;&nbsp;<span class="signin" onclick="PopLogin()" style="cursor: pointer; color: #006699;">Sign in</span> </li>
+                            </ul>
+                        </div>
+                        <div id="divNavProfileSignIn" class="title member-signin">
+                            <!-- hide if logged in -->
+                            <!-- <a href="/Account/Login.aspx">Member <span>Sign In</span></a> -->
+                            <p>
+                            </p>
+                        </div>
+                        <div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li class="rc"><span class="rc">Resource Connection</span>
+            <div style="opacity: 0;" class="sub">
+                <div class="nav-content">
+                    <!-- left column -->
+                    <div class="nav-rc-info col">
+                        <ul>
+                            <li class="reason rc"><a href="http://www.imediaconnection.com/resourceconnection/?imcid=nav">Resource Connection <span class="beta">BETA</span><br>
+                                <span>Helps marketers connect with digital service providers</span></a> </li>
+                            <li class="reason note"><a href="http://www.imediaconnection.com/resourceconnection/NotesandFavorites.aspx?imcid=nav">
+                                Favorites and Notes<br>
+                                <span>See or manage my favorites and notes on companies</span></a> </li>
+                            <li class="popular">
+                                <div class="heading">
+                                    Popular Categories</div>
+                                <span><a href="http://www.imediaconnection.com/resourceconnection/ad-networks/?imcid=nav">Ad Networks</a></span>
+                                <span><a href="http://www.imediaconnection.com/resourceconnection/analytics-_and_-reporting/?imcid=nav">Analytics &amp;
+                                    Reporting</a></span> <span><a href="http://www.imediaconnection.com/resourceconnection/email-marketing-_and_-service-providers/?imcid=nav">
+                                        Email Marketing &amp; Service Providers</a></span> <span><a href="http://www.imediaconnection.com/resourceconnection/online-publishing/?imcid=nav">
+                                            Online Publishing</a></span> <span><a href="http://www.imediaconnection.com/resourceconnection/search-marketing/?imcid=nav">
+                                                Search Marketing</a></span> <span><a href="http://www.imediaconnection.com/resourceconnection/video-marketing/?imcid=nav">
+                                                    Video Marketing</a></span> </li>
+                        </ul>
+                    </div>
+                    <!-- right column -->
+                    <div class="nav-rc col">
+                        <!-- no existing RC page or not logged in -->
+                        <div id="divRcCompanies" class=""><a href="http://www.imediaconnection.com/resourceconnection/welcome.aspx?imcid=nav"><img src="The%20fundamentals%20of%20real-time%20bidding%20-%20iMediaConnection.com_files/resource-connection-join-now-module.jpg" alt="Join Resource Connection" title="Join Resource Connection"></a></div>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li class="uk"><span class="uk"><a class="whyimc" href="http://www.imediaconnection.com/why-imedia.aspx">Why iMedia?</a></span></li>
+		
+        <li class="search">
+            <script type="text/javascript">
+                //<!--
+                var SiteSearch = {
+                    //
+                    SubmitSearchByClick: function (btn) {
+                        this.SubmitSearch(); return false;
+                    },
+                    //
+                    SubmitSearchByEnter: function (e, txtbox) {
+                        var keycode = this.GetCharKeyCode(e, txtbox);
+                        if (keycode != 13) { return true; }
+
+                        this.SubmitSearch();
+                        return false;
+                    },
+                    //
+                    SubmitSearch: function () {
+                        var keyword = this.GetKeyword();
+                        if (keyword.length === 0) { return; }
+
+                        var url = "/SearchResultsCSE.aspx"
+                                        + "?cx=017392947275951147837:mi3vecqy0uw"
+                                        + "&cof=FORID:9"
+                                        + "&ie=UTF-8"
+                                        + "&q=" + keyword
+                                        + "&sa.x=0"
+                                        + "&sa.y=0"
+                                        + "&sa=Go#1087&imcid=nav";
+
+                        location.href = url;
+                    },
+                    execute: function (keyword) {
+                        var keyword = this.GetKeyword();
+                        if (keyword.length === 0) { return; }
+
+                        var url = "/SearchResultsCSE.aspx"
+                                        + "?cx=017392947275951147837:mi3vecqy0uw"
+                                        + "&cof=FORID:9"
+                                        + "&ie=UTF-8"
+                                        + "&q=" + keyword
+                                        + "&sa.x=0"
+                                        + "&sa.y=0"
+                                        + "&sa=Go#1087&imcid=nav";
+
+                        location.href = url;
+                    },
+                    //
+                    GetCharKeyCode: function (e, obj) {
+                        var characterCode;
+                        // NN4 specific code
+                        if (e && e.which) { characterCode = e.which; }
+                        // IE specific code
+                        else { characterCode = e.keyCode; }
+                        return characterCode;
+                    },
+                    //
+                    GetKeyword: function () {
+                        var siteSearchBox = document.getElementById("siteSearchBox");
+                        if (siteSearchBox === null) { return ""; }
+                        return this.Trim(siteSearchBox.value);
+                    },
+                    //
+                    Trim: function (str) {
+                        return str.replace(/^\s*$/g, "");
+                    }
+                };
+                //-->
+            </script>
+            <script src="The%20fundamentals%20of%20real-time%20bidding%20-%20iMediaConnection.com_files/jsapi" type="text/javascript"></script>
+            <script type="text/javascript">
+                var autoCompletionOptions = {
+                    'maxCompletions': 5,
+                    'styleOptions': {
+                        'xOffset': 0
+                    }
+                };
+
+                google.load('search', '1', { language: 'en', style: google.loader.themes.V2_DEFAULT });
+                google.setOnLoadCallback(function () {
+                    google.search.CustomSearchControl.attachAutoCompletionWithOptions("017392947275951147837:mi3vecqy0uw", document.getElementById('siteSearchBox'), SiteSearch,
+                autoCompletionOptions);
+                });
+            </script><script src="The%20fundamentals%20of%20real-time%20bidding%20-%20iMediaConnection.com_files/a" type="text/javascript"></script><link href="The%20fundamentals%20of%20real-time%20bidding%20-%20iMediaConnection.com_files/defaulten.css" type="text/css" rel="stylesheet"><link href="The%20fundamentals%20of%20real-time%20bidding%20-%20iMediaConnection.com_files/default.css" type="text/css" rel="stylesheet"><script src="The%20fundamentals%20of%20real-time%20bidding%20-%20iMediaConnection.com_files/defaulten.js" type="text/javascript"></script>
+            <input spellcheck="false" autocomplete="off" dir="ltr" class="inp" id="siteSearchBox" name="q" onfocus="this.style.background='white';" onkeyup="return SiteSearch.SubmitSearchByEnter(event, this);" style="border: 1px solid rgb(204, 204, 204); padding: 2px; background: url(&quot;http://www.google.com/coop/intl/en/images/google_custom_search_watermark.gif&quot;) no-repeat scroll left center rgb(255, 255, 255); width: 115px; height: 17px; outline: medium none;" type="text">
+            <input class="inp" value="Go" name="sa" src="The%20fundamentals%20of%20real-time%20bidding%20-%20iMediaConnection.com_files/bt-go.png" onclick="return SiteSearch.SubmitSearchByClick(this);" type="image">
+        </li>
+    </ul>
+</div>
+<script type="text/javascript" src="The%20fundamentals%20of%20real-time%20bidding%20-%20iMediaConnection.com_files/brand"></script>
+<script type="text/javascript">
+    //load Articles, iMedia & ad:tech blog lists into navigation.
+    //    var urlParams = {};
+    //    (function () {
+    //        var e,
+    //        a = /\+/g,  // Regex for replacing addition symbol with a space
+    //        r = /([^&=]+)=?([^&]*)/g,
+    //        d = function (s) { return decodeURIComponent(s.replace(a, " ")); },
+    //        q = window.location.search.substring(1);
+
+    //        while (e = r.exec(q))
+    //            urlParams[d(e[1])] = d(e[2]);
+    //    })();
+
+    //for locked navigation bar
+    var setMenuOffset = function () {
+        var nav = jQuery("#topnav");
+        if (nav.length === 0) { return; }
+        var currentOffset = document.documentElement.scrollTop || document.body.scrollTop;
+        if (currentOffset > 155 && nav.css('position') != 'fixed') {
+            nav.css('top', '0px');
+            nav.css('position', 'fixed');
+        }
+        else if (nav.css('position') == 'fixed' && currentOffset <= 155) {
+            nav.css('position', 'static');
+        }
+    };
+
+    var baseUrl = (document.location.protocol == 'https:' ? 'https://' : 'http://') + 'www.imediaconnection.com';
+    jQuery(document).ready(function () {
+
+        if (typeof onScrollEventsFunctions === 'undefined') {
+            onScrollEventsFunctions = [];
+        }
+
+        onScrollEventsFunctions.push(setMenuOffset);
+
+        //for locked navigation bar
+        //window.onscroll = document.documentElement.onscroll = setMenuOffset;
+        //setMenuOffset();       
+
+        //Render Articles
+        var callUrl = baseUrl + "/profiles/WebService.asmx/RenderArticleRss";
+        jQuery.ajax({
+            type: "POST",
+            url: callUrl,
+            data: "{'path': 'http://www.imediaconnection.com/rss/top.xml' }",
+            contentType: "application/json; charset=utf-8",
+            dataType: "json",
+            success: function (ret) {
+                if (ret !== null) {
+                    var renderedContent = ret.d;
+                    if (renderedContent.length > 0) {
+                        jQuery('#ArticlesUL').html(renderedContent);
+                    }
+                }
+            },
+            error: function (e) { }
+        });
+        //Render Blog
+
+        callUrl = baseUrl + "/profiles/WebService.asmx/RenderBlogRss";
+        jQuery.ajax({
+            type: "POST",
+            url: callUrl,
+            data: "{'path': 'http://blogs.imediaconnection.com/custom-rss/' }",
+            contentType: "application/json; charset=utf-8",
+            dataType: "json",
+            success: function (ret) {
+                if (ret !== null) {
+                    var renderedContent = ret.d;
+                    if (renderedContent.length > 0) {
+                        jQuery('#ImcBlogNavUL').html(renderedContent);
+                    }
+                }
+            },
+            error: function (e) { }
+        });
+
+        //Render RC Companies
+        callUrl = baseUrl + "/CompanyService.asmx/GetProfileCompaniesForNav";
+
+        jQuery.ajax({
+            type: "POST",
+            url: callUrl,
+            contentType: "application/json; charset=utf-8",
+            dataType: "json",
+            success: function (ret) {
+                if (ret !== null) {
+                    var retContent = ret.d;
+                    if (retContent.Success && retContent.Message.length > 0) {
+                        jQuery('#divRcCompanies').html(retContent.Message);
+                    }
+                    else {
+                        jQuery('#divRcCompanies').html("<a href=\"/resourceconnection/welcome.aspx?imcid=nav\"><img src=\"http://assets.imediaconnection.com/images/rc/resource-connection-join-now-module.jpg\" alt=\"Join Resource Connection\" title=\"Join Resource Connection\" /></a>");
+                    }
+                }
+            },
+            error: function (e) { }
+        });
+
+    });
+</script>
+
+                
+                <!-- Under Nav Content -->
+                
+
+<div class="nav-top-content">
+    <!--?xml version="1.0" encoding="utf-8"?--><ul class="story"><li><a href="http://www.imediaconnection.com/content/38258.asp?imcid=topnavcontent"><img src="The%20fundamentals%20of%20real-time%20bidding%20-%20iMediaConnection.com_files/38258-md.jpg" alt="The most unbearable people you meet at conferences" title="The most unbearable people you meet at conferences" onerror="this.onerror=null;this.src='http://assets.imediaconnection.com/images/topstory/img-article-default-md.jpg'"><span>The most unbearable people you meet at conferences</span></a></li><li><a href="http://www.imediaconnection.com/content/38257.asp?imcid=topnavcontent"><img src="The%20fundamentals%20of%20real-time%20bidding%20-%20iMediaConnection.com_files/38257-md.jpg" alt="10 essential mobile apps for the modern marketer" title="10 essential mobile apps for the modern marketer" onerror="this.onerror=null;this.src='http://assets.imediaconnection.com/images/topstory/img-article-default-md.jpg'"><span>10 essential mobile apps for the modern marketer</span></a></li><li><a href="http://www.imediaconnection.com/content/38256.asp?imcid=topnavcontent"><img src="The%20fundamentals%20of%20real-time%20bidding%20-%20iMediaConnection.com_files/38256-md.jpg" alt="Promoting your personal brand through self-publishing" title="Promoting your personal brand through self-publishing" onerror="this.onerror=null;this.src='http://assets.imediaconnection.com/images/topstory/img-article-default-md.jpg'"><span>Promoting your personal brand through self-publishing</span></a></li><li><a href="http://www.imediaconnection.com/content/38255.asp?imcid=topnavcontent"><img src="The%20fundamentals%20of%20real-time%20bidding%20-%20iMediaConnection.com_files/38255-md.jpg" alt="The 10 commandments of Instagram marketing" title="The 10 commandments of Instagram marketing" onerror="this.onerror=null;this.src='http://assets.imediaconnection.com/images/topstory/img-article-default-md.jpg'"><span>The 10 commandments of Instagram marketing</span></a></li></ul>
+        <div class="videopromo">
+            <!-- <img src="http://assets.imediaconnection.com/images/pc/icon-industryinsider.png" id="nav-insider" alt="iMedia Industry Insider" title="iMedia Industry Insider" />  -->
+            <div id="container">
+                <a href="http://www.imediaconnection.com/content/38099.asp?imcid=topnav-video"><img src="The%20fundamentals%20of%20real-time%20bidding%20-%20iMediaConnection.com_files/videopromo-wednesday.jpg" id="main" alt="iMedia Industry Insider Video" title="iMedia Industry Insider Video"><span><img src="The%20fundamentals%20of%20real-time%20bidding%20-%20iMediaConnection.com_files/bt-video-play-28x30.png" class="videobt" alt="Play video">The event that brought out the best in Coca-Cola's social marketing</span>
+                </a>               
+            </div>  
+        </div>
+</div>
+
+
+
+                <!-- Additional promo -->
+                
+                
+                <!--  CONTENT  -->
+                <div class="grid_16">
+                    <div class="main-content">
+                        
+<script type="text/javascript">
+    function CheckAndShowInterstitial() {
+        //pop up ad - show once a week
+        //jQuery.removeCookie("imc_interstitial2");
+        if (are_cookies_enabled()) {
+            if (jQuery.cookie("imc_interstitial2") == null) {
+                jQuery.cookie("imc_interstitial2", "1", { expires: 3 });
+                window.location.replace("/interstitialintercept.aspx?purl=/content/27430.asp");
+            }
+        }
+    }
+    //CheckAndShowInterstitial();
+
+    function CheckAndShowInterstitialPop() {
+        //pop up ad - show once a week
+        //jQuery.removeCookie("imc_interstitial2");
+        if (are_cookies_enabled()) {
+            if (jQuery.cookie("imc_interstitial2") == null) {
+                jQuery.cookie("imc_interstitial2", "1", { expires: 3 });
+                ShowPopUpInterstitial();
+            }
+        }
+    }
+    //CheckAndShowInterstitialPop();
+    </script>
+
+    
+    <div class="artpg">
+        
+        
+        <div class="hd">
+            
+            
+            
+            <h1>
+                The fundamentals of real-time bidding
+            </h1>
+            
+            <div class="articleinfo">
+                <div id="lc">
+                    <a href="http://www.imediaconnection.com/profiles/iMedia_PC_Overview.aspx?ID=12960">
+                        <img src="The%20fundamentals%20of%20real-time%20bidding%20-%20iMediaConnection.com_files/hs_smolin_phillip_70x70.jpg" alt="Philip Smolin" title="Philip Smolin"></a>
+                    <ul>
+                        <li class="author-name"><a href="http://www.imediaconnection.com/profiles/iMedia_PC_Overview.aspx?ID=12960"> Philip Smolin</a></li><li class="contact-member"><a href="javascript:ContactViaForm(12960);%20void(0);">Contact</a></li><li class="follow-member" onclick="ToggleFollow()">Follow this author</li><li id="authorfollows"><a class="rss" href="http://www.imediaconnection.com/profiles/feeds/authorarticles.aspx?id=12960" target="new">RSS</a></li>
+                        <li id="authorfollows"></li>
+                    </ul>
+                    <div id="articledetail">
+                        <a class="category" href="http://www.imediaconnection.com/targeting/"> Targeting</a>
+                        Posted on
+                        August 23, 2010
+                    </div>
+                </div>
+                <div id="rc">
+                    <span class="sponsor" id="sectionSponsor"><a href="" target="new"><img src="The%20fundamentals%20of%20real-time%20bidding%20-%20iMediaConnection.com_files/spacer.gif" alt="sponsor" border="0"></a></span>
+                    
+                    
+                        <script type="text/javascript" src="The%20fundamentals%20of%20real-time%20bidding%20-%20iMediaConnection.com_files/21958.js"></script>
+                    
+                </div>
+            </div>
+            
+                <div class="sharetop">
+                    <span class="linkedin">
+                        <script type="text/javascript" src="The%20fundamentals%20of%20real-time%20bidding%20-%20iMediaConnection.com_files/in.js"></script>
+                        <span class="IN-widget" style="line-height: 1; vertical-align: baseline; display: inline-block; text-align: center;"><span style="padding: 0px ! important; margin: 0px ! important; text-indent: 0px ! important; display: inline-block ! important; vertical-align: baseline ! important; font-size: 1px ! important;"><span id="li_ui_li_gen_1425578418486_0"><a id="li_ui_li_gen_1425578418486_0-link" href="javascript:void(0);"><span id="li_ui_li_gen_1425578418486_0-logo">in</span><span id="li_ui_li_gen_1425578418486_0-title"><span id="li_ui_li_gen_1425578418486_0-mark"></span><span id="li_ui_li_gen_1425578418486_0-title-text">Share</span></span></a></span></span><span style="padding: 0px ! important; margin: 0px ! important; text-indent: 0px ! important; display: inline-block ! important; vertical-align: baseline ! important; font-size: 1px ! important;"><span id="li_ui_li_gen_1425578418546_1-container" class="IN-right IN-hidden"><span id="li_ui_li_gen_1425578418546_1" class="IN-right"><span id="li_ui_li_gen_1425578418546_1-inner" class="IN-right"><span id="li_ui_li_gen_1425578418546_1-content" class="IN-right">0</span></span></span></span></span></span><script type="in/share+init" data-url="http://www.imediaconnection.com/content/27430.asp?src=linkedIn201402" data-counter="right"></script>
+                    </span><span class="twitter"><iframe style="width: 106px; height: 20px;" data-twttr-rendered="true" title="Twitter Tweet Button" class="twitter-share-button twitter-tweet-button twitter-share-button twitter-count-horizontal" src="The%20fundamentals%20of%20real-time%20bidding%20-%20iMediaConnection.com_files/tweet_button.html" allowtransparency="true" scrolling="no" id="twitter-widget-0" frameborder="0"></iframe><script type="text/javascript" src="The%20fundamentals%20of%20real-time%20bidding%20-%20iMediaConnection.com_files/widgets.js"></script></span>
+                    <span class="fb">
+                        <iframe src="The%20fundamentals%20of%20real-time%20bidding%20-%20iMediaConnection.com_files/like_002.html" scrolling="no" style="border: none; overflow: hidden; width: 90px;
+                            height: 21px;" allowtransparency="true" frameborder="0"></iframe>
+                    </span><span class="plusone">
+                        <script gapi_processed="true" type="text/javascript" src="The%20fundamentals%20of%20real-time%20bidding%20-%20iMediaConnection.com_files/plusone.js"></script>
+                        <div id="___plusone_0" style="text-indent: 0px; margin: 0px; padding: 0px; background: none repeat scroll 0% 0% transparent; border-style: none; float: none; line-height: normal; font-size: 1px; vertical-align: baseline; display: inline-block; width: 90px; height: 20px;"><iframe title="+1" data-gapiattached="true" src="The%20fundamentals%20of%20real-time%20bidding%20-%20iMediaConnection.com_files/fastbutton.html" name="I0_1425578420238" id="I0_1425578420238" vspace="0" tabindex="0" style="position: static; top: 0px; width: 90px; margin: 0px; border-style: none; left: 0px; visibility: visible; height: 20px;" scrolling="no" marginwidth="0" marginheight="0" hspace="0" width="100%" frameborder="0"></iframe></div>
+                    </span><span class="pw pw-widget ra1-pw-classicWidget ra1-pw_size_small pw-layout-horizontal pw-counter-horizontal post pw-widget-look-native"><a aria-haspopup="true" class="pw-button pw-button-post-share button-type-post-share pw-size-small pw-button-counter-horizontal">
+                    <span class="pw-button-type-post-share"><span class="pw-icon ra1-pw-icon ra1-pw-icon-post"></span><span class="pw-button-type-post-share__txt">Share</span></span><span class="pw-button-counter"><i class="pw-button-counter__brd"></i><span class="pw-button-counter__count ra1-pw-button-counter-value">0</span></span></a></span>
+                    <script src="The%20fundamentals%20of%20real-time%20bidding%20-%20iMediaConnection.com_files/post-widget.js" type="text/javascript"></script>
+                    <ul>
+                        <li class="print"><a href="http://www.imediaconnection.com/printpage/printpage.aspx?id=27430">Print</a></li>
+                        <li class="comment"><a href="#addcomment">Comment</a></li>
+                    </ul>
+                </div>
+            
+            
+        </div>
+        <div class="pagination-top clearfix">
+            <ul>
+                
+                
+                
+                
+            </ul>
+        </div>
+        
+        
+            <div class="art-content">
+                <p>When it comes to online advertising, there's a common
+ misconception that real-time bidding (RTB) is a whole new ball game, 
+requiring a separate media strategy and an entirely new set of campaign 
+goals. While it's true that RTB is a different buying model for 
+marketers to understand, the promise of digital display advertising 
+remains "right message, right customer." What RTB adds to the equation 
+is "right price and right time." Thanks to RTB and auction marketplaces,
+ digital display can now be purchased in ways similar to search, and it 
+dramatically improves a marketer's ability to reach specific audiences 
+at scale. It's easy to think this might just be relevant for direct 
+response campaigns, but in fact RTB delivers tremendous advantages for 
+brand and branded response campaigns as well. Let's look at how RTB 
+enables all advertisers to more efficiently and effectively achieve four
+ common campaign objectives.</p>
+<div class="midpage-promobox"><strong>Stay informed.</strong> For more tips on freshening up your brand's marketing initiatives, attend the iMedia Brand Summit, Sept. 11-15. <a href="http://www.imediaconnection.com/SFDC/WebToLead.aspx">Request your invitation today</a>. </div>
+<p><strong>1. Find custom audiences at scale</strong><br>The fundamental
+ concept of RTB is it enables marketers to target audiences directly, 
+instead of using content as a proxy for audience. In auction markets, 
+marketers bid (or not) on individual ad impressions based on the 
+demographic and behavioral profile of a consumer, in contrast to 
+traditional content-based buys where inventory is purchased to <em>hopefully</em> reach a targeted audience. </p>
+<p>The beauty of RTB is that marketers target audiences based on their 
+own custom definitions of which consumers are appropriate for a 
+campaign. A classic strategy is to use remarketing data that tracks when
+ consumers have visited the advertiser's website. But with RTB, 
+marketers can now take it to the next level and leverage their full 
+customer relationship management (CRM) database for targeting. These 
+data represent the advertiser's full view of its customers (registration
+ data, purchase history, loyalty tier, etc.). By using a CRM-capable <a href="http://www.imediaconnection.com/content/26700.asp">demand-side platform (DSP)</a>, an advertiser can execute powerful cross-sell, up-sell, and retention campaigns. </p>
+<p>However, these strategies, while extremely effective, tend to have limited reach. To increase scale, advertisers can use <a href="http://www.clickz.com/clickz/column/1717014/looking-for-look-alikes" target="new">look-alike</a>
+ modeling to expand the size of the targetable audience. Look-alike 
+modeling finds new consumers that closely resemble the demographic and 
+psychographic attributes of an advertiser's existing audience. How does 
+this work? Imagine a dart board where the original remarketing audience 
+is the red bull's-eye in the center. Look-alike segments are the 
+concentric circles that extend out from the center, with each circle 
+increasing the scale of audience available at decreasing levels of 
+similarity. </p>
+<p><strong>2. Reduce media waste</strong><br>With RTB, marketers get 
+exactly the impressions they want and control over their ad spend. This 
+immediately improves efficiency by ensuring the advertisers only 
+purchase media for their target audience. Additionally, efficiencies can
+ be gained even before you buy the first impression. Sophisticated DSPs 
+provide marketers with powerful <a href="http://blog.turn.com/2010/04/20/the-power-of-what-if-when-its-needed-the-most/" target="new">bid-forecasting tools</a>
+ that are used to predict the unique user reach and impression 
+availability for a customer audience segment, along with how that 
+availability changes based on bid price and frequency cap. By analyzing 
+these data points during the planning process, the planner can evaluate 
+potential media strategies and avoid spending time and money on those 
+that will not scale up sufficiently enough to be worth pursuing. </p>
+<p>Another plus to operating campaigns in the RTB environment is 
+universal frequency caps. This feature, which brand advertisers have 
+been waiting for since the inception of online display advertising in 
+1995, enables the DSP to monitor and enforce a single frequency cap 
+across every RTB inventory source. Media buy duplication is (finally!) 
+eliminated, keeping costs under control and ensuring each consumer is 
+served the correct number of ad impressions. </p>
+<p><strong>3. Optimize for performance</strong><br>"Real-time bidding" 
+literally means real time, and as advertisers observe campaign 
+performance, they can react immediately to the data. No more waiting 
+hours or days for campaign analytics and then picking up the phone to 
+call a publisher to change an IO. All of the performance data and 
+controls for changing campaign targeting, budgeting, and bid pricing are
+ presented in a single interface and just a single click away.</p>
+<p>Depending on the capabilities of your DSP, sophisticated algorithms 
+might consider thousands of variables about the consumer, site, web 
+page, and ad creative to predict the right bid price for every 
+impression. Some DSPs also provide algorithms for optimizing budget 
+allocation and will automatically shift dollars to the auction markets 
+and targeting strategies that are driving the best audience reach or 
+ROI. Even with these powerful tools in the hands of the campaign 
+manager, it's important to not be hypnotized by a lower CPM. "Spray 
+painting" campaigns with cheap impressions doesn't necessarily lead to a
+ better outcome. Serving fewer but more relevant impressions to the 
+right consumers is frequently a more productive route to quality 
+conversions and a lower effective CPA.</p>
+<p><strong>4. Maintain brand safety</strong><br>In the early ad 
+exchanges, buyers didn't have a lot of control over publisher quality, 
+and they often bought impressions on a blind basis. Thanks to RTB, 
+marketers can now choose what impressions to purchase and at what level 
+of transparency. For more brand-conscious advertisers, it's now possible
+ to ensure a campaign is displayed on specific websites and types of 
+content, and to enforce those rules in real time. The IAB has recently 
+developed <a href="http://www.iab.net/iab_products_and_industry_services/508676/ne_guidelines" target="new">standards for content categorization and site transparency levels</a>
+ that will become a standard for all IAB-certified ad exchanges (and ad 
+networks) in 2011. To maintain a brand safe environment, select the 
+auction markets and publishers that provide the highest transparency 
+possible, and use DSP tools that enable you to select inventory quality 
+levels that match your brand's requirements. </p>
+<p>Since its inception in the mid '90s, online display advertising has 
+remained largely unchanged. While there have been new rich media ad 
+units and some improvements to ad targeting, the basic mechanics of how 
+advertising is bought and sold has remained the same. But, with the 
+adoption of RTB, order of magnitude improvements in scalability, 
+performance, and brand safety are possible. In particular, many brand 
+advertisers will be surprised to find RTB is their friend, and presents a
+ more effective and efficient method to reach audiences at scale while 
+improving campaign ROI. </p>
+<p><a href="http://www.imediaconnection.com/profiles/imedia_pc_overview.aspx?ID=12960"><em>Philip Smolin</em></a><em> is GM, platform solutions, at </em><a href="http://www.turn.com/" target="new"><em>Turn</em></a><em>.&nbsp; </em></p>
+<p><em>On Twitter? Follow iMedia Connection at </em><a href="http://twitter.com/iMediaTweet" target="new"><em>@iMediaTweet</em></a><em>. </em></p>
+            </div>
+            
+            <div class="pagination clearfix">
+                
+            </div>
+            <div class="jobboard" style="display:none;">
+                <div class="job-board-banner">Voting is open for the 2013 iMedia Agency Awards. <a style="font: bold 14px arial;" id="postjob" href="http://www.imediaconnection.com/awards/agencyawards2013.aspx?imcid=art-bluebox"><strong>Vote Now.</strong></a></div>
+            </div>
+            
+<div id="divArticleMentions" class="mention"></div>
+
+<script type="text/javascript">
+
+    function checkArticleMentions() {
+		var hidden = $('#divArticleMentions ul li:hidden')
+		if (hidden.length > 0) {
+			$('#divArticleMentions').append('<span id="spanToggleMentions">See more</span>');
+			$('#spanToggleMentions').click(function () {
+				var hidden = $('#divArticleMentions ul li:hidden')
+				if (hidden.length > 0) {
+					hidden.slideDown("slow");
+					$('#spanToggleMentions').text('See less');
+				} else {
+					$('#divArticleMentions ul li').each(function () {
+						if ($(this).attr('alt') == 'hide') {
+							$(this).slideUp("slow");
+						}
+					});
+					$('#spanToggleMentions').text('See more');
+				}
+			})
+		}
+	}
+
+    var loadingArticleMentions = false;
+    var loadArticleMentionsFunc = function () {
+        //get the y position of divArticleMentions.
+        var divYPosition = $("#divArticleMentions").offset().top - $(window).scrollTop();
+
+        //find the inner height and width.
+        var browserHeight = $(window).height();
+        if (divYPosition <= browserHeight && $("#divArticleMentions").html() == "" && !loadingArticleMentions) {
+            loadingArticleMentions = true;
+            //begin loading
+            $.ajax({
+                type: "POST",
+                url: "/ArticleWebService.asmx/GetAllArticleMentions",
+                data: '{ _articleId: 27430 }',
+                contentType: "application/json; charset=utf-8",
+                dataType: "json",
+                success: function (ret) {
+                    if (ret.d == "&nbsp;&nbsp;") {
+                        $("#divArticleMentions").hide();
+                        loadingArticleMentions = false;
+                        
+                    }
+                    else {
+                        $("#divArticleMentions").html(ret.d);
+                        loadingArticleMentions = false;
+                        checkArticleMentions();
+                    }
+                },
+                error: function (e) {
+                    $("#divArticleMentions").hide();
+                    
+                    loadingArticleMentions = false;
+                }
+            });
+        };
+    };
+
+    if (typeof onScrollEventsFunctions === 'undefined') {
+        onScrollEventsFunctions = [];
+    }
+
+    onScrollEventsFunctions.push(loadArticleMentionsFunc);
+
+</script>
+<div id="divRecommendedArticles" class="recommended"></div>
+    <script type="text/javascript">
+        var loadingRecommendedArticles = false;
+        var loadRecommendedArticleFunc = function () {
+            //get the y position of divArticleMentions.
+            var divYPosition = $("#divRecommendedArticles").offset().top - $(window).scrollTop();
+
+            //find the inner height and width.
+            var browserHeight = $(window).height();
+            if (divYPosition <= browserHeight && $("#divRecommendedArticles").html() == "" && !loadingRecommendedArticles) {
+                loadingRecommendedArticles = true;
+                //Load Recommended
+                $.ajax({
+                    type: "POST",
+                    url: "/ArticleWebService.asmx/GetRecommendedArticles",
+                    data: '{ }',
+                    contentType: "application/json; charset=utf-8",
+                    dataType: "json",
+                    success: function (ret) {
+                        if (ret != null) {
+                            var renderedContent = ret.d;
+                            //alert(renderedContent.Message.length);
+                            //alert(renderedContent.Message);
+                            if (renderedContent.Message.length > 0) {
+                                $('#divRecommendedArticles').html(renderedContent.Message);
+                            }
+                            else {
+                                $('#divRecommendedArticles').html("").hide();
+                            }
+                        }
+                    },
+                    error: function (e) {
+                        $('#divRecommendedArticles').html("").hide();
+                    }
+                });
+            };
+        };
+
+        if (typeof onScrollEventsFunctions === 'undefined') {
+            onScrollEventsFunctions = [];
+        }
+
+        onScrollEventsFunctions.push(loadRecommendedArticleFunc);
+    </script>
+        
+        <div class="sharetop sharebottom">
+            <span class="linkedin">
+                <script type="text/javascript" src="The%20fundamentals%20of%20real-time%20bidding%20-%20iMediaConnection.com_files/in.js"></script>
+                <span class="IN-widget" style="line-height: 1; vertical-align: baseline; display: inline-block; text-align: center;"><span style="padding: 0px ! important; margin: 0px ! important; text-indent: 0px ! important; display: inline-block ! important; vertical-align: baseline ! important; font-size: 1px ! important;"><span id="li_ui_li_gen_1425578418572_2"><a id="li_ui_li_gen_1425578418572_2-link" href="javascript:void(0);"><span id="li_ui_li_gen_1425578418572_2-logo">in</span><span id="li_ui_li_gen_1425578418572_2-title"><span id="li_ui_li_gen_1425578418572_2-mark"></span><span id="li_ui_li_gen_1425578418572_2-title-text">Share</span></span></a></span></span><span style="padding: 0px ! important; margin: 0px ! important; text-indent: 0px ! important; display: inline-block ! important; vertical-align: baseline ! important; font-size: 1px ! important;"><span id="li_ui_li_gen_1425578418598_3-container" class="IN-right IN-hidden"><span id="li_ui_li_gen_1425578418598_3" class="IN-right"><span id="li_ui_li_gen_1425578418598_3-inner" class="IN-right"><span id="li_ui_li_gen_1425578418598_3-content" class="IN-right">0</span></span></span></span></span></span><script type="in/share+init" data-url="http://www.imediaconnection.com/content/27430.asp?src=linkedIn201402" data-counter="right"></script>
+            </span><span class="twitter"><iframe style="width: 106px; height: 20px;" data-twttr-rendered="true" title="Twitter Tweet Button" class="twitter-share-button twitter-tweet-button twitter-share-button twitter-count-horizontal" src="The%20fundamentals%20of%20real-time%20bidding%20-%20iMediaConnection.com_files/tweet_button_002.html" allowtransparency="true" scrolling="no" id="twitter-widget-1" frameborder="0"></iframe><script type="text/javascript" src="The%20fundamentals%20of%20real-time%20bidding%20-%20iMediaConnection.com_files/widgets.js"></script></span>
+            <span class="fb">
+                <iframe src="The%20fundamentals%20of%20real-time%20bidding%20-%20iMediaConnection.com_files/like_002.html" scrolling="no" style="border: none; overflow: hidden; width: 90px;
+                    height: 21px;" allowtransparency="true" frameborder="0"></iframe>
+            </span><span class="plusone">
+                <div id="___plusone_1" style="text-indent: 0px; margin: 0px; padding: 0px; background: none repeat scroll 0% 0% transparent; border-style: none; float: none; line-height: normal; font-size: 1px; vertical-align: baseline; display: inline-block; width: 90px; height: 20px;"><iframe title="+1" data-gapiattached="true" src="The%20fundamentals%20of%20real-time%20bidding%20-%20iMediaConnection.com_files/fastbutton_002.html" name="I1_1425578420262" id="I1_1425578420262" vspace="0" tabindex="0" style="position: static; top: 0px; width: 90px; margin: 0px; border-style: none; left: 0px; visibility: visible; height: 20px;" scrolling="no" marginwidth="0" marginheight="0" hspace="0" width="100%" frameborder="0"></iframe></div>
+            </span><span class="pw pw-widget ra1-pw-classicWidget ra1-pw_size_small pw-layout-horizontal pw-counter-horizontal post pw-widget-look-native"><a aria-haspopup="true" class="pw-button pw-button-post-share button-type-post-share pw-size-small pw-button-counter-horizontal">
+            <span class="pw-button-type-post-share"><span class="pw-icon ra1-pw-icon ra1-pw-icon-post"></span><span class="pw-button-type-post-share__txt">Share</span></span><span class="pw-button-counter"><i class="pw-button-counter__brd"></i><span class="pw-button-counter__count ra1-pw-button-counter-value">0</span></span></a></span>
+            <script src="The%20fundamentals%20of%20real-time%20bidding%20-%20iMediaConnection.com_files/post-widget.js" type="text/javascript"></script>
+            <ul>
+                <li class="print"><a href="http://www.imediaconnection.com/printpage/printpage.aspx?id=27430">Print</a></li>
+            </ul>
+        </div>
+        <div class="clearfix">
+            <div class="more-articles">
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                <h3><a href="http://www.imediaconnection.com/behavioral/index.asp"><span>More articles from Targeting</span></a></h3>
+<ul class="list">
+    <li><h4><a href="http://www.imediaconnection.com/content/37508.asp">Programmatic's place at the top of the marketing funnel</a></h4></li><li><h4><a href="http://www.imediaconnection.com/content/37382.asp">7 deadly sins of Google AdWords</a></h4></li><li><h4><a href="http://www.imediaconnection.com/content/37242.asp">Why you should abandon ad personas</a></h4></li><li><h4><a href="http://www.imediaconnection.com/content/37114.asp">Why audience verification isn't enough to combat ad fraud</a></h4></li><li><h4><a href="http://www.imediaconnection.com/content/36894.asp">3 wrong answers to why no one saw your ad</a></h4></li>
+    <li class="link"><a href="http://www.imediaconnection.com/behavioral/index.asp">More</a> »</li>
+</ul>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+            </div>
+            <div class="jobs-module">
+<h3>
+  <a href="http://www.imediaconnection.com/jobs/">
+    <span>Latest Jobs</span>
+  </a>
+</h3>
+<ul class="list">
+  <li>
+    <h4>
+      <a href="http://www.imediaconnection.com/Jobs/Description.aspx?ID=3861&amp;ref=artfooter">Sales Account Exec</a>
+    </h4>
+  </li>
+  <li>
+    <h4>
+      <a href="http://www.imediaconnection.com/Jobs/Description.aspx?ID=3860&amp;ref=artfooter">Mobile App Acquisition Manager</a>
+    </h4>
+  </li>
+  <li>
+    <h4>
+      <a href="http://www.imediaconnection.com/Jobs/Description.aspx?ID=3859&amp;ref=artfooter">Director or Sr Director of Ad Product</a>
+    </h4>
+  </li>
+  <li>
+    <h4>
+      <a href="http://www.imediaconnection.com/Jobs/Description.aspx?ID=3858&amp;ref=artfooter">Associate Director, Paid Search Media</a>
+    </h4>
+  </li>
+  <li>
+    <h4>
+      <a href="http://www.imediaconnection.com/Jobs/Description.aspx?ID=3857&amp;ref=artfooter">Sr. Leader - Social Activation and Analytics</a>
+    </h4>
+  </li>
+  <li class="link">
+    <a href="http://www.imediaconnection.com/jobs/">more »</a>
+  </li>
+</ul></div>
+        </div>
+        
+            <div>
+                
+<div class="addcomment">
+    &nbsp;</div>
+<h4 class="comment">
+    <a class="addcomment" name="addcomment">Comments</a> <span class="follow-bt">
+        <input id="btnFollowThread" onclick="return toggleCommentSubscription();" value="Follow" type="button">
+    </span><span class="hidden follow-error-msg">To follow this comment thread, please first
+        sign in.</span>
+</h4>
+<div id="ctl00_MainContent_addCommentsCtrl_panel_login" onkeypress="javascript:return WebForm_FireDefaultButton(event, 'ctl00_MainContent_addCommentsCtrl_btnLogin')">
+	
+    <div class="user-login">
+        <h3>
+            Member Sign In</h3>
+        <div class="title-form-sm">
+            <span id="ctl00_MainContent_addCommentsCtrl_lblCommentFirst"></span>
+        </div>
+        <p>
+            Not a People Connection member?
+            <span id="ctl00_MainContent_addCommentsCtrl_lblRegisterLink"><a href="https://www.imediaconnection.com/profiles/register/start.aspx?ReturnUrl=http://www.imediaconnection.com/content/27430.asp" target="_top">Register here</a></span>.
+        </p>
+        <div>
+            </div>
+        <div class="user-name">
+            <label>
+                Your Email Address</label>
+            <input name="ctl00$MainContent$addCommentsCtrl$txtEmail" id="ctl00_MainContent_addCommentsCtrl_txtEmail" class="shadow" type="text">
+        </div>
+        <div class="user-pass">
+            <label>
+                Password</label>
+            <input name="ctl00$MainContent$addCommentsCtrl$txtPassword" id="ctl00_MainContent_addCommentsCtrl_txtPassword" class="shadow" type="password">
+        </div>
+        <div id="PasswordError" class="error" style="display: none;">
+            Please enter your password.
+        </div>
+        <div class="user-rememberme">
+            
+            <a href="http://www.imediaconnection.com/profiles/account/forgotpassword.aspx" target="_top">Forgot password?</a>
+        </div>
+        <div class="submit-bt clearfix">
+            <input name="ctl00$MainContent$addCommentsCtrl$btnLogin" value="Sign In" id="ctl00_MainContent_addCommentsCtrl_btnLogin" type="submit">
+        </div>
+    </div>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            if ($('.error-msg').length > 0 && $('div.addcomment').length > 0) $.scrollTo($('div.addcomment'), 10);
+        });
+
+        var toggleCommentSubscription = function () {
+            $('.follow-error-msg').removeClass('hidden');
+        };
+    </script>
+
+</div>
+
+<div class="art-comment clearfix"><div class="profile-img"><a href="http://www.imediaconnection.com/profiles/iMedia_PC_Overview.aspx?id=27409"><img onerror="this.onerror=null;this.src='http://imedia-images.s3.amazonaws.com/web/generic_profilepic.gif'" src="The%20fundamentals%20of%20real-time%20bidding%20-%20iMediaConnection.com_files/generic_profilepic.gif" alt="Angi Kelley" title="Angi Kelley"></a></div><div class="art-comment-content"><div><strong><a class="name" href="http://www.imediaconnection.com/profiles/iMedia_PC_Overview.aspx?id=27409">Angi Kelley</a></strong> <span class="time"> August 23, 2010 at 4:59 PM</span></div><p>This
+ is one model where the suppositions don't match with real-life.  RTB 
+works great in theory and if you can determine what time or date a 
+customer is more likely to purchase.  But not industries that have no 
+purchasing patterns.  Then there's the competitors who up the bidding to
+ such a point it's no longer profitable because they don't track their 
+sources but believe all the SEM and PPC agencies that insist you have to
+ have a campaign to survive.  Sorry... but it's outpricing itself just 
+like yellow pages.</p></div></div><div class="art-comment clearfix"><div class="profile-img"><a href="http://www.imediaconnection.com/profiles/iMedia_PC_Overview.aspx?id=29432"><img onerror="this.onerror=null;this.src='http://imedia-images.s3.amazonaws.com/web/generic_profilepic.gif'" src="The%20fundamentals%20of%20real-time%20bidding%20-%20iMediaConnection.com_files/generic_profilepic.gif" alt="Liz Zedo" title="Liz Zedo"></a></div><div class="art-comment-content"><div><strong><a class="name" href="http://www.imediaconnection.com/profiles/iMedia_PC_Overview.aspx?id=29432">Liz Zedo</a></strong> <span class="time"> August 23, 2010 at 12:07 PM</span></div><p>Thanks
+ for writing this detailed piece on RTB Philip.  It is becoming a more 
+and more popular topic in our space and advertisers need to understand 
+the fundamentals.  Of course the objectives of RTB are nothing new, but 
+hopefully the technology will help publishers sell more inventory, and 
+help advertisers buy inventory faster and more often.<br><br>Liz<br>Marketing Manager<br>www.ZEDO.com</p></div></div>
+            </div>
+        
+    </div>
+    
+    <div id="socialnote" style="display: none">
+        <script src="The%20fundamentals%20of%20real-time%20bidding%20-%20iMediaConnection.com_files/602.asc" type="text/javascript"></script>
+    </div>
+    <script type="text/javascript">
+        var xmlHttpp = false;
+
+        //Update View
+        function UpdateViewCount(articleID, type) { 
+          try{
+                xmlHttpp = new XMLHttpRequest();
+           }
+           catch(trymicrosoft){
+                try{
+                    xmlHttpp = new ActiveXObject("Msxml2.XMLHTTP");
+                }
+                catch(othermicrosoft){
+                    try{
+                        xmlHttpp = new ActiveXObject("Microsoft.XMLHTTP");
+                    }
+                    catch(failed){
+                        xmlHttpp = false;
+                    }
+                }
+           }
+
+           if(!xmlHttpp) {
+              alert('Browser does not support HTTP Request');
+              return;
+           }   
+           //var url="http://www.imediaconnection.com/PageViewUpdate.aspx";
+           var url="/PageViewUpdate.aspx";
+           url=url+"?PageID=" + articleID + "&Type=" + type ;
+           //url=url+"&sid="+Math.random()
+           xmlHttpp.onreadystatechange=stateChangeds;
+           xmlHttpp.open("GET",url,true);
+           xmlHttpp.send(null);
+        }
+
+        function stateChangeds()
+        { 
+           if (xmlHttpp.readyState==4 || xmlHttpp.readyState=="complete") 
+            {
+            } 
+        }
+
+        var updateID = "27430";
+        if (updateID != ''){
+            UpdateViewCount(27430,1);
+        }
+    </script>
+    <script type="text/javascript" src="The%20fundamentals%20of%20real-time%20bidding%20-%20iMediaConnection.com_files/ga_social_tracking.js"></script>
+    <script>
+        _ga.trackTwitter(); //Google Analytics Social Twitter tracking
+    </script>
+
+                        	<script type="text/javascript">
+                        	    //workaround to override inline style with inline-block.
+                        	    function ValidatorUpdateDisplay(val) {
+                        	        if (typeof (val.display) == "string") {
+                        	            if (val.display == "None") {
+                        	                return;
+                        	            }
+                        	            if (val.display == "Dynamic") {
+                        	                val.style.display = val.isvalid ? "none" : "inline-block";
+                        	                return;
+                        	            }
+                        	        }
+                        	        if ((navigator.userAgent.indexOf("Mac") > -1) && (navigator.userAgent.indexOf("MSIE") > -1)) {
+                        	            val.style.display = "inline-block";
+                        	        }
+                        	        val.style.visibility = val.isvalid ? "hidden" : "visible";
+                        	    } 
+	                        </script>
+                    </div>
+                </div>
+
+                <!--  RIGHT COLUMN -->
+                <div id="ctl00_PanelRightColumn">
+	                
+                    <div class="grid_8">
+                        <div class="right-column">                        
+                            
+    
+<div class="rc-300">
+    <div class="banner300x250" id="div-ad-medium-rectangle-custom-300x250">
+        <script type="text/javascript">
+            googletag.display('div-ad-medium-rectangle-custom-300x250');
+        </script>                                
+    </div>  
+</div>
+
+
+<!--  USE THIS ONE  -->
+
+
+
+
+    <script type="text/javascript">
+        function checkFormRight() {
+            var missinginfo = "";
+            var email = document.getElementById("EMAIL_ADDRESS").value;
+
+            if ((email === "") || (email.indexOf('@') < 1) || (email.indexOf('.') == -1)) {
+                missinginfo += "Invalid e-mail address!\n";
+                alert(missinginfo);
+                return false;
+            }
+            else {
+                var pageURL = document.URL;
+                document.newsLettSide.url.value = pageURL;
+            }
+
+            return true;
+        }
+        function cleartext() {
+            var email = document.getElementById("EMAIL_ADDRESS").value;
+            if (email == "richqz@hotmail.com") {
+                document.getElementById("EMAIL_ADDRESS").value = "";
+            }
+        }
+
+        var today = new Date();
+        var dayofweek = today.getDay();
+        var newday;
+        if (dayofweek == 6) {
+            today.setDate(today.getDate() - 1);
+        }
+        if (dayofweek == 7) {
+            today.setDate(today.getDate() - 2);
+        }
+
+        var day = "0";
+        var month = "0";
+        var year = today.getFullYear();
+
+        if (today.getMonth() + 1 < 10) {
+            month = month + (today.getMonth() + 1);
+        } else {
+            month = today.getMonth() + 1;
+        }
+
+        if (today.getDate() < 10) {
+            day = day + today.getDate();
+        } else {
+            day = today.getDate();
+        }
+
+        var strNewsletter = "newsletter" + month + day + year + ".htm";
+        var show = "<div class='label-module'><a href='http://www.imediaconnection.com/newsletter/" + strNewsletter + "'>DAILY NEWSLETTER</a></div>";    
+    </script>
+    <script type="text/javascript">
+        //<!--
+        var EmailSubmit = {
+            //
+            SubmitEmailByClick: function (btn) {
+                this.SubmitSearch(); return false;
+            },
+            //
+            SubmitEmailByEnter: function (e, txtbox) {
+                var keycode = this.GetCharKeyCode(e, txtbox);
+                if (keycode != 13) { return true; }
+
+                this.SubmitSearch();
+                return false;
+            },
+            //
+            SubmitSearch: function () {
+                var keyword = this.GetKeyword();
+                if (keyword.length == 0) { return; }
+
+                var url = "http://www.imediaconnection.com/newsletter/subscribe/?EMAIL_ADDRESS=" + keyword;
+
+                location.href = url;
+            },
+            //
+            GetCharKeyCode: function (e, obj) {
+                var characterCode;
+                // NN4 specific code
+                if (e && e.which) { characterCode = e.which; }
+                // IE specific code
+                else { characterCode = e.keyCode; }
+                return characterCode;
+            },
+            //
+            GetKeyword: function () {
+                var EmailBox = document.getElementById("EmailBox");
+                if (EmailBox == null) { return ""; }
+                return this.Trim(EmailBox.value);
+            },
+            //
+            Trim: function (str) {
+                return str.replace(/^\s*$/g, "");
+            }
+        };
+        //-->
+    </script>
+    <div class="socialmedia-module">
+        <h3>
+            <span>Follow</span> iMediaConnection</h3>
+        <div class="socialbox">
+            <label>
+                Receive our daily newsletter</label>
+            <input value="your email address" id="EmailBox" onfocus="this.value='';" onkeyup="return EmailSubmit.SubmitEmailByEnter(event, this)" type="text">
+            <input value="" class="button" src="The%20fundamentals%20of%20real-time%20bidding%20-%20iMediaConnection.com_files/bt-socialmedia-subscribe.png" onclick="return EmailSubmit.SubmitEmailByClick(this);" type="image">
+            <div class="social-icons">
+                <a href="http://goo.gl/T1mNO" id="facebook" target="_blank">iMedia Connection on Facebook</a>  
+                <a target="_blank" id="linkedin" href="http://goo.gl/o2GuiA">iMedia Connection on LinkedIn</a>
+                <a href="http://goo.gl/3sGI" id="twitter" target="_blank">iMedia Connection on twitter</a>
+                <a href="http://goo.gl/onTw" id="youtube" target="_blank">iMedia Connection on YouTube</a>
+                <a href="http://goo.gl/aKlu" id="rss" target="_blank">iMedia Connection RSS feeds</a>
+            </div>
+            <div class="likeus">
+                <iframe src="The%20fundamentals%20of%20real-time%20bidding%20-%20iMediaConnection.com_files/like_003.html" scrolling="no" style="border: none; overflow: hidden; width: 90px;
+                    height: 21px;" allowtransparency="true" frameborder="0"></iframe>
+                <div id="___plusone_2" style="text-indent: 0px; margin: 0px; padding: 0px; background: none repeat scroll 0% 0% transparent; border-style: none; float: none; line-height: normal; font-size: 1px; vertical-align: baseline; display: inline-block; width: 32px; height: 20px;"><iframe title="+1" data-gapiattached="true" src="The%20fundamentals%20of%20real-time%20bidding%20-%20iMediaConnection.com_files/fastbutton_003.html" name="I2_1425578420275" id="I2_1425578420275" vspace="0" tabindex="0" style="position: static; top: 0px; width: 32px; margin: 0px; border-style: none; left: 0px; visibility: visible; height: 20px;" scrolling="no" marginwidth="0" marginheight="0" hspace="0" width="100%" frameborder="0"></iframe></div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="banner300x600" id="div-ad-300x600">
+        <script type="text/javascript">
+            if (typeof checkSponsor === 'undefined' || checkSponsor != 1) {
+                googletag.display('div-ad-300x600');
+            }
+        </script>                                
+    </div>  
+
+
+
+
+<!--Summit Calendar -->
+
+    <div class="rc-event-calendar">
+        <h3>
+            <span>Upcoming</span> Summits</h3>
+        <ul>						
+            
+            
+            <li><span><a href="http://www.imediaconnection.com/summits/37535.asp?imcid=imc-rc">iMedia Commerce Summit</a></span> April 12-14, 2015, Minneapolis, Minnesota</li>    
+            <li><span><a href="http://www.imediaconnection.com/summits/36923.asp?imcid=imc-rc">iMedia Agency Summit</a></span> May 3-6, 2015, Rancho Palos Verdes, California</li>
+            <li><span><a href="http://www.imediaconnection.com/summits/36929.asp?imcid=imc-rc">iMedia Brand Summit</a> </span> September 13-16, 2015, Coronado, Califoria</li>                    
+			</ul>
+        <p>
+            <a href="http://www.imediaconnection.com/summits/index.asp">Full Summit Calendar</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="http://www.imediaconnection.com/SFDC/WebToLead.aspx" style="color: #CC0000;
+                text-decoration: underline;">Request Invite</a></p>
+    </div>
+
+
+    <div class="banner300x250 rc-300" id="div-ad-medium-rectangle-top-300x250">
+        <script type="text/javascript">
+            googletag.display('div-ad-medium-rectangle-top-300x250');
+        </script>                                
+    </div>  
+
+
+
+<!-- VIDEO MODULE A/B TEST -->
+<div style="display:none;">
+    <div id="videopromo1" class="video-promobox">
+        <h3>
+            <a href="http://www.imediaconnection.com/content/32662.asp?imcid=rc" style="background: url(http://assets.imediaconnection.com/images/promo/videopromo.jpg?20120918a) no-repeat;
+                background-position: 0 0; height: 200px;">3 digital trends that will make or break your company
+            <div class="bt-play" style="display:none;">
+            </div>
+            </a>
+        </h3>
+    </div>
+    <!--
+	<div id="videopromo2" class="video-promobox" style="display:none;">
+        <h3><a href="http://www.imediaconnection.com/content/32375.asp?imcid=videopromo2" style="background:url(http://assets.imediaconnection.com/images/promo/videopromo-test.jpg) no-repeat; background-position:0 -200px; height:200px;">10 ways to be a rock star social media manager
+			<div class="bt-play"></div></a>
+	</div>
+	<script type="text/javascript">
+        var rand = 1 + Math.floor(Math.random() * 1);
+
+        if (rand == 1) {
+            document.getElementById("videopromo1").style.display = "";
+        }
+        if (rand == 2) {
+            document.getElementById("videopromo2").style.display = "";
+        }
+    </script>
+	-->
+</div>
+
+
+
+
+    
+    
+    <table id="tblFeaturedPresentations" style="background-color: rgb(255, 255, 255); margin-bottom: 20px; margin-top: 10px; border-collapse: collapse;" width="300px;" border="0" cellpadding="0" cellspacing="0">
+        <thead>
+			<tr>
+				<th style="text-align:left;" valign="bottom">
+                    <div style="color: #A30006; font-family: georgia; font-size: 20px; margin-bottom:0;">Resource Connection <strong><span style="color:#333; font-family:Arial, Helvetica, sans-serif; font-size:12px; margin-bottom:0;"><br>Featured Presentations</span></strong></div>
+                </th>
+			</tr>  
+        </thead>
+        <tbody data-bind="foreach: featured">
+            <tr>
+                <td>
+                    <table style="border:1px #dedede solid; padding:4px;" width="100%" height="63" border="0" cellpadding="0" cellspacing="0">
+                        <tbody><tr>
+                            <td style="vertical-align:top;" align="center" valign="top" width="65">
+                                <a href="http://www.imediaconnection.com/resourceconnection/freshdigitalgroup.com/?imcid=imc-rc" data-bind="attr:{href: '/resourceconnection/' + CompanyUrl + '/?imcid=imc-rc'}" target="_blank">
+                                    <img src="The%20fundamentals%20of%20real-time%20bidding%20-%20iMediaConnection.com_files/rclogo-757-100x100.jpg" data-bind="attr:{src: '//imedia-rc-logo.s3.amazonaws.com/rclogo-' + CompanyId + '-100x100.jpg'}" alt="ReserveGroup" style="border:1px solid #eee; margin-right:6px;" width="63" border="0">
+                                </a>
+                            </td>
+                            <td valign="top" width="211">
+                                <a href="http://www.imediaconnection.com/resourceconnection/companypresentationview.aspx?pid=68&amp;imcid=imc-rc" data-bind="text: PresentationTitle, attr:{href: '/resourceconnection/companypresentationview.aspx?pid=' + PresentationId + '&amp;imcid=imc-rc'}" target="_blank" style="color:#333; font-family:arial; font-size:13px; font-weight:bold; text-decoration:none;">How to measure success in the digital space</a><br>
+                                <span style="color:#666; font-family:arial; font-size:13px; font-weight:normal;" data-bind="text: PresentationDescription">The problem today's consumer is facing is figuring out the proper usage of an array of digital platform options.</span>
+                            </td>
+                            <td style="vertical-align:bottom;" valign="bottom" width="9">
+                                <a href="http://www.imediaconnection.com/resourceconnection/companypresentationview.aspx?pid=68&amp;imcid=imc-rc" data-bind="attr:{href: '/resourceconnection/companypresentationview.aspx?pid=' + PresentationId +'&amp;imcid=imc-rc'}" target="_blank">
+                                    <img src="The%20fundamentals%20of%20real-time%20bidding%20-%20iMediaConnection.com_files/next-red-triangle.png" width="7" height="13" border="0">
+                                </a>
+                            </td>
+                        </tr>
+                    </tbody></table>
+                </td>
+            </tr>
+            <tr>
+                <td style="border-collapse: collapse; height:14px;" align="left" valign="top" height="10">
+                    <table width="283" height="15" border="0" cellpadding="0" cellspacing="0"><tbody><tr><td><img src="The%20fundamentals%20of%20real-time%20bidding%20-%20iMediaConnection.com_files/shadow-bottom.png" style="display: block;" vspace="0" width="283" hspace="0" border="0"></td></tr></tbody></table>
+                </td>
+            </tr> 
+        
+            <tr>
+                <td>
+                    <table style="border:1px #dedede solid; padding:4px;" width="100%" height="63" border="0" cellpadding="0" cellspacing="0">
+                        <tbody><tr>
+                            <td style="vertical-align:top;" align="center" valign="top" width="65">
+                                <a href="http://www.imediaconnection.com/resourceconnection/somedia.net/?imcid=imc-rc" data-bind="attr:{href: '/resourceconnection/' + CompanyUrl + '/?imcid=imc-rc'}" target="_blank">
+                                    <img src="The%20fundamentals%20of%20real-time%20bidding%20-%20iMediaConnection.com_files/rclogo-718-100x100.jpg" data-bind="attr:{src: '//imedia-rc-logo.s3.amazonaws.com/rclogo-' + CompanyId + '-100x100.jpg'}" alt="ReserveGroup" style="border:1px solid #eee; margin-right:6px;" width="63" border="0">
+                                </a>
+                            </td>
+                            <td valign="top" width="211">
+                                <a href="http://www.imediaconnection.com/resourceconnection/companypresentationview.aspx?pid=69&amp;imcid=imc-rc" data-bind="text: PresentationTitle, attr:{href: '/resourceconnection/companypresentationview.aspx?pid=' + PresentationId + '&amp;imcid=imc-rc'}" target="_blank" style="color:#333; font-family:arial; font-size:13px; font-weight:bold; text-decoration:none;">The marketer's guide to video in automated marketing</a><br>
+                                <span style="color:#666; font-family:arial; font-size:13px; font-weight:normal;" data-bind="text: PresentationDescription">Marketing automation and video marketing are becoming an integral part of the modern marketer’s toolkit.</span>
+                            </td>
+                            <td style="vertical-align:bottom;" valign="bottom" width="9">
+                                <a href="http://www.imediaconnection.com/resourceconnection/companypresentationview.aspx?pid=69&amp;imcid=imc-rc" data-bind="attr:{href: '/resourceconnection/companypresentationview.aspx?pid=' + PresentationId +'&amp;imcid=imc-rc'}" target="_blank">
+                                    <img src="The%20fundamentals%20of%20real-time%20bidding%20-%20iMediaConnection.com_files/next-red-triangle.png" width="7" height="13" border="0">
+                                </a>
+                            </td>
+                        </tr>
+                    </tbody></table>
+                </td>
+            </tr>
+            <tr>
+                <td style="border-collapse: collapse; height:14px;" align="left" valign="top" height="10">
+                    <table width="283" height="15" border="0" cellpadding="0" cellspacing="0"><tbody><tr><td><img src="The%20fundamentals%20of%20real-time%20bidding%20-%20iMediaConnection.com_files/shadow-bottom.png" style="display: block;" vspace="0" width="283" hspace="0" border="0"></td></tr></tbody></table>
+                </td>
+            </tr> 
+        
+            <tr>
+                <td>
+                    <table style="border:1px #dedede solid; padding:4px;" width="100%" height="63" border="0" cellpadding="0" cellspacing="0">
+                        <tbody><tr>
+                            <td style="vertical-align:top;" align="center" valign="top" width="65">
+                                <a href="http://www.imediaconnection.com/resourceconnection/proelios.com/?imcid=imc-rc" data-bind="attr:{href: '/resourceconnection/' + CompanyUrl + '/?imcid=imc-rc'}" target="_blank">
+                                    <img src="The%20fundamentals%20of%20real-time%20bidding%20-%20iMediaConnection.com_files/rclogo-624-100x100.jpg" data-bind="attr:{src: '//imedia-rc-logo.s3.amazonaws.com/rclogo-' + CompanyId + '-100x100.jpg'}" alt="ReserveGroup" style="border:1px solid #eee; margin-right:6px;" width="63" border="0">
+                                </a>
+                            </td>
+                            <td valign="top" width="211">
+                                <a href="http://www.imediaconnection.com/resourceconnection/companypresentationview.aspx?pid=70&amp;imcid=imc-rc" data-bind="text: PresentationTitle, attr:{href: '/resourceconnection/companypresentationview.aspx?pid=' + PresentationId + '&amp;imcid=imc-rc'}" target="_blank" style="color:#333; font-family:arial; font-size:13px; font-weight:bold; text-decoration:none;">Mobile gaming for brands</a><br>
+                                <span style="color:#666; font-family:arial; font-size:13px; font-weight:normal;" data-bind="text: PresentationDescription">Consumers want engaging and rewarding app experiences when it comes to mobile gaming.</span>
+                            </td>
+                            <td style="vertical-align:bottom;" valign="bottom" width="9">
+                                <a href="http://www.imediaconnection.com/resourceconnection/companypresentationview.aspx?pid=70&amp;imcid=imc-rc" data-bind="attr:{href: '/resourceconnection/companypresentationview.aspx?pid=' + PresentationId +'&amp;imcid=imc-rc'}" target="_blank">
+                                    <img src="The%20fundamentals%20of%20real-time%20bidding%20-%20iMediaConnection.com_files/next-red-triangle.png" width="7" height="13" border="0">
+                                </a>
+                            </td>
+                        </tr>
+                    </tbody></table>
+                </td>
+            </tr>
+            <tr>
+                <td style="border-collapse: collapse; height:14px;" align="left" valign="top" height="10">
+                    <table width="283" height="15" border="0" cellpadding="0" cellspacing="0"><tbody><tr><td><img src="The%20fundamentals%20of%20real-time%20bidding%20-%20iMediaConnection.com_files/shadow-bottom.png" style="display: block;" vspace="0" width="283" hspace="0" border="0"></td></tr></tbody></table>
+                </td>
+            </tr> 
+        </tbody>
+        <tbody id="tb-footer">
+            <tr>
+                <td align="right" valign="top" height="10"><a href="http://www.imediaconnection.com/resourceconnection/presentations/?imcid=imc-rc" target="_blank" style="color: #A60003; text-decoration: none; font-family:Arial, Helvetica, sans-serif; font-size:11px;">See more &gt;&gt;</a></td>
+            </tr>
+        </tbody>
+    </table>
+    <script type="text/javascript">        
+        function Presentation(_prez) {
+            var self = this;
+            self.Id = _prez.Id;
+            self.PresentationId = _prez.PresentationId;
+            self.CompanyId = _prez.CompanyId;
+            self.CompanyName = _prez.CompanyName;
+            self.CompanyUrl = _prez.CompanyUrl;
+            self.PresentationTitle = ko.observable(_prez.PresentationTitle);
+            self.PresentationDescription = ko.observable(_prez.PresentationDescription);
+            self.PresentationType = _prez.PresentationType;
+            self.PresentationUrl = _prez.PresentationUrl;
+        }
+
+        function FeaturedPresentationModel(presentations) {
+            var self = this;
+
+            self.featured = ko.observableArray(ko.utils.arrayMap(presentations, function (oPresentation) {
+                return new Presentation(oPresentation);
+            }));
+        };
+
+//        $(document).ready(function () {
+        $.ajax({
+            type: "POST",
+            url: '/CompanyService.asmx/GetFeaturedPresentations',
+            data: "{'topX': 0}",
+            contentType: "application/json; charset=utf-8",
+            dataType: "json",
+            success: function (response) {
+                var oResult = response.d;
+                if (oResult.Success == true) {
+                    var oJSONFeaturedPresentations = oResult.Data;
+                    $("#tblFeaturedPresentations").show();
+                    var oKsFeaturedPresentations = new FeaturedPresentationModel(oJSONFeaturedPresentations);
+                    ko.applyBindings(oKsFeaturedPresentations);
+                }
+            }
+        });
+//        });
+    </script>
+    
+
+
+
+
+
+
+
+<!-- Most Popular -->
+
+
+<div class="mostpopular"><h3><span>Most</span> Popular</h3>
+<div class="clearfix"><p><span class="drop">1</span> <a href="http://www.imediaconnection.com/content/38255.asp?ref=rc_mp">The 10 commandments of Instagram marketing</a></p></div><div class="clearfix"><p><span class="drop">2</span> <a href="http://www.imediaconnection.com/content/32359.asp?ref=rc_mp">The most meaningless (and hilarious) job titles on LinkedIn</a></p></div><div class="clearfix"><p><span class="drop">3</span> <a href="http://www.imediaconnection.com/content/38257.asp?ref=rc_mp">10 essential mobile apps for the modern marketer</a></p></div><div class="clearfix"><p><span class="drop">4</span> <a href="http://www.imediaconnection.com/content/32219.asp?ref=rc_mp">11 innovative movie marketing campaigns</a></p></div><div class="clearfix"><p><span class="drop">5</span> <a href="http://www.imediaconnection.com/content/38174.asp?ref=rc_mp">The top 10 most disastrous hashtag campaigns </a></p></div>
+</div>
+
+<!-- Summit Coverage -->
+
+<div class="summit-coverage-module clearfix">
+    <h3>
+        <span>Summit</span> Coverage</h3>
+    <a href="http://www.imediaconnection.com/summits/coverage/38037.asp?imcid=hp">
+        <img src="The%20fundamentals%20of%20real-time%20bidding%20-%20iMediaConnection.com_files/Rcol-Coverage-MainImg-300x90.jpg" alt="iMedia Agency Summit December 2014" border="0"></a>
+    <ul>
+            
+            <li><a href="http://www.imediaconnection.com/summits/coverage/38216.asp">How Coca-Cola blends art and science</a></li>
+            <li><a href="http://www.imediaconnection.com/summits/coverage/38053.asp">Kraft's journey to becoming a data-driven leader</a></li>
+           <!-- <li><a href="http://www.imediaconnection.com/summits/coverage/37822.asp">Balancing innovation and scale</a></li>
+            <li><a href="http://www.imediaconnection.com/summits/coverage/37821.asp">Agencies becoming the best version of ourselves</a></li>
+            <li><a href="http://www.imediaconnection.com/summits/coverage/37130.asp">A look inside the Millennial mindset</a></li>-->
+
+            
+            <li><a href="http://blogs.imediaconnection.com/blog/2015/02/23/3-tips-for-embracing-digital-transformation/?imcid=nl">
+                3 tips for embracing digital transformation</a></li>
+            <li><a href="http://blogs.imediaconnection.com/blog/2015/02/23/the-key-to-building-a-great-brand/">
+                The key to building a great brand</a></li>
+                
+                <li><a href="http://blogs.imediaconnection.com/blog/2015/02/24/the-great-content-debate-creativity-vs-measurability/?imcid=nav">
+                The great content debate: Creativity vs. measurability</a></li>
+			<li><a href="http://blogs.imediaconnection.com/blog/2015/02/24/how-agility-will-set-you-apart-from-the-competition/?imcid=nav">
+               How agility will set you apart from the competition</a></li>
+           <!-- <li><a href="http://blogs.imediaconnection.com/blog/2014/12/08/dont-run-from-disruption-leverage-it/">
+                Don't run from disruption -- leverage it</a></li>			
+            <li><a href="http://blogs.imediaconnection.com/blog/2014/12/09/why-you-need-to-be-thinking-about-short-form-video-content/">
+                Why you need to be thinking about short-form video content</a></li>
+            <li><a href="http://blogs.imediaconnection.com/blog/2014/12/09/marketing-tips-from-top-vine-talent/">
+                Marketing tips from top Vine talent</a></li>-->
+    </ul>
+    <div class="gallery">
+        <span><a href="http://www.imediaconnection.com/PhotoGallery/Default.aspx?SummitId=146" target="_blank">
+            <img src="The%20fundamentals%20of%20real-time%20bidding%20-%20iMediaConnection.com_files/sm_IMG0014.JPG" width="75" height="75" border="0"></a></span><span><a href="http://www.imediaconnection.com/PhotoGallery/View.aspx?PhotoId=19732&amp;CurrentPage=4" target="_blank">
+                    <img src="The%20fundamentals%20of%20real-time%20bidding%20-%20iMediaConnection.com_files/sm_IMG0079.JPG" width="75" height="75" border="0"></a> </span><span><a href="http://www.imediaconnection.com/PhotoGallery/View.aspx?PhotoId=19768&amp;CurrentPage=6" target="_blank">
+                            <img src="The%20fundamentals%20of%20real-time%20bidding%20-%20iMediaConnection.com_files/sm_IMG0104.JPG" width="75" height="75" border="0"></a> </span><span><a href="http://www.imediaconnection.com/PhotoGallery/View.aspx?PhotoId=19820&amp;CurrentPage=10" target="_blank">
+                                    <img src="The%20fundamentals%20of%20real-time%20bidding%20-%20iMediaConnection.com_files/sm_IMG0189.JPG" width="75" height="75" border="0"></a> </span>
+        <div class="readmore">
+            <a href="http://www.imediaconnection.com/PhotoGallery/Default.aspx?SummitId=146">view
+                photos</a> »</div>
+    </div>
+</div>
+
+
+
+
+
+
+    
+    
+    <script type="text/javascript">
+        function displaypanel() {
+            if (typeof (pmi_displayPanel) != 'undefined')
+            { pmi_displayPanel(); }
+
+            return false;
+        }
+    </script>
+
+                        </div>
+                    </div>
+                
+</div>
+            </div>
+            
+            <!-- ARTICLE YOU MIGHT HAVE MISSED -->
+            
+                <div class="feature-reminder">
+                    <div class="title">
+                        Articles you might have missed:</div>
+                    <div class="story">
+                        <!--?xml version="1.0" encoding="utf-8"?--><ul><li><a href="http://www.imediaconnection.com/content/38258.asp?imcid=missedarticle"><img src="The%20fundamentals%20of%20real-time%20bidding%20-%20iMediaConnection.com_files/38258-sm.jpg" alt="The most unbearable people you meet at conferences" title="The most unbearable people you meet at conferences" onerror="this.onerror=null;this.src='http://assets.imediaconnection.com/images/topstory/img-article-default.jpg'"><span>The most unbearable people you meet at conferences</span></a></li></ul><ul><li><a href="http://www.imediaconnection.com/content/38257.asp?imcid=missedarticle"><img src="The%20fundamentals%20of%20real-time%20bidding%20-%20iMediaConnection.com_files/38257-sm.jpg" alt="10 essential mobile apps for the modern marketer" title="10 essential mobile apps for the modern marketer" onerror="this.onerror=null;this.src='http://assets.imediaconnection.com/images/topstory/img-article-default.jpg'"><span>10 essential mobile apps for the modern marketer</span></a></li></ul><ul><li><a href="http://www.imediaconnection.com/content/38256.asp?imcid=missedarticle"><img src="The%20fundamentals%20of%20real-time%20bidding%20-%20iMediaConnection.com_files/38256-sm.jpg" alt="Promoting your personal brand through self-publishing" title="Promoting your personal brand through self-publishing" onerror="this.onerror=null;this.src='http://assets.imediaconnection.com/images/topstory/img-article-default.jpg'"><span>Promoting your personal brand through self-publishing</span></a></li></ul><ul><li><a href="http://www.imediaconnection.com/content/38255.asp?imcid=missedarticle"><img src="The%20fundamentals%20of%20real-time%20bidding%20-%20iMediaConnection.com_files/38255-sm.jpg" alt="The 10 commandments of Instagram marketing" title="The 10 commandments of Instagram marketing" onerror="this.onerror=null;this.src='http://assets.imediaconnection.com/images/topstory/img-article-default.jpg'"><span>The 10 commandments of Instagram marketing</span></a></li></ul><ul><li><a href="http://www.imediaconnection.com/content/38208.asp?imcid=missedarticle"><img src="The%20fundamentals%20of%20real-time%20bidding%20-%20iMediaConnection.com_files/38208-sm.jpg" alt="5 brands with the craziest fans" title="5 brands with the craziest fans" onerror="this.onerror=null;this.src='http://assets.imediaconnection.com/images/topstory/img-article-default.jpg'"><span>5 brands with the craziest fans</span></a></li></ul>
+                    </div>
+                </div>
+            
+
+            <!-- FOOTER -->
+            
+
+<script type="text/javascript">
+    //load Articles, iMedia & ad:tech blog lists into navigation.
+    
+//    var urlParams = {};
+//    (function () {
+//        var e,
+//        a = /\+/g,  // Regex for replacing addition symbol with a space
+//        r = /([^&=]+)=?([^&]*)/g,
+//        d = function (s) { return decodeURIComponent(s.replace(a, " ")); },
+//        q = window.location.search.substring(1);
+
+//        while (e = r.exec(q))
+//            urlParams[d(e[1])] = d(e[2]);
+//    })();
+
+    var baseUrl = (document.location.protocol == 'https:' ? 'https://' : 'http://') + 'www.imediaconnection.com';
+    jQuery(document).ready(function () {
+        //Render Footer
+        var callUrl = baseUrl + "/profiles/WebService.asmx/RenderFooter";        
+        jQuery.ajax({
+            type: "POST",
+            url: callUrl,
+            data: "",
+            contentType: "application/json; charset=utf-8",
+            dataType: "json",
+            success: function (ret) {
+                if (ret != null) {
+                    var renderedContent = ret.d;
+                    if (renderedContent.length > 0) {
+                        jQuery('#footerSpan').html(renderedContent);
+                    }
+                }
+            },
+            error: function (e) { }
+        });     
+    });
+</script>
+
+<div class="site-footer">               
+    <!--  EDITOR'S PICKS  -->
+    <div class="editor-pick clearfix">
+        <h4>Editor's <span>Picks</span></h4>
+        <span id="footerSpan"><div class="col">
+<span class="title"><a href="http://www.imediaconnection.com/socialmedia/">Social Media</a></span>
+
+<ul>
+  <li>
+    <a href="http://www.imediaconnection.com/content/38255.asp">The 10 commandments of Instagram marketing</a>
+  </li>
+  <li>
+    <a href="http://www.imediaconnection.com/content/38239.asp">3 successful campaigns that encouraged gifting </a>
+  </li>
+  <li>
+    <a href="http://www.imediaconnection.com/content/38174.asp">The top 10 most disastrous hashtag campaigns </a>
+  </li>
+</ul>
+<span class="title"><a href="http://www.imediaconnection.com/websites/">Websites</a></span>
+
+<ul>
+  <li>
+    <a href="http://www.imediaconnection.com/content/38089.asp">The 10 best brand websites of 2014</a>
+  </li>
+  <li>
+    <a href="http://www.imediaconnection.com/content/38073.asp">3 ways to best use your homepage real estate</a>
+  </li>
+  <li>
+    <a href="http://www.imediaconnection.com/content/37500.asp">6 killer websites to watch</a>
+  </li>
+</ul>
+<span class="title"><a href="http://www.imediaconnection.com/itv/">Video</a></span>
+
+<ul>
+  <li>
+    <a href="http://www.imediaconnection.com/content/38245.asp">The marketing strategy behind America's favorite puppy</a>
+  </li>
+  <li>
+    <a href="http://www.imediaconnection.com/content/38175.asp">The newest brands to rock video content </a>
+  </li>
+  <li>
+    <a href="http://www.imediaconnection.com/content/38204.asp">5 qualities of an ideal DSP</a>
+  </li>
+</ul>
+<span class="title"><a href="http://www.imediaconnection.com/directmarketing/">Direct Marketing</a></span>
+
+<ul>
+  <li>
+    <a href="http://www.imediaconnection.com/content/30204.asp">The dangers of being blinded by the trendy QR code </a>
+  </li>
+  <li>
+    <a href="http://www.imediaconnection.com/content/30173.asp">Why the email inbox is the new DVR</a>
+  </li>
+  <li>
+    <a href="http://www.imediaconnection.com/content/30117.asp">4 new reasons to redesign your website</a>
+  </li>
+</ul>
+<span class="title"><a href="http://www.imediaconnection.com/local/">Local</a></span>
+
+<ul>
+  <li>
+    <a href="http://www.imediaconnection.com/content/37444.asp">A better way to use beacons</a>
+  </li>
+  <li>
+    <a href="http://www.imediaconnection.com/content/31927.asp">5 location-based tools for non-local brands</a>
+  </li>
+  <li>
+    <a href="http://www.imediaconnection.com/content/31805.asp">Why consumers can't find you online</a>
+  </li>
+</ul>
+</div>
+<div class="col">
+<span class="title"><a href="http://www.imediaconnection.com/apps/">Apps</a></span>
+
+<ul>
+  <li>
+    <a href="http://www.imediaconnection.com/content/37280.asp">7 questions to ask for a stellar mobile app  </a>
+  </li>
+  <li>
+    <a href="http://www.imediaconnection.com/content/29733.asp">Why the iAd was a failure</a>
+  </li>
+  <li>
+    <a href="http://www.imediaconnection.com/content/27977.asp">Is the iAd platform right for your brand?</a>
+  </li>
+</ul>
+<span class="title"><a href="http://www.imediaconnection.com/email/">Email</a></span>
+
+<ul>
+  <li>
+    <a href="http://www.imediaconnection.com/content/38188.asp">4 surefire ways to botch your RFP</a>
+  </li>
+  <li>
+    <a href="http://www.imediaconnection.com/content/38104.asp">Common marketing emails that no longer work</a>
+  </li>
+  <li>
+    <a href="http://www.imediaconnection.com/content/38075.asp">3 hot email companies you should follow</a>
+  </li>
+</ul>
+<span class="title"><a href="http://www.imediaconnection.com/targeting/">Targeting</a></span>
+
+<ul>
+  <li>
+    <a href="http://www.imediaconnection.com/content/37992.asp">How to best leverage PPC bids</a>
+  </li>
+  <li>
+    <a href="http://www.imediaconnection.com/content/37508.asp">Programmatic's place at the top of the marketing funnel</a>
+  </li>
+  <li>
+    <a href="http://www.imediaconnection.com/content/37382.asp">7 deadly sins of Google AdWords</a>
+  </li>
+</ul>
+<span class="title"><a href="http://www.imediaconnection.com/creative/">Creative</a></span>
+
+<ul>
+  <li>
+    <a href="http://www.imediaconnection.com/content/38172.asp">Marketing's most amazing reboots</a>
+  </li>
+  <li>
+    <a href="http://www.imediaconnection.com/content/38135.asp">5 ways to turn your creative dreams into reality</a>
+  </li>
+  <li>
+    <a href="http://www.imediaconnection.com/content/37772.asp">4 tips to pull back the creative curtain </a>
+  </li>
+</ul>
+<span class="title"><a href="http://www.imediaconnection.com/integrated/">Integrated Marketing</a></span>
+
+<ul>
+  <li>
+    <a href="http://www.imediaconnection.com/content/37027.asp">How to successfully combine marketing and IT</a>
+  </li>
+  <li>
+    <a href="http://www.imediaconnection.com/content/36296.asp">Developing smart word-of-mouth marketing</a>
+  </li>
+  <li>
+    <a href="http://www.imediaconnection.com/content/36089.asp">The difference between male and female marketers</a>
+  </li>
+</ul>
+</div>
+<div class="col last">
+<span class="title"><a href="http://www.imediaconnection.com/mobile/">Mobile</a></span>
+
+<ul>
+  <li>
+    <a href="http://www.imediaconnection.com/content/38259.asp">Why good isn't good enough for mobile</a>
+  </li>
+  <li>
+    <a href="http://www.imediaconnection.com/content/38191.asp">How Google is transforming the mobile landscape</a>
+  </li>
+  <li>
+    <a href="http://www.imediaconnection.com/content/38147.asp">3 reasons to reconsider your mobile-first strategy </a>
+  </li>
+</ul>
+<span class="title"><a href="http://www.imediaconnection.com/search/">Search</a></span>
+
+<ul>
+  <li>
+    <a href="http://www.imediaconnection.com/content/38293.asp">The year of search personalization</a>
+  </li>
+  <li>
+    <a href="http://www.imediaconnection.com/content/38190.asp">Retail search intent: Find your focused online shopper</a>
+  </li>
+  <li>
+    <a href="http://www.imediaconnection.com/content/37827.asp">A new website trend that's affecting SEO</a>
+  </li>
+</ul>
+<span class="title"><a href="http://www.imediaconnection.com/adnetworks/">Ad Networks</a></span>
+
+<ul>
+  <li>
+    <a href="http://www.imediaconnection.com/content/33851.asp">Why the days of skipping ads are over</a>
+  </li>
+  <li>
+    <a href="http://www.imediaconnection.com/content/33311.asp">An essential guide to changing ad platforms</a>
+  </li>
+  <li>
+    <a href="http://www.imediaconnection.com/content/33218.asp">How to successfully combine video and TV buying</a>
+  </li>
+</ul>
+<span class="title"><a href="http://www.imediaconnection.com/webanalytics/">Web Analytics</a></span>
+
+<ul>
+  <li>
+    <a href="http://www.imediaconnection.com/content/38272.asp">How to clean your dirty data</a>
+  </li>
+  <li>
+    <a href="http://www.imediaconnection.com/content/38152.asp">5 reasons the absence of data isn't a negative </a>
+  </li>
+  <li>
+    <a href="http://www.imediaconnection.com/content/37592.asp">CPM: Perception vs. reality</a>
+  </li>
+</ul>
+<span class="title"><a href="http://www.imediaconnection.com/emerging/">Emerging Platforms</a></span>
+
+<ul>
+  <li>
+    <a href="http://www.imediaconnection.com/content/37969.asp">4 tech trends modern marketers can't ignore in 2015</a>
+  </li>
+  <li>
+    <a href="http://www.imediaconnection.com/content/38012.asp">18 CES innovations that marketers need to watch</a>
+  </li>
+  <li>
+    <a href="http://www.imediaconnection.com/content/37249.asp">5 cloud computing tools that have influenced marketing</a>
+  </li>
+</ul>
+</div>
+</span>
+
+    </div>
+    <!--  BOTTOM NAV  -->
+    <div class="bottom-nav clearfix" style="position:relative;">
+        <div class="col">
+            <span class="title">iMedia Summit</span>
+            <ul>
+                <li><a href="http://www.imediaconnection.com/summits/index.asp?imcid=footer">iMedia Summit Homepage</a></li>
+                <li><a href="http://www.imediaconnection.com/summits/96.asp?imcid=footer">iMedia Summit Coverage</a></li>
+                <li><a href="http://www.imediaconnection.com/SFDC/WebToLead.aspx?imcid=footer">Request Invite</a></li>
+            </ul>
+
+            <span class="title">Awards</span>
+            <ul>
+                <li><a href="http://www.imediaconnection.com/iMediaLists/2011/agency-award-winners/?imcid=footer">2011 Agency Awards</a></li>
+                <li><a href="http://www.imediaconnection.com/Awards/AgencyAwards2012.aspx?imcid=footer">2012 Agency Awards</a></li>
+                <li><a href="http://www.imediaconnection.com/iMediaLists/2013/agency-award-winners/?imcid=footer">2013 Agency Awards</a></li>
+                <li><a href="http://www.imediaconnection.com/iMediaLists/2014/agency-award-winners/?imcid=footer">2014 Agency Awards</a></li>
+                <li><a href="http://www.imediaconnection.com/awards/aspyawards2015.aspx?imcid=footer">2015 ASPY Awards</a></li>
+            </ul>
+        </div>
+        <div class="col ">
+            <span class="title">Video</span>
+            <ul>
+                <li><a href="http://www.imediaconnection.com/videos/">Featured Videos</a></li>
+            </ul>
+
+            <span class="title">Blog</span>
+            <ul>
+                <li><a href="http://blogs.imediaconnection.com/">iMedia Connection Blog</a></li>
+                
+            </ul>
+        </div>
+        <div class="col">
+            <span class="title">People Connection</span>
+            <ul>
+                <li><a href="http://www.imediaconnection.com/profiles/">Find People</a></li>
+                <li><a href="https://www.imediaconnection.com/profiles/register/start.aspx">Become a Member</a></li>
+                <li><a href="https://www.imediaconnection.com/profiles/Account/Login.aspx">Sign In</a></li>
+            </ul>
+
+            <span class="title">Job Connection</span>
+            <ul>
+                <li><a href="http://www.imediaconnection.com/jobs/">Search Jobs</a></li>
+
+                <li><a href="http://www.imediaconnection.com/jobs/JobConnectionMain.aspx">Post a Job</a></li>
+                <li><a href="http://www.imediaconnection.com/jobs/JobConnectionMain.aspx">Purchase Packs</a></li>
+            </ul>
+                 
+            <span class="title">Resource Connection</span>
+            <ul>
+                <li><a href="http://www.imediaconnection.com/resourceconnection/index.asp">Find Company</a></li>
+            </ul>
+        </div>
+        <div class="col">
+            <span class="title">Connect with Us</span>
+            <ul>
+                <li><a href="http://www.imediaconnection.com/newsletter/subscribe/?EMAIL_ADDRESS=your%20email">Daily Newsletter</a></li>
+                <li><a href="http://www.imediaconnection.com/rss.aspx" target="_blank">RSS</a></li>
+                <li><a href="http://twitter.com/#%21/imediatweet" target="_blank">Twitter</a></li>
+                <li><a href="http://www.facebook.com/pages/iMedia-Connection/116418948405948" target="_blank">Facebook</a></li>
+                
+                <li><a href="http://www.youtube.com/user/iMediaConnection" target="_blank">YouTube</a></li>
+                <li><a href="http://www.slideshare.net/imediaconnection" target="_blank">Slideshare</a></li>
+            </ul>
+        </div>
+        <div class="col">
+            <span class="title">Company Info</span>
+            <ul>
+                <li><a href="http://www.imediaconnection.com/AboutUs.aspx">About Us</a></li>
+                <li><a href="http://www.imediaconnection.com/content/35737.asp">Contributor Guidelines</a></li>
+                <li><a href="http://www.imediaconnection.com/AdSponsorship.aspx">Summit Sponsorships &amp;<br>&nbsp;&nbsp;Online Advertising</a></li>
+                <li><a href="http://www.imediaconnection.com/Privacy.aspx">Privacy Policy</a></li>
+                <li><a href="http://www.imediaconnection.com/Feedback.aspx">Contact Us</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+        </div>
+        
+    </form>
+    <!-- START QUANTCAST TAG -->
+    <script type="text/javascript">
+        _qoptions = {
+            qacct: "p-61KlJaeg2GWeI"
+        };
+    </script>
+    <script type="text/javascript" src="The%20fundamentals%20of%20real-time%20bidding%20-%20iMediaConnection.com_files/quant.js"></script>
+    <noscript>
+    <img src="http://pixel.quantserve.com/pixel/p-61KlJaeg2GWeI.gif" style="display: none;" border="0" height="1" width="1" alt="Quantcast"/>
+    </noscript>
+    <!-- END QUANTCAST TAG -->
+    
+    <!--  GETCLICKY  -->
+	<script src="The%20fundamentals%20of%20real-time%20bidding%20-%20iMediaConnection.com_files/js.js" type="text/javascript"></script>
+	<script type="text/javascript">try{ clicky.init(66395590); }catch(e){}</script>
+	<noscript><p><img alt="Clicky" width="1" height="1" src="//in.getclicky.com/66395590ns.gif" /></p></noscript>
+    <!-- END GETCLICKY -->
+
+    <!-- BIZO -->
+    <script type="text/javascript">
+        _bizo_data_partner_id = "3202";
+    </script>
+    <script type="text/javascript">
+        (function () { var b, a, u; a = document.createElement("script"); a.type = "text/javascript"; a.async = true; u = (window.location.protocol === "https:" ? "https://sjs." : "http://js.") + "bizographics.com/insight.min.js"; a.src = u; b = document.getElementsByTagName("script")[0]; return b.parentNode.insertBefore(a, b) })();
+    </script>
+    <noscript>
+      <img height="1" width="1" alt="" style="display:none;" src="//www.bizographics.com/collect/?pid=3202&fmt=gif" />
+    </noscript>
+
+
+
+<div style="display: none;" id="cboxOverlay"></div><div style="display: none; padding-bottom: 0px; padding-right: 0px;" class="" id="colorbox"><div id="cboxWrapper"><div><div style="float: left;" id="cboxTopLeft"></div><div style="float: left;" id="cboxTopCenter"></div><div style="float: left;" id="cboxTopRight"></div></div><div style="clear: left;"><div style="float: left;" id="cboxMiddleLeft"></div><div style="float: left;" id="cboxContent"><div style="width: 0px; height: 0px; overflow: hidden; float: left;" id="cboxLoadedContent"></div><div style="float: left;" id="cboxLoadingOverlay"></div><div style="float: left;" id="cboxLoadingGraphic"></div><div style="float: left;" id="cboxTitle"></div><div style="float: left;" id="cboxCurrent"></div><div style="float: left;" id="cboxNext"></div><div style="float: left;" id="cboxPrevious"></div><div style="float: left;" id="cboxSlideshow"></div><div style="float: left;" id="cboxClose"></div></div><div style="float: left;" id="cboxMiddleRight"></div></div><div style="clear: left;"><div style="float: left;" id="cboxBottomLeft"></div><div style="float: left;" id="cboxBottomCenter"></div><div style="float: left;" id="cboxBottomRight"></div></div></div><div style="position: absolute; width: 9999px; visibility: hidden; display: none;"></div></div><iframe tabindex="-1" style="width: 1px; height: 1px; position: absolute; top: -100px;" src="The%20fundamentals%20of%20real-time%20bidding%20-%20iMediaConnection.com_files/postmessageRelay.html" id="oauth2relay371638099" name="oauth2relay371638099"></iframe><iframe src="The%20fundamentals%20of%20real-time%20bidding%20-%20iMediaConnection.com_files/x8208.asc" class="ra1-pw-logImage" width="0" height="0"></iframe><script src="The%20fundamentals%20of%20real-time%20bidding%20-%20iMediaConnection.com_files/nr-593.js"></script><table class="gstl_50 gssb_c" style="width: 121px; display: none; top: 180px; left: 952px; position: absolute;" cellpadding="0" cellspacing="0"><tbody><tr><td class="gssb_f"></td><td style="width: 100%;" class="gssb_e"></td></tr></tbody></table><script type="text/javascript" src="The%20fundamentals%20of%20real-time%20bidding%20-%20iMediaConnection.com_files/a.asc"></script><img style="display: none;" alt="" src="The%20fundamentals%20of%20real-time%20bidding%20-%20iMediaConnection.com_files/seg.asc" width="1" height="1" border="0"><img style="display: none;" alt="" src="The%20fundamentals%20of%20real-time%20bidding%20-%20iMediaConnection.com_files/pixel.asc" width="1" height="1" border="0"><img style="display: none;" alt="" src="The%20fundamentals%20of%20real-time%20bidding%20-%20iMediaConnection.com_files/image.asc" width="1" height="1" border="0"><script type="text/javascript" src="The%20fundamentals%20of%20real-time%20bidding%20-%20iMediaConnection.com_files/g.js"></script><img style="display: none;" alt="" src="The%20fundamentals%20of%20real-time%20bidding%20-%20iMediaConnection.com_files/14591.asc" width="1" height="1" border="0"></body></html>

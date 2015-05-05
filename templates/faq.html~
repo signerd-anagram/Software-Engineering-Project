@@ -1,0 +1,12 @@
+{% extends 'layout.html' %}
+{% block content %}
+<div class = "sign_up">			
+			<div class = "block_header"><h2>HOW DO YOU BEGIN?</h2></div>
+					
+			<hr> 
+			
+			<form action = "" method = "POST">
+					<textarea name = "answer" value = "Begin by signing up" readonly></textarea><br>
+			</form>
+</div>
+{% endblock %}

@@ -1,0 +1,74 @@
+{% extends 'menu.html' %}
+{% block more_content%}
+<div id = "bids_banner">		
+	{%for item in items %}
+		<div class = " bid_ad ">
+			<a href = "/item?code={{ item.code }}">
+				<img src = "/static/imgs/{{ item.image_url }}" width = "100px" height = "100px">
+				<h2>{{ item.name }}</h2>
+				<p><label>{{ item.description }}</label></p>
+				<label class = "bid_current">Highest bid: <strong>${{ item.highest_bid }}</strong></label>
+			</a>
+		</div>
+	{%endfor%}
+	</div>
+				<!--		
+				<div class = " bid_ad ">
+						<img src = "/static/imgs/image.jpg" width = "100px" height = "100px">
+						<h2>James Bond DVD 007</h2>
+						<p><label>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s</label></p>
+						<label class = "bid_current">Curent bid: <strong>$200</strong></label>
+				</div>
+				
+				<div class = " bid_ad ">
+						<img src = "/static/imgs/image.jpg" width = "100px" height = "100px">
+						<h2>James Bond DVD 007</h2>
+						<p><label>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s</label></p>
+						<label class = "bid_current">Curent bid: <strong>$200</strong></label>
+				</div>
+				
+				<div class = " bid_ad ">
+						<img src = "/static/imgs/image.jpg" width = "100px" height = "100px">
+						<h2>James Bond DVD 007</h2>
+						<p><label>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s</label></p>
+						<label class = "bid_current">Curent bid: <strong>$200</strong></label>
+				</div>
+				
+				<div class = " bid_ad ">
+						<img src = "/static/imgs/image.jpg" width = "100px" height = "100px">
+						<h2>James Bond DVD 007</h2>
+						<p><label>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s</label></p>
+						<label class = "bid_current">Curent bid: <strong>$200</strong></label>
+				</div>
+						
+				<div class = " bid_ad ">
+						<img src = "/static/imgs/image.jpg" width = "100px" height = "100px">
+						<h2>James Bond DVD 007</h2>
+						<p><label>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s</label></p>
+						<label class = "bid_current">Curent bid: <strong>$200</strong></label>
+				</div>
+				
+				<div class = " bid_ad ">
+						<img src = "/static/imgs/image.jpg" width = "100px" height = "100px">
+						<h2>James Bond DVD 007</h2>
+						<p><label>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s</label></p>
+						<label class = "bid_current">Curent bid: <strong>$200</strong></label>
+				</div>
+				
+				<div class = " bid_ad ">
+						<img src = "/static/imgs/image.jpg" width = "100px" height = "100px">
+						<h2>James Bond DVD 007</h2>
+						<p><label>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s</label></p>
+						<label class = "bid_current">Curent bid: <strong>$200</strong></label>
+				</div>
+				
+				<div class = " bid_ad ">
+						<img src = "/static/imgs/image.jpg" width = "100px" height = "100px">
+						<h2>James Bond DVD 007</h2>
+						<p><label>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s</label></p>
+						<label class = "bid_current">Curent bid: <strong>$200</strong></label>
+				</div>
+
+			</div>
+			-->
+{% endblock %}

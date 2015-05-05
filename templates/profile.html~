@@ -1,0 +1,44 @@
+{% extends 'menu.html' %}
+{% block more_content%}
+
+<div id = "bids_banner" style = "text-align: left;">		
+	<img src = "/static/imgs/superuser.png" width = "100px" height = "100px" style = "border-radius: 50px;"><br>
+	<font style = "color: maroon; font-size: 3em;">{{ user.username }}'s profile</font>
+</div>
+
+<div class = "sign_up" style = "margin-right: 1%;">	
+<div class = "block_header" ><h2>SELLING</h2></div>
+					
+		<hr> 
+		
+		<div id = "bids_banner">
+		{% for item in user.items_sold %}
+			<div class = " bid_ad" style = "width: 40%; float: left; margin: 0 4% 20px 4%; background-color: #f3f4f5; border-radius: 10px; padding: 1%;" >
+				<a href = "/item?code={{ item.code }}">
+					<img src = "/static/imgs/{{ item.image_url }}" width = "100px" height = "100px">
+					<h2>{{ item.name }}</h2>
+					<label class = "bid_current">Highest bid: <strong>${{ item.price }}</strong></label>
+				</a>
+			</div>
+		{% endfor %}
+		</div>
+</div>
+
+<div class = "sign_up" style = "margin-left: 1%;">
+<div class = "block_header" ><h2>BOUGHT</h2></div>
+					
+		<hr> 
+		
+		<div id = "bids_banner">
+		{% for item in user.items_bought %}
+			<div class = " bid_ad" style = "width: 40%; float: left; margin: 0 4% 20px 4%; background-color: #f3f4f5; border-radius: 10px; padding: 1%;" >
+				<a href = "/item?code={{ item.code }}">
+					<img src = "/static/imgs/{{ item.image_url }}" width = "100px" height = "100px">
+					<h2>{{ item.name }}</h2>
+					<label class = "bid_current">Highest bid: <strong>${{ item.price }}</strong></label>
+				</a>
+			</div>
+		{% endfor %}
+		</div>
+</div>
+{% endblock %}

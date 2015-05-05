@@ -1,0 +1,9 @@
+''' This library models a bid during an auction '''
+import datetime
+
+from database import *
+
+
+class Bid(Model):
+	username = ForeignKeyField(User, related_name = "bids")
+	date_of_bidding = DateField(default = datetime.datetime.now)

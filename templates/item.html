@@ -1,0 +1,47 @@
+{% extends 'layout.html' %}
+{% block content%}
+
+<div class = "sign_up" style = "margin-right: 1%;">
+	<form action = "{{ url_for('profile')}}" method = "POST">
+		<div class = "block_header" ><h2>{{ selected_item.name.upper() }}</h2></div>
+					
+		<hr> 
+		
+		<img src = "/static/imgs/{{ selected_item.image_url }}" width = "200px" height = "200px" align = "center">
+									
+		<p>
+		{{ selected_item.description }}
+		</p>
+		
+		<p>	
+		<input type = "text" name = "username" value = "{{ selected_item.seller.username }}" style = "display: none;" readonly>
+		<input type = "submit" name = "view_profile" value = "View Seller">
+		</p>
+								
+	</form>
+</div>
+
+<div class = "sign_up" style = "margin-left: 1%;">
+	<form action =  "" method = "POST">		
+		<div class = "block_header" ><h2><font class = "theme_colour">BIDDING HISTORY </font></h2></div>
+					
+		<hr> 
+									
+		<p>
+			{% for bid in bids[0:15] %}
+				<div class = "block_header" >
+					<h2>
+						<div style = "text-align: left; width: 49%; float: left; ">{{ bid.amount }}</div>
+						<div style = "text-align: right; width: 49%; float: left; ">{{ bid.username.username }}</div>
+					</h2>
+				</div>				
+			{% endfor %}
+			
+			<input type = "submit" value = "BID" style = "float: right;">
+			<input type = "number" placeholder = "PLACE BID HERE" name = "bid" style = "width: 200px; border: 0; border-bottom: 2px solid maroon; float: right; padding: 16px 0 16px 0;">
+						
+		</p>
+								
+	</form>
+</div>
+{% endblock %}
